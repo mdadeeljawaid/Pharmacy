@@ -8,6 +8,10 @@ $(document).ready(function(){
           $(".navbar").addClass('nav-bgcolor')
         } 
   })
+  
+  // $( document ).click(function() {
+  //   $( "#mobilenav" ).toggle( "slide" );
+  // });
 
   
 });
