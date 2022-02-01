@@ -2,10 +2,20 @@ body {
   background-image: linear-gradient(to right, #efffda, #ffffff);
 }
 .btn {
-  background-color: #ebfe85;
+  background-color: #1f8ceb;
+  color: white;
 }
 .nav-bgcolor {
-  background-color: #ebfe85;
+  background-color: #1f8ceb;
+}
+.navbar-toggler {
+  background-color: #1f8ceb;
+}
+#acctTop {
+  
+}
+.cartBtn {
+  float: right;
 }
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
