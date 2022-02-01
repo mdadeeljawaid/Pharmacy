@@ -4,10 +4,16 @@ body {
 .btn {
   background-color: #ebfe85;
 }
+.nav-bgcolor {
+  background-color: #ebfe85;
+}
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
   .accountSec {
     display: none;
+  }
+  .nav-bgcolor {
+    background-image: linear-gradient(to right, #efffda, #ffffff);
   }
 }
 
