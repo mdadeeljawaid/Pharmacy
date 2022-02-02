@@ -1,15 +1,17 @@
 body {
-  background-image: linear-gradient(to right, #efffda, #ffffff);
+  /* background-image: linear-gradient(to right, #efffda, #ffffff); */
+  background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
+  /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
 }
 .btn {
-  background-color: #1f8ceb;
+  background-color: #2e9af8;
   color: white;
 }
 .nav-bgcolor {
-  background-color: #1f8ceb;
+  background-color: #2e9af8;
 }
 .navbar-toggler {
-  background-color: #1f8ceb;
+  background-color: #2e9af8;
 }
 #acctTop {
 }
