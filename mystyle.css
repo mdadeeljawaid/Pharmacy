@@ -1,50 +1,53 @@
 body {
-  /* background-image: linear-gradient(to right, #efffda, #ffffff); */
-  background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
-  /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
+	/* background-image: linear-gradient(to right, #efffda, #ffffff); */
+	background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
+	/* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
 }
+
 .btn {
-  background-color: #2e9af8;
-  color: white;
+	background-color: #2e9af8;
+	color: white;
 }
+
 .nav-bgcolor {
-  background-color: #2e9af8;
+	background-color: #2e9af8;
 }
+
 .navbar-toggler {
-  background-color: #2e9af8;
+	background-color: #2e9af8;
 }
-#acctTop {
-}
+
+#acctTop {}
+
 .cartBtn {
-  float: right;
+	float: right;
 }
-#mobilenav {
-}
+
+#mobilenav {}
+
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
-  .accountSec {
-    display: none;
-  }
-  .nav-bgcolor {
-    background-image: linear-gradient(to right, #efffda, #ffffff);
-  }
+	.accountSec {
+		display: none;
+	}
+
+	.nav-bgcolor {
+		background-image: linear-gradient(to right, #efffda, #ffffff);
+	}
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-}
+@media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 600px and up) */
 @media only screen and (min-width: 700px) {
-  #accountSec {
-    display: none;
-  }
+	#accountSec {
+		display: none;
+	}
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
+@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-}
+@media only screen and (min-width: 1200px) {}
