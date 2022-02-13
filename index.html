@@ -25,7 +25,7 @@
 
   <body>
     <!-- head section -->
-    <header class="container-fluid row">
+    <header class="container-fluid row" id="headertop">
       <!-- logo -->
       <div class="container-fluid col-3">
         <img src="./image/logo.png" alt="@logo" height="100PX" width="100%" />
@@ -88,8 +88,8 @@
       <!-- cart -->
       <div class="container-fluid col-1 mt-3">
         <a href="cart.html" class="btn mr-sm-1" role="button"
-          ><i class="fas fa-cart-plus">Cart</i></a
-        >
+          ><i class="fas fa-cart-plus">Cart</i>
+        </a>
       </div>
 
       <!-- LOGIN MODAL -->
@@ -190,25 +190,47 @@
         </div>
       </div>
     </header>
-
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor">
       <div class="container-fluid">
-        <button
-          class="navbar-toggler"
-          type="button"
-          id="mobilenav"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="row" id="navhide">
+          <!-- togler button -->
+          <button class="navbar-toggler align-self-start col-2" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- logo nav-->
+          <div class="container-fluid col-3" id="logonav">
+            <img src="./image/logo.png" alt="@logo" height="50PX" width="50%" />
+          </div>
+          <!-- search nav -->
+          <div class="container-fluid col-5 mt-3">
+            <form class="d-flex input-group">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+          <!-- cart nav -->
+          <div class="container-fluid col-2 mt-3">
+            <a href="cart.html" class="btn mr-sm-1" role="button"
+              ><i class="fas fa-cart-plus">Cart</i>
+            </a>
+          </div>
+        </div>
+        <div
+          class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav align-self-stretch">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">HOME</a>
             </li>
@@ -257,13 +279,15 @@
         </div>
       </div>
     </nav>
+    <!-- for closing nav toggel -->
+    <div class="overlay">
+      <aside></aside>
+      <section></section>
+      <footer></footer>
 
-    <aside></aside>
-    <section></section>
-    <footer></footer>
-
-    <aside></aside>
-    <section></section>
-    <footer></footer>
+      <aside></aside>
+      <section></section>
+      <footer></footer>
+    </div>
   </body>
 </html>

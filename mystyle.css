@@ -22,11 +22,45 @@ body {
 }
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
-  .accountSec {
+  #headertop {
     display: none;
   }
-  .nav-bgcolor {
+
+  /* .nav-bgcolor {
     background-image: linear-gradient(to right, #efffda, #ffffff);
+  } */
+  .mobileMenu {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    -webkit-transition: all ease 0.25s;
+    transition: all ease 0.25s;
+    background-color: #2e9af8;
+  }
+  .mobileMenu.open {
+    transform: translateX(0);
+  }
+
+  .mobileMenu .navbar-nav {
+    overflow-y: auto;
+  }
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+  }
+  .overlay.open {
+    display: block;
+    z-index: 1029;
   }
 }
 
@@ -34,9 +68,12 @@ body {
 @media only screen and (min-width: 600px) {
 }
 
-/* Medium devices (landscape tablets, 600px and up) */
+/* Medium devices (landscape tablets, 700px and up) */
 @media only screen and (min-width: 700px) {
   #accountSec {
+    display: none;
+  }
+  #navhide {
     display: none;
   }
 }
