@@ -3,8 +3,19 @@ body {
   background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
   /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
 }
+
+#top_nav ul li a {
+  color: white;
+  font-family: open sans;
+  font-weight: 600;
+  padding: 0 56px 0px 9px;
+}
 .btn {
   background-color: #2e9af8;
+  color: white;
+}
+.btn:hover {
+  background-color: #0c71c9;
   color: white;
 }
 .nav-bgcolor {
@@ -17,9 +28,14 @@ body {
 .border-btn-togler {
   border-color: #2e9af8;
 }
-#acctTop {
+
+#accountSec ul {
+  background-color: #2e9af8;
 }
 
+#acctTop {
+}
+/* logo image */
 .image-radius {
   border-radius: 50%;
 }
