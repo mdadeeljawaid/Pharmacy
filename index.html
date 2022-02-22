@@ -202,48 +202,49 @@
     <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor">
       <div class="container-fluid">
         <div id="navhide">
-          <div class="row">
+          <div class="container-fluid row justify-content-between">
             <!-- togler button -->
-            <button class="navbar-toggler align-self-start col-3" type="button">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
+            <div class="container-fluid col-2 mx-1">
+              <button class="navbar-toggler align-self-start" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
             <!-- logo nav-->
-            <div class="col-3" id="logonav">
+            <div class="container-fluid col-5 ml-1" id="logonav">
               <img
                 src="./image/logo.png"
                 alt="@logo"
                 class="image-radius"
-                height="45PX"
+                height="40PX"
                 width="100%"
               />
             </div>
 
             <!-- cart nav -->
-            <div class="col-3 offset-3 pl-5 mt-3">
-              <a href="cart.html" class="btn" role="button"
+            <div class="container-fluid col-4 ml-2 ">
+              <a href="cart.html" class="btn ml-5" role="button"
                 ><i class="fas fa-cart-plus">Cart</i>
               </a>
             </div>
           </div>
-        </div>
-        <!-- search nav -->
-        <div class="container-fluid mt-3" id="navhide">
-          <form class="d-flex input-group">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <div class="input-group-append">
-              <button class="btn btn-" type="submit">
-                <i class="fas fa-search"></i>
-              </button>
-            </div>
-          </form>
-        </div>
 
+          <!-- search nav -->
+          <div class="container-fluid mt-3 ml-auto row" id="navhide">
+            <form class="d-flex input-group">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <div class="input-group-append">
+                <button class="btn btn-" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
         <div
           class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
           id="navbarSupportedContent"

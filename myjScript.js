@@ -9,9 +9,7 @@ $(document).ready(function(){
   //       } 
   // })
   
-  // $( document ).click(function() {
-  //   $( "#mobilenav" ).toggle( "slide" );
-  // });
+  
 
 
   var fixHeight = function() {
