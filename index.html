@@ -28,7 +28,13 @@
     <header class="container-fluid row" id="headertop">
       <!-- logo -->
       <div class="container-fluid col-3">
-        <img src="./image/logo.png" alt="@logo" height="100PX" width="100%" />
+        <img
+          src="./image/logo.png"
+          alt="@logo"
+          class="image-radius"
+          height="100PX"
+          width="100%"
+        />
       </div>
 
       <!-- search -->
@@ -92,7 +98,7 @@
         </a>
       </div>
 
-      <!-- LOGIN MODAL -->
+      <!--Start LOGIN MODAL -->
       <div class="modal" id="loginModal">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -128,6 +134,7 @@
           </div>
         </div>
       </div>
+      <!--end LOGIN MODAL -->
 
       <!-- Regstration MODAL -->
       <div class="modal" id="RegstrationModal">
@@ -190,42 +197,53 @@
         </div>
       </div>
     </header>
+
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor">
       <div class="container-fluid">
-        <div class="row" id="navhide">
-          <!-- togler button -->
-          <button class="navbar-toggler align-self-start col-2" type="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div id="navhide">
+          <div class="row">
+            <!-- togler button -->
+            <button class="navbar-toggler align-self-start col-3" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-          <!-- logo nav-->
-          <div class="container-fluid col-3" id="logonav">
-            <img src="./image/logo.png" alt="@logo" height="50PX" width="50%" />
-          </div>
-          <!-- search nav -->
-          <div class="container-fluid col-5 mt-3">
-            <form class="d-flex input-group">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+            <!-- logo nav-->
+            <div class="col-3" id="logonav">
+              <img
+                src="./image/logo.png"
+                alt="@logo"
+                class="image-radius"
+                height="45PX"
+                width="100%"
               />
-              <div class="input-group-append">
-                <button class="btn btn-" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </form>
-          </div>
-          <!-- cart nav -->
-          <div class="container-fluid col-2 mt-3">
-            <a href="cart.html" class="btn mr-sm-1" role="button"
-              ><i class="fas fa-cart-plus">Cart</i>
-            </a>
+            </div>
+
+            <!-- cart nav -->
+            <div class="col-3 offset-3 pl-5 mt-3">
+              <a href="cart.html" class="btn" role="button"
+                ><i class="fas fa-cart-plus">Cart</i>
+              </a>
+            </div>
           </div>
         </div>
+        <!-- search nav -->
+        <div class="container-fluid mt-3" id="navhide">
+          <form class="d-flex input-group">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
         <div
           class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
           id="navbarSupportedContent"
@@ -280,14 +298,13 @@
       </div>
     </nav>
     <!-- for closing nav toggel -->
-    <div class="overlay">
-      <aside></aside>
-      <section></section>
-      <footer></footer>
 
-      <aside></aside>
-      <section></section>
-      <footer></footer>
-    </div>
+    <aside></aside>
+    <section></section>
+    <footer></footer>
+
+    <aside></aside>
+    <section></section>
+    <footer></footer>
   </body>
 </html>

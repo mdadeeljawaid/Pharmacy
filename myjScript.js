@@ -31,8 +31,8 @@ $(document).ready(function(){
   });
   
 
-  $('.navbar-toggler, .overlay').on('click', function() {
-    $('.mobileMenu, .overlay').toggleClass('open');
+  $('.navbar-toggler').on('click', function() {
+    $('.mobileMenu').toggleClass('open');
   });
 
 

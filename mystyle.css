@@ -15,9 +15,14 @@ body {
 }
 #acctTop {
 }
-.cartBtn {
-  float: right;
+
+.image-radius {
+  border-radius: 50%;
 }
+
+/* .cartBtn {
+  float: right;
+} */
 #mobilenav {
 }
 /* Extra small devices (phones, 700px and down) */
@@ -49,11 +54,11 @@ body {
   .mobileMenu .navbar-nav {
     overflow-y: auto;
   }
-  .overlay {
+  /* .overlay {
     position: fixed;
     top: 0;
     bottom: 0;
-    left: 0;
+    left: 200px;
     right: 0;
     margin: auto;
     background-color: rgba(0, 0, 0, 0.5);
@@ -62,11 +67,7 @@ body {
   .overlay.open {
     display: block;
     z-index: 1029;
-  }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+  } */
 }
 
 /* Medium devices (landscape tablets, 700px and up) */
@@ -77,12 +78,4 @@ body {
   #navhide {
     display: none;
   }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
 }
