@@ -42,7 +42,8 @@ body {
     background-color: #2e9af8;
   }
   .mobileMenu.open {
-    transform: translateX(0);
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
   }
 
   .mobileMenu .navbar-nav {
