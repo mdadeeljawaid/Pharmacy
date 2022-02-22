@@ -13,6 +13,10 @@ body {
 .navbar-toggler {
   background-color: #2e9af8;
 }
+
+.border-btn-togler {
+  border-color: #2e9af8;
+}
 #acctTop {
 }
 
