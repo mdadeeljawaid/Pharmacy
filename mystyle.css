@@ -1,3 +1,5 @@
+/* start home page */
+
 body {
   /* background-image: linear-gradient(to right, #efffda, #ffffff); */
   background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
@@ -33,18 +35,6 @@ body {
   background-color: #2e9af8;
 }
 
-#acctTop {
-}
-/* logo image */
-.image-radius {
-  /* border-radius: 50%; */
-}
-
-/* .cartBtn {
-  float: right;
-} */
-#mobilenav {
-}
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
   #headertop {
@@ -138,3 +128,15 @@ body {
     display: none;
   }
 }
+
+@media only screen and (max-width: 700px) {
+  .sizeforimage img {
+    height: 320px;
+    width: 100% auto;
+  }
+}
+/* end home page */
+
+/* start search page */
+
+/* end search page */
