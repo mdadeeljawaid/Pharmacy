@@ -28,13 +28,7 @@
     <header class="container-fluid row" id="headertop">
       <!-- logo -->
       <div class="container-fluid col-3">
-        <img
-          src="./image/logo1.png"
-          alt="@logo"
-          class="image-radius"
-          height="auto"
-          width="200px"
-        />
+        <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
       </div>
 
       <!-- search -->
@@ -69,21 +63,10 @@
         </button>
         <ul class="dropdown-menu">
           <li>
-            <a
-              class="dropdown-item"
-              data-toggle="modal"
-              data-target="#loginModal"
-              >LOGIN</a
-            >
+            <a href="./login.html">LOGIN</a>
           </li>
           <li>
-            <a
-              class="dropdown-item"
-              data-toggle="modal"
-              data-target="#RegstrationModal"
-              href="#"
-              >SIGNUP</a
-            >
+            <a href="./registration.html">SIGNUP</a>
           </li>
 
           <li><hr class="dropdown-divider" /></li>
@@ -97,110 +80,12 @@
           ><i class="fas fa-cart-plus">Cart</i>
         </a>
       </div>
-
-      <!--Start LOGIN MODAL -->
-      <div class="modal" id="loginModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Login</h5>
-              <button class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="username">Username</label>
-                  <input
-                    type="text"
-                    placeholder="Username"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="form-control"
-                  />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-dismiss="modal">
-                Login
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--end LOGIN MODAL -->
-
-      <!-- Regstration MODAL -->
-      <div class="modal" id="RegstrationModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title">Signup</h5>
-              <button class="close" data-dismiss="modal">&times;</button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="form-group">
-                  <label for="name">Full Name</label>
-                  <input
-                    type="text"
-                    placeholder="FULL NAME"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="name">Mobile Number</label>
-                  <input
-                    type="text"
-                    placeholder="9000000000"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="email">EMAIL</label>
-                  <input
-                    type="email"
-                    placeholder="abc@gmail.com"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="password">Password</label>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="form-control"
-                  />
-                </div>
-                <div class="form-group">
-                  <label for="Repassword">Confirm Password</label>
-                  <input
-                    type="password"
-                    placeholder="Password"
-                    class="form-control"
-                  />
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button class="btn btn-primary" data-dismiss="modal">
-                Signup
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
     </header>
 
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor" id="top_nav">
       <div class="container-fluid">
+        <!-- nav hide on big screen -->
         <div id="navhide">
           <div class="row justify-content-between">
             <!-- togler button -->
@@ -217,7 +102,6 @@
               <img
                 src="./image/logo1.png"
                 alt="@logo"
-                class="image-radius"
                 height="auto"
                 width="100px"
               />
@@ -283,21 +167,10 @@
               </button>
               <ul class="dropdown-menu">
                 <li>
-                  <a
-                    class="dropdown-item"
-                    data-toggle="modal"
-                    data-target="#loginModal"
-                    >LOGIN</a
-                  >
+                  <a href="./login.html">LOGIN</a>
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    data-toggle="modal"
-                    data-target="#RegstrationModal"
-                    href="#"
-                    >SIGNUP</a
-                  >
+                  <a href="./registration.html">SIGNUP</a>
                 </li>
 
                 <li><hr class="dropdown-divider" /></li>
@@ -309,7 +182,8 @@
       </div>
     </nav>
     <!-- for closing nav toggel -->
-    <aside>
+
+    <aside id="banner">
       <!-- SLIDER WITH CAPTIONS -->
       <div
         id="slider4"
@@ -367,6 +241,7 @@
         </a>
       </div>
     </aside>
+
     <section></section>
     <footer></footer>
 
