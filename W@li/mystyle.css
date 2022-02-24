@@ -3,9 +3,10 @@ body {
 }
 .btn {
   background-color: #1f8ceb;
-  color: white;
+  color: rgb(163, 43, 43);
 }
 .nav-bgcolor {
+<<<<<<< Updated upstream
   background-color: #1f8ceb;
 }
 .navbar-toggler {
@@ -17,6 +18,9 @@ body {
   float: right;
 }
 #mobilenav {
+=======
+  background-color: #a4b92c;
+>>>>>>> Stashed changes
 }
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
