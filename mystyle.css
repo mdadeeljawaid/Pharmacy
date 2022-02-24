@@ -35,6 +35,11 @@ body {
 #accountSec ul {
   background-color: #2e9af8;
 }
+#logonav {
+  background-color: white;
+  margin-left: 11px;
+  border-radius: 25px;
+}
 
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
