@@ -63,6 +63,7 @@ body {
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
     background-color: #2e9af8;
+    z-index: 1;
   }
   .mobileMenu.open {
     -webkit-transform: translateX(0%);
