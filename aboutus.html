@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myjScript.js"></script>
+
+    <link rel="stylesheet" href="aboutusstyle.css">
+</head>
+
+<body>
+    <!-- head section -->
+    <header class="container-fluid row" id="headertop">
+        <!-- logo -->
+        <div class="container-fluid col-3">
+            <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
+        </div>
+
+        <!-- search -->
+        <div class="container-fluid col-5 mt-3">
+            <form class="d-flex input-group">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <div class="input-group-append">
+                    <button class="btn btn-" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- accountSec    -->
+        <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
+            <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fas fa-user">Account</i>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="./login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="./registration.html">SIGNUP</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">SELLER</a></li>
+            </ul>
+        </div>
+
+        <!-- cart -->
+        <div class="container-fluid col-1 mt-3">
+            <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+            </a>
+        </div>
+    </header>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor" id="top_nav">
+        <div class="container-fluid">
+            <!-- nav hide on big screen -->
+            <div id="navhide">
+                <div class="row justify-content-between">
+                    <!-- togler button -->
+                    <div class="container-fluid col-2 mx-1">
+                        <button class="navbar-toggler align-self-start border-btn-togler" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!-- logo nav-->
+                    <div class="container-fluid col-5 ml-1" id="logonav">
+                        <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+                    </div>
+
+                    <!-- cart nav -->
+                    <div class="container-fluid col-4">
+                        <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- search nav -->
+                <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
+                    <form class="d-flex input-group">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <div class="input-group-append">
+                            <button class="btn btn-" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav align-self-stretch">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="wishlist.html" class="nav-link" role="button">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact
+                            Us</a>
+                    </li>
+                    <!-- accountSec after size decrease -->
+                    <li class="nav-item" id="accountSec">
+                        <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user">ACCOUNT</i>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="./login.html">LOGIN</a>
+                            </li>
+                            <li>
+                                <a href="./registration.html">SIGNUP</a>
+                            </li>
+
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">SELLER</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!--+++++++++++++++++++++++++++++++++++++work from here+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!-- About Us Page -->
+    <div class="quote">
+        <h1 class="text">Our Mission<br> Reach Medicine On Time</h1>
+    </div>
+    <div class="about-para">
+        <h1 class="heading">Who We Are?</h1>
+        <hr style="background-color:rgb(0, 23, 128);height:4px;">
+        <div class="column left">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id quos at rem odio quae repellendus accusantium
+                voluptatem. Aspernatur quo porro animi delectus totam doloremque veniam saepe. Cumque est, ab ratione
+                molestias minus nihil. Maiores sint nemo aspernatur, sunt deleniti ea animi magni quo blanditiis!
+                Quibusdam error dignissimos pariatur omnis quo quidem architecto soluta ipsum quod corporis, autem eos
+                nobis ad sit aspernatur alias? Fugit vel odit consequuntur laborum facilis officia, adipisci commodi
+                tempora asperiores voluptatibus atque sapiente inventore accusantium similique vitae sunt odio hic!
+                Alias ipsam excepturi placeat voluptate, nemo quae culpa maiores, asperiores odio illum harum mollitia
+                fuga? Itaque assumenda consequatur illum doloremque eius minima distinctio at dolorum temporibus
+                architecto fugiat nostrum dolorem labore quas quia commodi officiis repellat, eaque minus doloribus
+                molestiae nobis beatae. Veritatis repudiandae, ipsam neque consequatur fuga molestiae amet, quas commodi
+                eveniet fugiat animi cumque deserunt voluptatibus. Nemo consectetur autem aut vel, sapiente corrupti
+                officiis repellat dignissimos doloribus deleniti qui debitis sequi beatae perspiciatis cumque, quidem
+                aperiam placeat? Ut deleniti consectetur quam ipsa optio saepe officiis, aut ratione. Nulla magnam
+                nesciunt reiciendis sed distinctio eum itaque beatae, maiores aliquam rem asperiores doloribus aut
+                mollitia voluptatum quia? Natus sed reprehenderit odio facilis consectetur fuga unde labore!</p>
+        </div>
+        <div class="column right">
+            <p><img src="image/delivery-image.jpg" alt="delivery man" class="image"></p>
+        </div>
+    </div>
+    <div class="services">
+        <h1 class="heading">Why Choose Us?</h1>
+        <hr style="background-color:rgb(0, 23, 128);height:4px;">
+        <div class="service">
+            <h2>Secure</h2>
+            <hr style="background-color:rgb(17, 130, 158);height:2px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ratione vero in labore nisi ex
+                aliquid ipsam tempora quo voluptates eaque doloremque quod nam, dicta rerum dignissimos repudiandae
+                error ullam. Deleniti, autem qui? Aliquid explicabo quam, velit veritatis debitis quibusdam, maiores
+                autem at atque asperiores ratione aliquam, corrupti commodi porro?</p>
+        </div>
+        <div class="service">
+            <h2>Free Delivery</h2>
+            <hr style="background-color:rgb(17, 130, 158);height:2px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ratione vero in labore nisi ex
+                aliquid ipsam tempora quo voluptates eaque doloremque quod nam, dicta rerum dignissimos repudiandae
+                error ullam. Deleniti, autem qui? Aliquid explicabo quam, velit veritatis debitis quibusdam, maiores
+                autem at atque asperiores ratione aliquam, corrupti commodi porro?</p>
+        </div>
+        <div class="service">
+            <h2>Verified Sellers</h2>
+            <hr style="background-color:rgb(17, 130, 158);height:2px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ratione vero in labore nisi ex
+                aliquid ipsam tempora quo voluptates eaque doloremque quod nam, dicta rerum dignissimos repudiandae
+                error ullam. Deleniti, autem qui? Aliquid explicabo quam, velit veritatis debitis quibusdam, maiores
+                autem at atque asperiores ratione aliquam, corrupti commodi porro?</p>
+        </div>
+        <div class="service">
+            <h2>Trusted</h2>
+            <hr style="background-color:rgb(17, 130, 158);height:2px;">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ratione vero in labore nisi ex
+                aliquid ipsam tempora quo voluptates eaque doloremque quod nam, dicta rerum dignissimos repudiandae
+                error ullam. Deleniti, autem qui? Aliquid explicabo quam, velit veritatis debitis quibusdam, maiores
+                autem at atque asperiores ratione aliquam, corrupti commodi porro?</p>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
