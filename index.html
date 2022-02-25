@@ -96,10 +96,10 @@
             <!-- togler button -->
             <div class="container-fluid col-2 mx-1">
               <button
-                class="navbar-toggler align-self-start border-0"
+                class="navbar-toggler align-self-start border-0 bg-white rounded"
                 type="button"
               >
-                <span class="navbar-toggler-icon bg-white rounded"></span>
+                <span class="navbar-toggler-icon"></span>
               </button>
             </div>
             <!-- logo nav-->
@@ -144,6 +144,11 @@
           id="navbarSupportedContent"
         >
           <ul class="navbar-nav align-self-stretch justify-content-around">
+            <!-- nav close button -->
+            <button type="button" class="btn btnclsnav" id="navhide">
+              <span aria-hidden="true">&times;</span>
+            </button>
+
             <li class="nav-item justify-content-around">
               <a class="nav-link active" aria-current="page" href="./index.html"
                 ><i class="fa fa-home"></i>Home</a

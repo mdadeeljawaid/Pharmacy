@@ -29,8 +29,8 @@ $(document).ready(function(){
   });
   
 
-  $('.navbar-toggler,.overlay').on('click', function() {
-    $('.mobileMenu,.overlay').toggleClass('open');
+  $('.navbar-toggler,.overlay,.btnclsnav').on('click', function() {
+    $('.mobileMenu,.overlay,.btnclsnav').toggleClass('open');
   });
 
 
