@@ -41,6 +41,12 @@ body {
   border-radius: 7px;
 }
 
+.stickySearch {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
 /* Extra small devices (phones, 700px and down) */
 @media only screen and (max-width: 700px) {
   #headertop {

@@ -14,8 +14,8 @@
   <script src="myjScript.js"></script>
     </head>
     <body>
-      <!-- head section -->
-  <header class="container-fluid row" id="headertop">
+   <!-- header section -->
+   <header class="container-fluid row" id="headertop">
     <!-- logo -->
     <div class="container-fluid col-3">
       <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
@@ -24,7 +24,12 @@
     <!-- search -->
     <div class="container-fluid col-5 mt-3">
       <form class="d-flex input-group">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <div class="input-group-append">
           <button class="btn btn-" type="submit">
             <i class="fas fa-search"></i>
@@ -34,9 +39,16 @@
     </div>
 
     <!-- accountSec    -->
-    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
-      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
-        aria-expanded="false">
+    <div
+      class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
+      id="acctTop"
+    >
+      <button
+        class="btn dropdown-toggle float-lg-right float-md-right"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+      >
         <i class="fas fa-user">Account</i>
       </button>
       <ul class="dropdown-menu">
@@ -56,31 +68,45 @@
 
     <!-- cart -->
     <div class="container-fluid col-1 mt-3">
-      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+      <a href="cart.html" class="btn" role="button"
+        ><i class="fas fa-cart-plus">Cart</i>
       </a>
     </div>
   </header>
 
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor" id="top_nav">
+  <nav
+    class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin"
+    id="top_nav"
+  >
     <div class="container-fluid">
       <!-- nav hide on big screen -->
       <div id="navhide">
-        <div class="row justify-content-between">
+        <div class="row justify-content-around">
           <!-- togler button -->
           <div class="container-fluid col-2 mx-1">
-            <button class="navbar-toggler align-self-start border-btn-togler" type="button">
+            <button
+              class="navbar-toggler align-self-start border-0 bg-white rounded"
+              type="button"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <!-- logo nav-->
-          <div class="container-fluid col-5 ml-1" id="logonav">
-            <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+          <div class="container-fluid col-5 ml-1">
+            <div id="logonav">
+              <img
+                src="./image/logo1.png"
+                alt="@logo"
+                height="auto"
+                width="100px"
+              />
+            </div>
           </div>
-
           <!-- cart nav -->
-          <div class="container-fluid col-4">
-            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+          <div class="container-fluid col-4 justify-content-around">
+            <a href="cart.html" class="btn ml-5" role="button"
+              ><i class="fas fa-cart-plus">Cart</i>
             </a>
           </div>
         </div>
@@ -88,7 +114,12 @@
         <!-- search nav -->
         <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
           <form class="d-flex input-group">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <div class="input-group-append">
               <button class="btn btn-" type="submit">
                 <i class="fas fa-search"></i>
@@ -97,26 +128,46 @@
           </form>
         </div>
       </div>
+
       <div
-        class="collapse navbar-collapse p-3 p-lg-0 mt-5 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-        id="navbarSupportedContent">
-        <ul class="navbar-nav align-self-stretch">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home"></i>Home</a>
+        class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav align-self-stretch justify-content-around">
+          <!-- nav close button -->
+          <button type="button" class="btn btnclsnav" id="navhide">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <li class="nav-item justify-content-around">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              ><i class="fa fa-home"></i>Home</a
+            >
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
+          <li class="nav-item justify-content-around">
+            <a class="nav-link" href="Adeel/Product.html"
+              ><i class="fa fa-store"></i>Shop</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="wishlist.html" class="nav-link" role="button">About Us</a>
+          <li class="nav-item justify-content-around">
+            <a href="./aboutus.html" class="nav-link" role="button"
+              >About Us</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
+          <li class="nav-item justify-content-around">
+            <a href="wishlist.html" class="nav-link" role="button"
+              ><i class="fa fa-address-book"></i>Contact Us</a
+            >
           </li>
           <!-- accountSec after size decrease -->
-          <li class="nav-item" id="accountSec">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-user">ACCOUNT</i>
+          <li class="nav-item justify-content-around" id="accountSec">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i>ACCOUNT
             </button>
             <ul class="dropdown-menu">
               <li>
@@ -136,6 +187,7 @@
       </div>
     </div>
   </nav>
+  <div class="overlay"></div>
   
   <!-- **************************** Product Page Work Starts from here ********************************** -->
   <div class="container mt-5">

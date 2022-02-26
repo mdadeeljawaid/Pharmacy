@@ -4,184 +4,171 @@ body {
     /* background-image: linear-gradient(to right, #efffda, #ffffff); */
     background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
     /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
-}
-
-#top_nav ul li a {
+  }
+  
+  #top_nav ul li a {
     color: white;
     font-family: open sans;
     font-weight: 600;
     padding: 0 0px 0px 0px;
     margin: 0 116px 0 0;
-}
-
-.btn {
+  }
+  .btn {
     background-color: #2e9af8;
     color: white;
-}
-
-.btn:hover {
+  }
+  .btn:hover {
     background-color: #0c71c9;
     color: white;
-}
-
-.nav-bgcolor {
+  }
+  .nav-bgcolor {
     background-color: #2e9af8;
-}
-
-.navbar-toggler {
+  }
+  .navbar-toggler {
     background-color: #2e9af8;
-}
-
-.border-btn-togler {
+  }
+  
+  .border-btn-togler {
     border-color: #2e9af8;
-}
-
-#accountSec ul {
+  }
+  
+  #accountSec ul {
     background-color: #2e9af8;
-}
-
-#logonav {
+  }
+  #logonav {
     background-color: white;
     /* margin-left: ; */
     border-radius: 7px;
-}
-
-/* Extra small devices (phones, 700px and down) */
-@media only screen and (max-width: 700px) {
+  }
+  
+  .stickySearch {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+  }
+  
+  /* Extra small devices (phones, 700px and down) */
+  @media only screen and (max-width: 700px) {
     #headertop {
-        display: none;
+      display: none;
     }
-
-    #accountSec {}
-
+    #accountSec {
+    }
     /* .nav-bgcolor {
       background-image: linear-gradient(to right, #efffda, #ffffff);
     } */
     .mobileMenu {
-        -webkit-transform: translateX(-100%);
-        transform: translateX(-100%);
-        position: fixed;
-        top: 0px;
-        bottom: 0;
-        margin: auto;
-        /* margin-top: 50px; */
-        left: 0;
-        -webkit-transition: all ease 0.25s;
-        transition: all ease 0.25s;
-        background-color: #2e9af8;
-        z-index: 500;
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+      position: fixed;
+      top: 0px;
+      bottom: 0;
+      margin: auto;
+      /* margin-top: 50px; */
+      left: 0;
+      -webkit-transition: all ease 0.25s;
+      transition: all ease 0.25s;
+      background-color: #2e9af8;
+      z-index: 500;
     }
-
     .mobileMenu.open {
-        -webkit-transform: translateX(0%);
-        transform: translateX(0%);
+      -webkit-transform: translateX(0%);
+      transform: translateX(0%);
     }
-
+  
     .mobileMenu .navbar-nav {
-        overflow-y: auto;
+      overflow-y: auto;
+    }  
+     .overlay {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0px;
+      right: 0;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
     }
-
-    .overlay {
-        position: fixed;
-        top: 0;
-        bottom: 0;
-        left: 0px;
-        right: 0;
-        margin: auto;
-        background-color: rgba(0, 0, 0, 0.5);
-        display: none;
-    }
-
     .overlay.open {
-        display: block;
-        z-index: 499;
+      display: block;
+      z-index: 499;
     }
-}
-
-/* Medium devices (landscape tablets, 700px and up) */
-@media only screen and (min-width: 700px) {
+  }
+  
+  /* Medium devices (landscape tablets, 700px and up) */
+  @media only screen and (min-width: 700px) {
     #accountSec {
-        display: none;
+      display: none;
     }
-
     #navhide {
-        display: none;
+      display: none;
     }
-
+  
     .navbar-expand-lg {
-        -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
+      -ms-flex-flow: row nowrap;
+      flex-flow: row nowrap;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
     }
-
     .navbar-expand-lg .navbar-nav {
-        -ms-flex-direction: row;
-        flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
     }
-
     .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
+      position: absolute;
     }
-
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 0.5rem;
-        padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
     }
-
-    .navbar-expand-lg>.container,
-    .navbar-expand-lg>.container-fluid,
-    .navbar-expand-lg>.container-sm,
-    .navbar-expand-lg>.container-md,
-    .navbar-expand-lg>.container-lg,
-    .navbar-expand-lg>.container-xl {
-        -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    .navbar-expand-lg > .container,
+    .navbar-expand-lg > .container-fluid,
+    .navbar-expand-lg > .container-sm,
+    .navbar-expand-lg > .container-md,
+    .navbar-expand-lg > .container-lg,
+    .navbar-expand-lg > .container-xl {
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
     }
-
     .navbar-expand-lg .navbar-nav-scroll {
-        overflow: visible;
+      overflow: visible;
     }
-
     .navbar-expand-lg .navbar-collapse {
-        display: -ms-flexbox !important;
-        display: flex !important;
-        -ms-flex-preferred-size: auto;
-        flex-basis: auto;
+      display: -ms-flexbox !important;
+      display: flex !important;
+      -ms-flex-preferred-size: auto;
+      flex-basis: auto;
     }
-
     .navbar-expand-lg .navbar-toggler {
-        display: none;
+      display: none;
     }
-
-    .CustmPadingMargin {}
-}
-
-@media only screen and (max-width: 700px) {
+    .CustmPadingMargin {
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
     .sizeforimage img {
-        height: 200px;
-        width: 100% auto;
+      height: 200px;
+      width: 100% auto;
     }
-}
-
-@media only screen and (min-width: 990px) {
+  }
+  
+  @media only screen and (min-width: 990px) {
     #top_nav ul li a {
-        padding: 0 0 0px 0px;
-        margin: 4px 168px 4px -12%;
+      padding: 0 0 0px 0px;
+      margin: 4px 168px 4px -12%;
     }
-}
-
-@media only screen and (min-width: 1329px) {
+  }
+  @media only screen and (min-width: 1329px) {
     #top_nav ul li a {
-        padding: 0 0 0px 0px;
-        margin: 4px 244px 4px auto;
+      padding: 0 0 0px 0px;
+      margin: 4px 244px 4px auto;
     }
-}
-
-#banner {
+  }
+  
+  #banner {
     position: -webkit-;
-}
-
+  }
 /* ********************Product page************************ */
 
 .button-container {
