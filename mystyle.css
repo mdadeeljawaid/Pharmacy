@@ -5,7 +5,7 @@ body {
   background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8);
   /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
 }
-
+/* nav */
 #top_nav ul li a {
   color: white;
   font-family: open sans;
@@ -13,6 +13,20 @@ body {
   padding: 0 0px 0px 0px;
   margin: 0 116px 0 0;
 }
+
+@media only screen and (min-width: 990px) {
+  #top_nav ul li a {
+    padding: 0 0 0px 0px;
+    margin: 4px 168px 4px -12%;
+  }
+}
+@media only screen and (min-width: 1329px) {
+  #top_nav ul li a {
+    padding: 0 0 0px 0px;
+    margin: 4px 244px 4px auto;
+  }
+}
+/* btn color */
 .btn {
   background-color: #2e9af8;
   color: white;
@@ -21,6 +35,8 @@ body {
   background-color: #0c71c9;
   color: white;
 }
+
+/* nav bg color */
 .nav-bgcolor {
   background-color: #2e9af8;
 }
@@ -28,13 +44,12 @@ body {
   background-color: #2e9af8;
 }
 
-.border-btn-togler {
-  border-color: #2e9af8;
-}
-
+/* nav account background color */
 #accountSec ul {
   background-color: #2e9af8;
 }
+
+/* navlogo background */
 #logonav {
   background-color: white;
   /* margin-left: ; */
@@ -52,11 +67,7 @@ body {
   #headertop {
     display: none;
   }
-  #accountSec {
-  }
-  /* .nav-bgcolor {
-    background-image: linear-gradient(to right, #efffda, #ffffff);
-  } */
+
   .mobileMenu {
     -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
@@ -93,6 +104,8 @@ body {
     display: block;
     z-index: 499;
   }
+
+
 }
 
 /* Medium devices (landscape tablets, 700px and up) */
@@ -152,22 +165,20 @@ body {
     width: 100% auto;
   }
 }
-
-@media only screen and (min-width: 990px) {
-  #top_nav ul li a {
-    padding: 0 0 0px 0px;
-    margin: 4px 168px 4px -12%;
-  }
-}
-@media only screen and (min-width: 1329px) {
-  #top_nav ul li a {
-    padding: 0 0 0px 0px;
-    margin: 4px 244px 4px auto;
-  }
-}
-
+/* banner  */
 #banner {
   position: -webkit-;
+}
+/* categary cart */
+.widthSet{
+      width: 13%;
+      border-radius: 10%;
+}
+@media only screen and (max-width: 700px) {
+  .widthSet{
+        width: 23%;
+        border-radius: 10%;
+  }
 }
 /* end home page */
 
