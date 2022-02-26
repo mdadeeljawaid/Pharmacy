@@ -171,15 +171,25 @@ body {
 }
 /* categary cart */
 .widthSet{
-      width: 13%;
-      border-radius: 10%;
+      width: 12%;
+      border-radius: 35%;
+      margin: 15px 70px 0 48px;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width:700px) {
   .widthSet{
-        width: 23%;
-        border-radius: 10%;
+    width: 30%;
+    border-radius: 35%;
+    margin: 12px 10px 0 0;
   }
 }
+@media only screen and (min-width: 940px) {
+  .widthSet{
+    width: 18%;
+    border-radius: 35%;
+    margin: 12px 17px 0 0;
+  }
+}
+
 /* end home page */
 
 /* start search page */
