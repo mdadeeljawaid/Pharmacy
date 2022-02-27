@@ -169,7 +169,12 @@ body {
 #banner {
   position: -webkit-;
 }
-/* categary cart */
+/* categary section */
+section{
+  
+  width: 100%;
+}
+
 .widthSet{
       width: 12%;
       border-radius: 35%;
@@ -189,6 +194,18 @@ body {
     margin: 12px 17px 0 0;
   }
 }
+/* footer section */
+
+/* footer{
+  background-color: #2e9af8;
+   
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: white;
+   text-align: center; 
+} */
+
 
 /* end home page */
 
