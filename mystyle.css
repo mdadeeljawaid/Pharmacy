@@ -179,7 +179,7 @@ section{
   width: 15%;
   border-radius: 35%;
   margin: 12px 0px 25px 19px;
-  box-shadow: 8px 7px 0px 7px rgb(235 245 255);
+  box-shadow: 4px 4px 0px 0px rgb(235 245 255);
 }
 
 .widthSet:hover{
