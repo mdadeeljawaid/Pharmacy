@@ -3,7 +3,7 @@
 body {
   /* background-image: linear-gradient(to right, #efffda, #ffffff); */
   /* background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8); */
-  /* background-image: linear-gradient(to right, #f1f4f8, #a3fdf2af); */
+  background-image: linear-gradient(to right, rgb(214 248 240), rgb(218 237 254));
 }
 /* nav */
 #top_nav ul li a {
@@ -38,10 +38,11 @@ body {
 
 /* nav bg color */
 .nav-bgcolor {
-  background-color: #2e9af8;
+  background-color:#2e9af8;
 }
 .navbar-toggler {
   background-color: #2e9af8;
+  
 }
 
 /* nav account background color */
@@ -51,7 +52,7 @@ body {
 
 /* navlogo background */
 #logonav {
-  background-color: white;
+  /* background-color: white; */
   /* margin-left: ; */
   border-radius: 7px;
 }
@@ -179,11 +180,11 @@ section{
   width: 15%;
   border-radius: 35%;
   margin: 12px 0px 25px 19px;
-  box-shadow: 4px 4px 0px 0px rgb(235 245 255);
+  box-shadow: 0px 5px 0px 0px rgb(235 245 255);
 }
 
 .widthSet:hover{
-  box-shadow: 0px 0px 20px 6px rgb(0 123 255);
+  box-shadow: 0px 0px 13px 8px rgb(192 211 232);
 }
 @media only screen and (max-width:700px) {
   .widthSet{
@@ -194,9 +195,9 @@ section{
 }
 @media only screen and (min-width: 940px) {
   .widthSet{
-    width: 18%;
+    width: 16%;
     border-radius: 35%;
-    margin: 12px 0px 25px 19px;
+    margin: 2px 0px 25px 101px;
   }
 }
 /* footer section */

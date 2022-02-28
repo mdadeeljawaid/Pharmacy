@@ -1,9 +1,10 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Product Details Page</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+  <meta charset="utf-8" />
+  <title>Product Details Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -12,10 +13,11 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
   <script src="myjScript.js"></script>
-    </head>
-    <body>
-   <!-- header section -->
-   <header class="container-fluid row" id="headertop">
+</head>
+
+<body>
+  <!-- header section -->
+  <header class="container-fluid row" id="headertop">
     <!-- logo -->
     <div class="container-fluid col-3">
       <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
@@ -24,12 +26,7 @@
     <!-- search -->
     <div class="container-fluid col-5 mt-3">
       <form class="d-flex input-group">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
         <div class="input-group-append">
           <button class="btn btn-" type="submit">
             <i class="fas fa-search"></i>
@@ -39,16 +36,9 @@
     </div>
 
     <!-- accountSec    -->
-    <div
-      class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
-      id="acctTop"
-    >
-      <button
-        class="btn dropdown-toggle float-lg-right float-md-right"
-        type="button"
-        data-toggle="dropdown"
-        aria-expanded="false"
-      >
+    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
+      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
+        aria-expanded="false">
         <i class="fas fa-user">Account</i>
       </button>
       <ul class="dropdown-menu">
@@ -68,45 +58,32 @@
 
     <!-- cart -->
     <div class="container-fluid col-1 mt-3">
-      <a href="cart.html" class="btn" role="button"
-        ><i class="fas fa-cart-plus">Cart</i>
+      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
       </a>
     </div>
   </header>
 
   <!-- nav bar -->
-  <nav
-    class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin"
-    id="top_nav"
-  >
+  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
     <div class="container-fluid">
       <!-- nav hide on big screen -->
       <div id="navhide">
         <div class="row justify-content-around">
           <!-- togler button -->
           <div class="container-fluid col-2 mx-1">
-            <button
-              class="navbar-toggler align-self-start border-0 bg-white rounded"
-              type="button"
-            >
+            <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <!-- logo nav-->
           <div class="container-fluid col-5 ml-1">
             <div id="logonav">
-              <img
-                src="./image/logo1.png"
-                alt="@logo"
-                height="auto"
-                width="100px"
-              />
+              <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
             </div>
           </div>
           <!-- cart nav -->
           <div class="container-fluid col-4 justify-content-around">
-            <a href="cart.html" class="btn ml-5" role="button"
-              ><i class="fas fa-cart-plus">Cart</i>
+            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
             </a>
           </div>
         </div>
@@ -114,12 +91,7 @@
         <!-- search nav -->
         <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
           <form class="d-flex input-group">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <div class="input-group-append">
               <button class="btn btn-" type="submit">
                 <i class="fas fa-search"></i>
@@ -131,8 +103,7 @@
 
       <div
         class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-        id="navbarSupportedContent"
-      >
+        id="navbarSupportedContent">
         <ul class="navbar-nav align-self-stretch justify-content-around">
           <!-- nav close button -->
           <button type="button" class="btn btnclsnav" id="navhide">
@@ -140,33 +111,20 @@
           </button>
 
           <li class="nav-item justify-content-around">
-            <a class="nav-link active" aria-current="page" href="./index.html"
-              ><i class="fa fa-home"></i>Home</a
-            >
+            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home"></i>Home</a>
           </li>
           <li class="nav-item justify-content-around">
-            <a class="nav-link" href="Adeel/Product.html"
-              ><i class="fa fa-store"></i>Shop</a
-            >
+            <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
           </li>
           <li class="nav-item justify-content-around">
-            <a href="./aboutus.html" class="nav-link" role="button"
-              >About Us</a
-            >
+            <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
           </li>
           <li class="nav-item justify-content-around">
-            <a href="wishlist.html" class="nav-link" role="button"
-              ><i class="fa fa-address-book"></i>Contact Us</a
-            >
+            <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
           </li>
           <!-- accountSec after size decrease -->
           <li class="nav-item justify-content-around" id="accountSec">
-            <button
-              class="btn dropdown-toggle"
-              type="button"
-              data-toggle="dropdown"
-              aria-expanded="false"
-            >
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
               <i class="fas fa-user"></i>ACCOUNT
             </button>
             <ul class="dropdown-menu">
@@ -188,36 +146,31 @@
     </div>
   </nav>
   <div class="overlay"></div>
-  
+
   <!-- **************************** Product Page Work Starts from here ********************************** -->
-  <div class="container mt-5">
-    <div class="row">
-      <div class="col-md-12">
-        Home &GT Shop &GT Healthcare &GT Dettol Antiseptic Liquid Bottle Of 125 Ml
-      </div>
-    </div>
-  </div>
 
   <div class="container">
     <div class="row">
       <div class="col-md-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
+          <div class="carousel-inner mt-2">
             <div class="carousel-item active">
-              <img src="./image/dettol1.jpg" class="d-block w-100" alt="First Slide" height="400" width="50">
+              <img src="./image/dettol1.jpg" class="d-block w-100 productpageimage-main" alt="First Slide" />
             </div>
             <div class="carousel-item">
-              <img src="./image/dettol2.jpg" class="d-block w-100" alt="Second Slide" height="400" width="50">
+              <img src="./image/dettol2.jpg" class="d-block w-100 productpageimage-main" alt="Second Slide" />
             </div>
             <div class="carousel-item">
-              <img src="./image/dettol3.jpg" class="d-block w-100" alt="Third Slide" height="400" width="50">
+              <img src="./image/dettol3.jpg" class="d-block w-100 productpageimage-main" alt="Third Slide" />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -225,27 +178,43 @@
       </div>
 
       <div class="col-md-6">
-        <div class="row"><h2>Dettol Antiseptic Liquid Bottle</h2></div>
         <div class="row">
-          <h1>₹ 59.29</h1>&nbsp; &nbsp; <h3><del>₹ 60.5</del></h3> &nbsp; &nbsp; <h2 class="text-success">2% off</h2>
+          <h2>Dettol Antiseptic Liquid Bottle</h2>
+        </div>
+        <div class="row">
+          <h1>₹ 59.29</h1>
+          &nbsp; &nbsp;
+          <h3><del>₹ 60.5</del></h3>
+          &nbsp; &nbsp;
+          <h2 class="text-success">2% off</h2>
         </div>
         <div class="row">
           <p>Inclusive of all taxes</p>
         </div>
         <div class="row">
-          <h3 class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          <h3 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
-            <i class="fa fa-star-half"></i></h3><h5>315 ratings</h5>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </h3>
+          <h5>315 ratings</h5>
         </div>
         <div class="row">
-          <h3 class="text-info"><i class="fa fa-map-marker" aria-hidden="true"></i></h3>
-          <p style="font: size 20px;"> &nbsp; Delivery by Tomorrow &nbsp;<b>Before 12 pm | &nbsp; <span class="text-success">FREE</span></b></p>
+          <h3 class="text-info">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          </h3>
+          <p style="font: size 20px">
+            &nbsp; Delivery by Tomorrow &nbsp;<b>Before 12 pm | &nbsp; <span class="text-success">FREE</span></b>
+          </p>
         </div>
         <div class="row">
           <p><b>Offers :-</b></p>
         </div>
         <div class="row">
-          <p><i class="text-success fa fa-check-square"></i> <i>Get 20% instant off on medicines</i></p>
+          <p>
+            <i class="text-success fa fa-check-square"></i>
+            <i>Get 20% instant off on medicines</i>
+          </p>
         </div>
         <div class="row">
           <!-- <button class="button-container">Add to Cart</button> -->
@@ -255,7 +224,8 @@
         <div class="row mt-4">
           <h4>Pack Size : &nbsp; &nbsp;</h4>
           <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+              data-bs-toggle="dropdown" aria-expanded="false">
               Select Sizes
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
@@ -266,66 +236,54 @@
           </div>
         </div>
         <div class="row mt-4">
-          <h4>Seller: &nbsp; &nbsp; </h4>
-          <p style="font-size: 18px;">Patna Drugs</p>
-        </div>
+          <h4>Seller: &nbsp; &nbsp;</h4>
+          <p style="font-size: 18px">Patna Drugs</p>
         </div>
       </div>
+    </div>
   </div>
 
-    <!-- ******** Similar Products ******** -->
-  <div class="container">
+  <!-- ******** Similar Products ******** -->
+  <div class="container container-fluid">
     <div class="row mt-5"></div>
     <h2>Similar Products</h2>
   </div>
 
-   <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card h-101">
-        <img src="./image/smp1.jpg" class="card-img-top" alt="First Similar Product">
-        <div class="card-body">
-          <h5 class="card-title">Dettol Liquid Disinfectant For Floor Cleaner, Surface Disinfection Personal Hygiene Lime Fresh 500ml</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-            illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
-        </div>
-        <div class="card-footer">
-          <a class="btn btn-success text-light">Buy Now</a> &nbsp; <a class="btn btn-danger text-light">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a><br/>
-        </div>
+  <div class="row productpage-similar-outerDiv">
+    <div class="productpage-similar">
+      <img src="./image/smp1.jpg" class="" alt="First Similar Product" />
+      <div class="">
+        <h5 class="">
+          Dettol Liquid Disinfectant For Floor Cleaner, Surface Disinfection
+          Personal Hygiene Lime Fresh 500ml
+        </h5>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-102">
-        <img src="./image/smp2.jpg" class="card-img-top" alt="Second Similar Product">
-        <div class="card-body">
-          <h5 class="card-title">Liquid Disinfectant - Personal Hygiene Surface Disinfectant Floor Cleaner Menthol Cool 500ml</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-            illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
-        </div>
-        <div class="card-footer">
-          <a class="btn btn-success text-light">Buy Now</a> &nbsp; <a class="btn btn-danger text-light">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a><br/>
-        </div>
-      </div>
-    </div>
-    <div class="col">
-      <div class="card h-103">
-        <img src="./image/smp3.jpg" class="card-img-top" alt="Third Similar Product">
-        <div class="card-body">
-          <h5 class="card-title">Ciphands Antiseptic Liquid - 250ml</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-            illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
-        </div>
-        <div class="card-footer">
-          <a class="btn btn-success text-light">Buy Now</a> &nbsp; <a class="btn btn-danger text-light">
-            <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a><br/>
-        </div>
-      </div>
-    </div>
-   </div>
 
+    <div class="productpage-similar">
+      <img src="./image/smp1.jpg" class="" alt="First Similar Product" />
+      <div class="">
+        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner,</h5>
+      </div>
+    </div>
+    <div class="productpage-similar">
+      <img src="./image/smp1.jpg" class="" alt="First Similar Product" />
+      <div class="">
+        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner,</h5>
+      </div>
+    </div>
+    <div class="productpage-similar">
+      <img src="./image/smp1.jpg" class="" alt="First Similar Product" />
+      <div class="">
+        <h5 class="">
+          Dettol Liquid Disinfectant For Floor Cleaner, Surface Disinfection
+          Personal Hygiene Lime Fresh 500ml
+        </h5>
+      </div>
+    </div>
+  </div>
 
-   <!-- *********** Ratings and Reviews ************** -->
+  <!-- *********** Ratings and Reviews ************** -->
   <div class="container mt-5 mb-5">
     <div class="row">
       <h2>Ratings and Reviews</h2>
@@ -334,42 +292,60 @@
 
   <div class="row mt-5 mb-5">
     <div class="media">
-      <img src="./image/prof1.jpg" class="mr-3" alt="placeholder image">
+      <img src="./image/prof1.jpg" class="mr-3" alt="placeholder image" />
       <div class="media-body">
-        <h5 class="mt-0">Very Nice Product <span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
-          <i class="fa fa-star"></i><i class="fa fa-star"></i>
-          <i class="fa fa-star-half"></i></span></h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-          illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
+        <h5 class="mt-0">
+          Very Nice Product
+          <span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i></span>
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+          non debitis, magni harum consequatur doloribus illum quia optio
+          repellendus numquam enim natus autem, neque, delectus eius culpa
+          iusto earum cupiditate
+        </p>
       </div>
     </div>
   </div>
 
   <div class="row mt-5 mb-5">
     <div class="media">
-      <img src="./image/prof2.jpg" class="mr-3" alt="placeholder image">
+      <img src="./image/prof2.jpg" class="mr-3" alt="placeholder image" />
       <div class="media-body">
-        <h5 class="mt-0">Product was Damaged<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
-          <i class="fa fa-star-half"></i></span></h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-          illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
+        <h5 class="mt-0">
+          Product was Damaged<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i></span>
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+          non debitis, magni harum consequatur doloribus illum quia optio
+          repellendus numquam enim natus autem, neque, delectus eius culpa
+          iusto earum cupiditate
+        </p>
       </div>
     </div>
   </div>
 
   <div class="row mt-5 mb-5">
     <div class="media">
-      <img src="./image/prof3.jpg" class="mr-3" alt="placeholder image">
+      <img src="./image/prof3.jpg" class="mr-3" alt="placeholder image" />
       <div class="media-body">
-        <h5 class="mt-0">Good Quality<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
-          <i class="fa fa-star"></i><i class="fa fa-star"></i>
-          </span></h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum non debitis, magni harum consequatur doloribus 
-          illum quia optio repellendus numquam enim natus autem, neque, delectus eius culpa iusto earum cupiditate</p>
+        <h5 class="mt-0">
+          Good Quality<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </span>
+        </h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
+          non debitis, magni harum consequatur doloribus illum quia optio
+          repellendus numquam enim natus autem, neque, delectus eius culpa
+          iusto earum cupiditate
+        </p>
       </div>
     </div>
   </div>
-
 
   <!-- *************** Form to post reviews ****************** -->
   <div class="row mb-5">
@@ -379,14 +355,16 @@
   <form>
     <div class="form-group">
       <label for="exampleInputName">Name</label>
-      <input type="name" class="form-control" id="exampleInputName" aria-describedby="name" placeholder="write your name">
-     </div>
+      <input type="name" class="form-control" id="exampleInputName" aria-describedby="name"
+        placeholder="write your name" />
+    </div>
     <div class="form-group">
       <label for="exampleInputReviews">Reviews</label>
-      <textarea type="text" class="form-control" id="exampleInputtextarea" placeholder="write your own reviews" rows="3"></textarea>
+      <textarea type="text" class="form-control" id="exampleInputtextarea" placeholder="write your own reviews"
+        rows="3"></textarea>
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
+</body>
 
-      </body>
 </html>

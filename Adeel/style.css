@@ -201,6 +201,87 @@ body {
     margin-bottom: 10px;
 }
 
+
+
+
+
+
+
+
+
+/* @wali work on product page */
+.productpage-similar-outerDiv{
+  justify-content: space-evenly;
+}
+
+
+.productpageimage-main{
+      height: 452px;
+      width: auto;
+
+}
+.productpage-similar {
+  height: 300px;
+  width: 20%;
+  float: left;
+  flex-wrap: nowrap;
+  /* margin: 0px 0px 25px 55px; */
+  margin-top: 2%;
+  padding: 0 0 0 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+.productpage-similar img{
+  margin-top: 2px;
+  height: 146px;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  
+}
+
+
+
+
+
+
+@media only screen and (max-width:750px) {
+  .productpageimage-main{
+    height: 300px;
+    width: auto;
+  
+  }
+  
+  .productpage-similar {
+    height: 351px;
+    width: 40%;
+    float: left;
+    flex-wrap: nowrap;
+    /* margin: 0px 0px 27px 58px; */
+    margin-top: 2%;
+    padding: 0 0 0 0;
+    text-align: center;
+    background-color: rgba(255, 251, 254, 0.836);
+    border-radius: 10%;
+  }
+  
+  .productpage-similar img{
+    margin-top: 2px;
+    height: 146px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    
+  }
+}
+
+
 /* end home page */
 
 /* start search page */
