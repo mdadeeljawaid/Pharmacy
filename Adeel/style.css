@@ -229,7 +229,7 @@ body {
   margin-top: 2%;
   padding: 0 0 0 0;
   text-align: center;
-  background-color: #fff;
+  background-color: rgb(209, 207, 207);
   border-radius: 10%;
 }
 
@@ -265,7 +265,7 @@ body {
     margin-top: 2%;
     padding: 0 0 0 0;
     text-align: center;
-    background-color: rgba(255, 251, 254, 0.836);
+    background-color: rgba(192, 189, 191, 0.582);
     border-radius: 10%;
   }
   
