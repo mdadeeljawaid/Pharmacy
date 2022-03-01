@@ -55,7 +55,7 @@ body {
 
 /* navlogo background */
 #logonav {
-  /* background-color: white; */
+  background-color: white; 
   /* margin-left: ; */
   border-radius: 7px;
 }
@@ -83,6 +83,7 @@ body {
     bottom: 0;
     margin: auto;
     /* margin-top: 50px; */
+    
     left: 0;
     -webkit-transition: all ease 0.25s;
     transition: all ease 0.25s;
@@ -112,6 +113,14 @@ body {
     z-index: 499;
   }
 
+  .navUl li{
+    /* justify-content: space-between; */
+    margin: 14px 14px 9px 24px
+    /* padding: 0 0 0 0; */
+  }
+  #accountSec{
+    bottom: 0;
+  }
 
 }
 
@@ -192,6 +201,11 @@ section{
   margin-top: 4%;
   box-shadow: 0px 5px 0px 0px rgb(235 245 255);
 }
+.widthSet img{
+  border-radius: 35%;
+  height:100%;
+  width:100%;
+}
 .widthSet:hover{
   box-shadow: 0px 0px 13px 8px rgb(192 211 232);
 }
@@ -210,6 +224,16 @@ section{
     margin: 6px 55px 24px 60px;
   }
 }
+
+/* review section */
+#review img {
+  margin-top: -50px; }
+#review .card:hover {
+  background: #3292a6;
+  color: #fff; }
+#review .fab {
+  color: #fff; }
+
 /* footer section */
 
  footer{
