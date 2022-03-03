@@ -68,10 +68,10 @@
 
 @media screen and (max-width: 760px) {
     .contact_form {
+        float: none;
         width: 90%;
         margin: auto;
         margin-top: 20px;
-        float: none;
     }
 
     .contact_form label {
