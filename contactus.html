@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
     <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="contactusstyle.css">
     <script src="myjScript.js"></script>
 </head>
 
@@ -153,8 +154,21 @@
     <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!--+++++++++++++++++++++++++++++++++++++work from here+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <aside></aside>
-    <section></section>
+    <div class="contact_form">
+        <form action="get">
+            <label for="name">Hello there, my name is</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name here">
+            <br>
+            <label for="message">And my query/suggestion is</label>
+            <!-- <br> -->
+            <textarea name="message" id="message" cols="50" rows="5" placeholder="Enter your message here"></textarea>
+            <br>
+            <label for="email">You can reach me at </label>
+            <input type="email" name="email" id="email" placeholder="Enter your email-id here">
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
 
     <!-- footer -->
     <footer id="main-footer" class="">
