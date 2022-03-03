@@ -1,186 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="mystyle.css" />
-    <script src="myjScript.js"></script>
-  </head>
 
-  <body class="">
-    <!-- header section -->
-    <header class="container-fluid row" id="headertop">
-      <!-- logo -->
-      <div class="container-fluid col-3">
-        <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="mystyle.css" />
+  <script src="myjScript.js"></script>
+</head>
 
-      <!-- search -->
-      <div class="container-fluid col-5 mt-3">
-        <form class="d-flex input-group">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <div class="input-group-append">
-            <button class="btn btn-" type="submit">
-              <i class="fas fa-search"></i>
+<body class="">
+  <!-- header section -->
+  <header class="container-fluid row" id="headertop">
+    <!-- logo -->
+    <div class="container-fluid col-3">
+      <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
+    </div>
+
+    <!-- search -->
+    <div class="container-fluid col-5 mt-3">
+      <form class="d-flex input-group">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <div class="input-group-append">
+          <button class="btn btn-" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- accountSec    -->
+    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
+      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fas fa-user">Account</i>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="./login.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="./registration.html">SIGNUP</a>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <li><a class="dropdown-item" href="#">SELLER</a></li>
+      </ul>
+    </div>
+
+    <!-- cart -->
+    <div class="container-fluid col-1 mt-3">
+      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+      </a>
+    </div>
+  </header>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
+    <div class="container-fluid">
+      <!-- nav hide on big screen -->
+      <div id="navhide">
+        <div class="row justify-content-around">
+          <!-- togler button -->
+          <div class="container-fluid col-2 mx-1">
+            <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
+              <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-        </form>
-      </div>
-
-      <!-- accountSec    -->
-      <div
-        class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
-        id="acctTop"
-      >
-        <button
-          class="btn dropdown-toggle float-lg-right float-md-right"
-          type="button"
-          data-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fas fa-user">Account</i>
-        </button>
-        <ul class="dropdown-menu">
-          <li>
-            <a href="./login.html">LOGIN</a>
-          </li>
-          <li>
-            <a href="./registration.html">SIGNUP</a>
-          </li>
-
-          <li>
-            <hr class="dropdown-divider" />
-          </li>
-          <li><a class="dropdown-item" href="#">SELLER</a></li>
-        </ul>
-      </div>
-
-      <!-- cart -->
-      <div class="container-fluid col-1 mt-3">
-        <a href="cart.html" class="btn" role="button"
-          ><i class="fas fa-cart-plus">Cart</i>
-        </a>
-      </div>
-    </header>
-
-    <!-- nav bar -->
-    <nav
-      class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin"
-      id="top_nav"
-    >
-      <div class="container-fluid">
-        <!-- nav hide on big screen -->
-        <div id="navhide">
-          <div class="row justify-content-around">
-            <!-- togler button -->
-            <div class="container-fluid col-2 mx-1">
-              <button
-                class="navbar-toggler align-self-start border-0 bg-white rounded"
-                type="button"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-            </div>
-            <!-- logo nav-->
-            <div class="container-fluid col-5 ml-1">
-              <div class="mobnavlogobg" id="logonav">
-                <img
-                  src="./image/logo1.png"
-                  alt="@logo"
-                  height="auto"
-                  width="100px"
-                />
-              </div>
-            </div>
-            <!-- cart nav -->
-            <div class="container-fluid col-4 justify-content-around">
-              <a href="cart.html" class="btn ml-5" role="button"
-                ><i class="fas fa-cart-plus">Cart</i>
-              </a>
+          <!-- logo nav-->
+          <div class="container-fluid col-5 ml-1">
+            <div class="mobnavlogobg" id="logonav">
+              <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
             </div>
           </div>
-
-          <!-- search nav -->
-          <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
-            <form class="d-flex input-group">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <div class="input-group-append">
-                <button class="btn btn-" type="submit">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-            </form>
+          <!-- cart nav -->
+          <div class="container-fluid col-4 justify-content-around">
+            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+            </a>
           </div>
         </div>
 
-        <div
-          class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-          id="navbarSupportedContent"
-        >
-          <ul class="navbar-nav align-self-stretch navUl">
-            <!-- nav close button -->
-            <!-- <button type="button" class="btn btnclsnav" id="navhide">
+        <!-- search nav -->
+        <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
+          <form class="d-flex input-group">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <div class="input-group-append">
+              <button class="btn btn-" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div
+        class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav align-self-stretch navUl">
+          <!-- nav close button -->
+          <!-- <button type="button" class="btn btnclsnav" id="navhide">
               <span aria-hidden="true">&times;</span>
             </button> -->
-            <a class="btnclsnav" id="navhide"
-              ><img alt="logo" src="./image/Closeicon.png" height="30px"
-              width="30px"
-            </a>
-
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./index.html"
-                ><i class="fa fa-home"></i>Home</a
-              >
+          <a class="btnclsnav" id="navhide"><img alt="logo" src="./image/Closeicon.png" height="30px" width="30px" </a>
+              <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home"></i>Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="Adeel/Product.html"
-                ><i class="fa fa-store"></i>Shop</a
-              >
+              <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
             </li>
             <li class="nav-item">
-              <a href="./aboutus.html" class="nav-link" role="button"
-                >About Us</a
-              >
+              <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
             </li>
             <li class="nav-item">
-              <a href="wishlist.html" class="nav-link" role="button"
-                ><i class="fa fa-address-book"></i>Contact Us</a
-              >
+              <a href="contactus.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
             </li>
             <!-- accountSec after size decrease -->
             <li class="nav-item" id="accountSec">
-              <button
-                class="btn dropdown-toggle"
-                type="button"
-                data-toggle="dropdown"
-                aria-expanded="false"
-              >
+              <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
                 <i class="fas fa-user"></i>ACCOUNT
               </button>
               <ul class="dropdown-menu">
@@ -197,243 +143,202 @@
                 <li><a class="dropdown-item" href="#">SELLER</a></li>
               </ul>
             </li>
-          </ul>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="overlay"></div>
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+  <!-- image banner for  -->
+  <aside class="mt-1" id="banner">
+    <!-- SLIDER WITH CAPTIONS -->
+    <div id="slider4" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li class="active" data-target="#slider4" data-slide-to="0"></li>
+        <li class="active" data-target="#slider4" data-slide-to="1"></li>
+        <li class="active" data-target="#slider4" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active sizeforimage">
+          <img class="d-block" src="./image/img1.jpg" alt="First Slide" height="350px" width="100% auto" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Slide One</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item sizeforimage">
+          <img class="d-block" src="./image/img2.jpg" alt="Second Slide" height="350px" width="100% auto" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Slide Two</h3>
+            <p></p>
+          </div>
+        </div>
+        <div class="carousel-item sizeforimage">
+          <img class="d-block banerimg" src="./image/img3.jpg" alt="Third Slide" height="350px" width="100% auto" />
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Slide Three</h3>
+            <p></p>
+          </div>
         </div>
       </div>
-    </nav>
-    <div class="overlay"></div>
-    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <!-- image banner for  -->
-    <aside class="mt-1" id="banner">
-      <!-- SLIDER WITH CAPTIONS -->
-      <div id="slider4" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li class="active" data-target="#slider4" data-slide-to="0"></li>
-          <li class="active" data-target="#slider4" data-slide-to="1"></li>
-          <li class="active" data-target="#slider4" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active sizeforimage">
-            <img
-              class="d-block"
-              src="./image/img1.jpg"
-              alt="First Slide"
-              height="350px"
-              width="100% auto"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Slide One</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item sizeforimage">
-            <img
-              class="d-block"
-              src="./image/img2.jpg"
-              alt="Second Slide"
-              height="350px"
-              width="100% auto"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Slide Two</h3>
-              <p></p>
-            </div>
-          </div>
-          <div class="carousel-item sizeforimage">
-            <img
-              class="d-block banerimg"
-              src="./image/img3.jpg"
-              alt="Third Slide"
-              height="350px"
-              width="100% auto"
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h3>Slide Three</h3>
-              <p></p>
-            </div>
-          </div>
-        </div>
+      <!-- CONTROLS -->
+      <a href="#slider4" class="carousel-control-prev" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
 
-        <!-- CONTROLS -->
-        <a href="#slider4" class="carousel-control-prev" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
+      <a href="#slider4" class="carousel-control-next" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </aside>
 
-        <a href="#slider4" class="carousel-control-next" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
+  <!-- categery -->
+  <section class="container-fluid">
+    <div class="row ml-0 categery-outter-div">
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/mask.jpg" alt="First Slide" />
         </a>
       </div>
-    </aside>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/sen.jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/smp2.jpg" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/healhcare.png" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/healthcare.jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/line (1).jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/wloss.jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/q (3).jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/q (2).jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/fruits.jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/q (1).jpg" alt="First Slide" />
+        </a>
+      </div>
+      <div class="bg-white float-left widthSet">
+        <a href="#" class="">
+          <img class="d-block" src="./image/salad.jpg" alt="First Slide" />
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- categery -->
-    <section class="container-fluid">
-      <div class="row ml-0 categery-outter-div">
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/mask.jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/sen.jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/smp2.jpg" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img
-              class="d-block"
-              src="./image/healhcare.png"
-              alt="First Slide"
-            />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img
-              class="d-block"
-              src="./image/healthcare.jpg"
-              alt="First Slide"
-            />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/line (1).jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/wloss.jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/q (3).jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/q (2).jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/fruits.jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/q (1).jpg" alt="First Slide" />
-          </a>
-        </div>
-        <div class="bg-white float-left widthSet">
-          <a href="#" class="">
-            <img class="d-block" src="./image/salad.jpg" alt="First Slide" />
-          </a>
+  <!-- review section -->
+
+  <section id="review" class="my-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="info-header mb-5">
+            <h1 class="text-primary pb-3">
+              Hear what people are saying about us.
+            </h1>
+            <p class="lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              laborum numquam aperiam dolores a porro!
+            </p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- review section -->
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="./image/prof1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3" />
+              <h3>wali</h3>
 
-    <section id="review" class="my-5 text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="info-header mb-5">
-              <h1 class="text-primary pb-3">
-                Hear what people are saying about us.
-              </h1>
-              <p class="lead">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-                laborum numquam aperiam dolores a porro!
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                commodi nostrum, ab libero voluptas officia.
               </p>
             </div>
           </div>
         </div>
 
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="./image/prof1.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>wali</h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  commodi nostrum, ab libero voluptas officia.
-                </p>
-              </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="./image/prof1.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3" />
+              <h3>naiyer abdullah</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                commodi nostrum, ab libero voluptas officia.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="./image/prof1.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>naiyer abdullah</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  commodi nostrum, ab libero voluptas officia.
-                </p>
-              </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="./image/prof3.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3" />
+              <h3>addel saddam</h3>
+
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                commodi nostrum, ab libero voluptas officia.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="./image/prof3.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>addel saddam</h3>
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <img src="./image/prof2.jpg" alt="" class="img-fluid rounded-circle w-50 mb-3" />
+              <h3>Faraz</h3>
 
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  commodi nostrum, ab libero voluptas officia.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="./image/prof2.jpg"
-                  alt=""
-                  class="img-fluid rounded-circle w-50 mb-3"
-                />
-                <h3>Faraz</h3>
-
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-                  commodi nostrum, ab libero voluptas officia.
-                </p>
-              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+                commodi nostrum, ab libero voluptas officia.
+              </p>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
+<<<<<<< HEAD
     <!-- footer -->
     <footer id="main-footer" class="">
       <div class="container text-white">
@@ -443,31 +348,43 @@
               Copyright &copy;
               <span id="footeryear"></span>
             </p>
+=======
+  <!-- footer -->
+  <footer id="main-footer" class="">
+    <div class="container text-white">
+      <div class="row">
+        <div class="col text-center">
+          <p>
+            Copyright &copy;
+            <span id="year"></span>
+          </p>
+        </div>
+        <div class="d-flex justify-content-center">
+          <div class="p-4">
+            <a href="http://facebook.com">
+              <i class="fab fa-facebook"></i>
+            </a>
+>>>>>>> b0262d376a97493023a6314572d5a7254c0e48b2
           </div>
-          <div class="d-flex justify-content-center">
-            <div class="p-4">
-              <a href="http://facebook.com">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </div>
-            <div class="p-4">
-              <a href="http://twitter.com">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </div>
-            <div class="p-4">
-              <a href="http://instagram.com">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </div>
-            <div class="p-4">
-              <a href="http://www.whatsapp.com">
-                <i class="fab fa-whatsapp"></i>
-              </a>
-            </div>
+          <div class="p-4">
+            <a href="http://twitter.com">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+          <div class="p-4">
+            <a href="http://instagram.com">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+          <div class="p-4">
+            <a href="http://www.whatsapp.com">
+              <i class="fab fa-whatsapp"></i>
+            </a>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
