@@ -1,8 +1,14 @@
+.contact::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .contact_form {
     width: 70%;
     height: 60vh;
     margin: 2%;
-    box-sizing: border-box;
+    float: left;
 }
 
 .contact_form form {
@@ -47,12 +53,24 @@
     background-color: rgb(115, 212, 212);
 }
 
+.contact_address {
+    border-radius: 5px;
+    padding: 5%;
+    padding-top: 3%;
+}
+
+.contact_address iframe {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+    vertical-align: middle;
+}
+
 @media screen and (max-width: 760px) {
     .contact_form {
         width: 90%;
         margin: auto;
         margin-top: 20px;
-        /* height: 70vh; */
     }
 
     .contact_form label {
