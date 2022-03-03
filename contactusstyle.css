@@ -84,4 +84,9 @@
     .contact_form textarea {
         width: 90%;
     }
+
+    .contact_address iframe {
+        width: 80%;
+        height: auto;
+    }
 }
