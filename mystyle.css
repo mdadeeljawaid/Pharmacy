@@ -3,7 +3,7 @@
 body {
   /* background-image: linear-gradient(to right, #efffda, #ffffff); */
   /* background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8); */
-  /* background-image: linear-gradient(to right, rgb(214 248 240), rgb(218 237 254)); */
+  background-image: linear-gradient(to right, rgb(214 248 240), rgb(218 237 254));
 }
 /* nav */
 #top_nav ul li a {
@@ -212,7 +212,8 @@ section{
 }
 @media only screen and (max-width:700px) {
   .widthSet{
-    width: 32%;
+    width: 31%;
+    height: 144px;
     border-radius: 10%;
     margin-top: 4%;
   }
