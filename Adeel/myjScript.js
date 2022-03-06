@@ -50,13 +50,4 @@ $(document).ready(function(){
   $('#slider4').on('slid.bs.carousel', function () {
     console.log('SLID!');
   });
-
-
-
-
-
-
-
-
-
 });
