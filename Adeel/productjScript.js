@@ -50,4 +50,8 @@ $(document).ready(function(){
   $('#slider4').on('slid.bs.carousel', function () {
     console.log('SLID!');
   });
+
+  //current year for copyright
+  document.getElementById("footeryear").innerHTML=new Date().getFullYear();
+
 });
