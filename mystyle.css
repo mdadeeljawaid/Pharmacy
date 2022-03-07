@@ -186,6 +186,16 @@ body {
 #banner {
   position: -webkit-;
 }
+
+/* dummy text */
+
+#dummytext .row{
+  justify-content: space-around;
+  padding: 20px 0px 20px 0;
+}
+
+
+
 /* categary section */
 section{
   
