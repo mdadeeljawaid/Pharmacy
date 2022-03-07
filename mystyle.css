@@ -259,6 +259,14 @@ footer{
 } 
 
 
+@media only screen and (max-width: 600px) {
+ #main-footer .row{
+    flex-direction: column
+  }
+}
+
+
+
 /* end home page */
 
 /* start search page */
