@@ -26,7 +26,12 @@
     <!-- search -->
     <div class="container-fluid col-5 mt-3">
       <form class="d-flex input-group">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <div class="input-group-append">
           <button class="btn btn-" type="submit">
             <i class="fas fa-search"></i>
@@ -36,9 +41,16 @@
     </div>
 
     <!-- accountSec    -->
-    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
-      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
-        aria-expanded="false">
+    <div
+      class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
+      id="acctTop"
+    >
+      <button
+        class="btn dropdown-toggle float-lg-right float-md-right"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+      >
         <i class="fas fa-user">Account</i>
       </button>
       <ul class="dropdown-menu">
@@ -58,32 +70,45 @@
 
     <!-- cart -->
     <div class="container-fluid col-1 mt-3">
-      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+      <a href="cart.html" class="btn" role="button"
+        ><i class="fas fa-cart-plus">Cart</i>
       </a>
     </div>
   </header>
 
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
+  <nav
+    class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin"
+    id="top_nav"
+  >
     <div class="container-fluid">
       <!-- nav hide on big screen -->
       <div id="navhide">
         <div class="row justify-content-around">
           <!-- togler button -->
           <div class="container-fluid col-2 mx-1">
-            <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
+            <button
+              class="navbar-toggler align-self-start border-0 bg-white rounded"
+              type="button"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <!-- logo nav-->
           <div class="container-fluid col-5 ml-1">
-            <div id="logonav">
-              <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+            <div class="mobnavlogobg" id="logonav">
+              <img
+                src="./image/logo1.png"
+                alt="@logo"
+                height="auto"
+                width="100px"
+              />
             </div>
           </div>
           <!-- cart nav -->
           <div class="container-fluid col-4 justify-content-around">
-            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+            <a href="cart.html" class="btn ml-5" role="button"
+              ><i class="fas fa-cart-plus">Cart</i>
             </a>
           </div>
         </div>
@@ -91,7 +116,12 @@
         <!-- search nav -->
         <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
           <form class="d-flex input-group">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <div class="input-group-append">
               <button class="btn btn-" type="submit">
                 <i class="fas fa-search"></i>
@@ -103,28 +133,45 @@
 
       <div
         class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-        id="navbarSupportedContent">
-        <ul class="navbar-nav align-self-stretch justify-content-around">
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav align-self-stretch navUl">
           <!-- nav close button -->
-          <button type="button" class="btn btnclsnav" id="navhide">
+          <!-- <button type="button" class="btn btnclsnav" id="navhide">
             <span aria-hidden="true">&times;</span>
-          </button>
-
-          <li class="nav-item justify-content-around">
-            <a class="nav-link active" aria-current="page" href="../index.html"><i class="fa fa-home"></i>Home</a>
+          </button> -->
+          <a class="btnclsnav" id="navhide"
+            ><img alt="logo" src="./image/Closeicon.png" height="30px"
+            width="30px"
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              ><i class="fa fa-home"></i>Home</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a class="nav-link" href="../Search.html"><i class="fa fa-store"></i>Shop</a>
+          <li class="nav-item">
+            <a class="nav-link" href="Adeel/Product.html"
+              ><i class="fa fa-store"></i>Shop</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
+          <li class="nav-item">
+            <a href="./aboutus.html" class="nav-link" role="button"
+              >About Us</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
+          <li class="nav-item">
+            <a href="contactus.html" class="nav-link" role="button"
+              ><i class="fa fa-address-book"></i>Contact Us</a
+            >
           </li>
           <!-- accountSec after size decrease -->
-          <li class="nav-item justify-content-around" id="accountSec">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item" id="accountSec">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
               <i class="fas fa-user"></i>ACCOUNT
             </button>
             <ul class="dropdown-menu">
@@ -426,34 +473,66 @@
   </div>
 
   <!-- footer -->
-  <footer id="main-footer" class="">
-    <div class="container text-white">
-      <div class="row">
-        <div class="col text-center">
+   <!-- footer -->
+   <footer id="main-footer" class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
+        <p>
+          <b>Visit us at:</b><br />
+          mediwalabox.com<br />
+          Bailey road<br />
+          Patna<br />
+          Bihar<br />
+          800014
+        </p>
+      </div>
+
+      <div class="col">
+        <div class="">
           <p>
-            Copyright &copy;
-            <span id="footeryear"></span>
+            <b
+              >Copyright &copy;
+              <span id="footeryear"></span>
+              'G3'<br />
+              All Rights Reserved.</b
+            >
           </p>
         </div>
-        <div class="d-flex justify-content-center">
-          <div class="p-4">
+      </div>
+
+      <div id="footerrightside" class="col">
+        <div class="">
+          <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+          <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+        </div>
+
+        <div class="d-flex justify-content-center socialmediatag">
+          <div class="p-1">
             <a href="http://facebook.com">
-              <i class="fab fa-facebook"></i>
+              <img src="./image/imgpng/facebook.png" alt="@fb" width="30px" />
             </a>
           </div>
-          <div class="p-4">
+          <div class="p-1">
             <a href="http://twitter.com">
-              <i class="fab fa-twitter"></i>
+              <img src="./image/imgpng/twitter.png" alt="@tw" width="35px" />
             </a>
           </div>
-          <div class="p-4">
+          <div class="p-1">
             <a href="http://instagram.com">
-              <i class="fab fa-instagram"></i>
+              <img
+                src="./image/imgpng/instagram.png"
+                alt="@inst"
+                width="30px"
+              />
             </a>
           </div>
-          <div class="p-4">
+          <div class="p-1">
             <a href="http://www.whatsapp.com">
-              <i class="fab fa-whatsapp"></i>
+              <img
+                src="./image/imgpng/WhatsApp-logo.png  "
+                alt="@wapp"
+                width="30px"
+              />
             </a>
           </div>
         </div>
