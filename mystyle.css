@@ -258,6 +258,12 @@ footer{
    text-align: center; 
 } 
 
+#salepamplets img{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
 
 @media only screen and (max-width: 600px) {
  #main-footer .row{
