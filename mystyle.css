@@ -265,9 +265,20 @@ footer{
 }
 
 
-@media only screen and (max-width: 600px) {
- #main-footer .row{
+
+
+@media only screen and (max-width: 450px) {
+ /* #main-footer .row{
     flex-direction: column
+  } */
+  #addresssection{
+    order: 1;
+  }
+  #Copyrightsection{
+    order: 3;
+  }
+  #footerSocialMedia{
+    order: 2;
   }
 }
 
