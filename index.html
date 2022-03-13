@@ -27,12 +27,12 @@
     <!-- header section -->
     <header class="container-fluid row" id="headertop">
       <!-- logo -->
-      <div class="container-fluid col-3">
+      <div class=" col-3">
         <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
       </div>
 
       <!-- search -->
-      <div class="container-fluid col-5 mt-3">
+      <div class=" col-5 mt-3">
         <form class="d-flex input-group">
           <input
             class="form-control me-2"
@@ -50,7 +50,7 @@
 
       <!-- accountSec    -->
       <div
-        class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
+        class="accountSec  col-3 mt-3 navbar-expand-lg"
         id="acctTop"
       >
         <button
@@ -91,10 +91,10 @@
     >
       <div class="container-fluid">
         <!-- nav hide on big screen -->
-        <div id="navhide">
-          <div class="row justify-content-around">
+        <div id="navhide" class="container-fluid ml-auto">
+          <div class="row container-fluid" id="uperrow">
             <!-- togler button -->
-            <div class="container-fluid col-2 mx-1">
+            <div class="col-2 " id="navtoglerbtn">
               <button
                 class="navbar-toggler align-self-start border-0 bg-white rounded"
                 type="button"
@@ -102,8 +102,9 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
             </div>
+
             <!-- logo nav-->
-            <div class="container-fluid col-5 ml-1">
+            <div class="col-4 " id="navlogo">
               <div class="mobnavlogobg" id="logonav">
                 <img
                   src="./image/logo1.png"
@@ -113,17 +114,18 @@
                 />
               </div>
             </div>
+
             <!-- cart nav -->
-            <div class="container-fluid col-4 justify-content-around">
-              <a href="cart.html" class="btn ml-5" role="button"
+            <div class="col-2 offset-4 justify-content-around" id="navcart">
+              <a href="cart.html" class="btn " role="button"
                 ><i class="fas fa-cart-plus">Cart</i>
               </a>
             </div>
           </div>
 
           <!-- search nav -->
-          <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
-            <form class="d-flex input-group">
+          <div class="container-fluid mt-1 ml-auto  row" id="navhide">
+            <form class="d-flex input-group" id="searchnav">
               <input
                 class="form-control me-2"
                 type="search"
