@@ -1,0 +1,26 @@
+DRUGS
+
+Medicine Name  
+Prescription
+Type of Sell
+Manufacturer
+Salt
+MRP
+Uses
+Alternate Medicines
+Side Effects
+How to Use
+Chemical Class
+Habit Forming
+Therapeutic Class
+Action Class
+
+
+
+OTC
+
+Name
+Type of Sell
+Category
+MRP
+Manufacturer

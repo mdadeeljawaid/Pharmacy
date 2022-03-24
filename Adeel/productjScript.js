@@ -51,12 +51,7 @@ $(document).ready(function(){
     console.log('SLID!');
   });
 
-
-
-
-
-
-
-
+  //current year for copyright
+  document.getElementById("footeryear").innerHTML=new Date().getFullYear();
 
 });

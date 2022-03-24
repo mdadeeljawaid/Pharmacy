@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEDI BOX - Edit Profile</title>
+    <link rel="icon" type="image/png" href="Images/carts.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+ <!-- Start of my-profile page -->
+ <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit Profile</li>
+    </ol>
+</nav>
+
+
+
+<section class="edit-profile">
+    <div class="mega-container">
+        <aside
+        class='grid-column-1 container d-flex flex-lg-column align-items-lg-start justify-content-lg-start flex-md-column align-items-md-start float-lg-left'>
+        <div class="profile mb-4 d-flex flex-column justify-content-center align-items-start">
+            <h6 class="font-weight-bold my-account-heading">MY ACCOUNT</h6>
+            <img src="Images/profile-head.png" alt="Profile picture">
+            <p class='mb-0 mt-2'>SYED NAIYER IQBAL</p>
+            <p>Syednaiyeriqbal786gmail.com</p>
+        </div>
+        <div class="orders mb-4">
+            <h6 class="font-weight-bold">ORDERS</h6>
+            <div class="list-group border-0">
+                <a href="my-order.html" class="list-items">My Order</a>
+                <a href="Track-order.html" class="list-items">Track Order</a>
+                <a href="Return-order.html" class="list-items">Return Order</a>
+                <a href="Track-order.html" class="list-items">Cancelled Order</a>
+            </div>
+        </div>
+        <div class="account mb-4">
+            <h6 class="font-weight-bold">ACCOUNT</h6>
+            <div class="list-group">
+                <a href="My-profile.html" class="list-items list-item-active font-weight-bold">Profile</a>
+                <a href="My-profile.html" class="list-items">Saved Addresses</a>
+                <a href="My-profile.html" class="list-items">Saved Cards</a>
+                <a href="My-profile.html" class="list-items">Change Password</a>
+            </div>
+        </div>
+        <div class="payment mb-4">
+            <h6 class="font-weight-bold">PAYMENT</h6>
+            <div class="list-group">
+                <a href="#" class="list-items">PhonePe</a>
+                <a href="#" class="list-items">Gift Card</a>
+                <a href="#" class="list-items">Credit Card</a>
+                <a href="#" class="list-items">Debit Card</a>
+            </div>
+        </div>
+        </aside>
+        <main class='flex-container grid-column-2'>
+            <h3 class="font-weight-bold">EDIT PROFILE</h3>
+            <hr>
+            <form class='edit-profile-form'>
+                <div class="mb-3">
+                    <label for="profileInputMobileNum" class="form-label">Mobile Number</label>
+                    <input type="text" pattern="[6-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+                        class="form-control" id="profileInputMobileNum" aria-label="contactnumber">
+                </div>
+                <div class="mb-3">
+                    <label for="profileInputFullname" class="form-label">Full Name</label>
+                    <input placeholder="Enter your full name" type="text" class="form-control" id="profileInputFullname">
+                </div>
+                <div class="mb-3">
+                    <label for="profileInputEmail1" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Enter your email id"
+                        id="profileInputEmail1" aria-label="Email">
+                </div>
+                <div class="mb-3 d-flex justify-content-center" id="gender-select">
+                    <div class="male w-100 text-center border font-weight-bold" id="male-box">
+                        <img class="tick-img1" id="tick-m" src="Images/tick.png" alt="tick image">
+                        Male
+                    </div>
+                    <div class="female w-100 text-center border font-weight-bold" id="female-box">
+                        <img class="tick-img2 d-none" id="tick-f" src="Images/tick.png" alt="tick image">
+                        Female
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="profileInputBirthday" class="form-label">Birthday (dd/mm/yyyy)</label>
+                    <input type="text" class="form-control" placeholder="Enter your birthday based on above format"
+                        pattern="[0-9][0-9]/[0-9][0-9]/[0-9][0-9][0-9][0-9]" id="profileInputBirthday"
+                        aria-label="Birthday">
+                </div>
+                <div class="mb-3">
+                    <label for="profileInputLocation" class="form-label">Location</label>
+                    <input placeholder="Enter your current location" type="text" class="form-control" id="profileInputLocation"
+                        aria-label="Location">
+                </div>
+                <div class="mb-3">
+                    <label for="profileInputAltMobile" class="form-label">Alternate mobile number details</label>
+                    <input type="text" class="form-control" placeholder="Enter your alternate mobile number"
+                        pattern="[6-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+                        id="profileInputAltMobile" aria-label="Alternate Contact Number">
+                </div>
+                
+                <div class="button-group d-flex flex-column mt-3" id="btn-group">
+                    <button class="btn mb-3" type="button">CHANGE PASSWORD</button>
+                    <button class="btn" id="save-btn" type="button">SAVE
+                        DETAILS</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</section>

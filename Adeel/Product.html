@@ -11,8 +11,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="myjScript.js"></script>
+  <link rel="stylesheet" href="productstyle.css" />
+  <script src="productjScript.js"></script>
 </head>
 
 <body>
@@ -26,7 +26,12 @@
     <!-- search -->
     <div class="container-fluid col-5 mt-3">
       <form class="d-flex input-group">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <div class="input-group-append">
           <button class="btn btn-" type="submit">
             <i class="fas fa-search"></i>
@@ -36,9 +41,16 @@
     </div>
 
     <!-- accountSec    -->
-    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
-      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
-        aria-expanded="false">
+    <div
+      class="accountSec container-fluid col-3 mt-3 navbar-expand-lg"
+      id="acctTop"
+    >
+      <button
+        class="btn dropdown-toggle float-lg-right float-md-right"
+        type="button"
+        data-toggle="dropdown"
+        aria-expanded="false"
+      >
         <i class="fas fa-user">Account</i>
       </button>
       <ul class="dropdown-menu">
@@ -58,32 +70,45 @@
 
     <!-- cart -->
     <div class="container-fluid col-1 mt-3">
-      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+      <a href="cart.html" class="btn" role="button"
+        ><i class="fas fa-cart-plus">Cart</i>
       </a>
     </div>
   </header>
 
   <!-- nav bar -->
-  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
+  <nav
+    class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin"
+    id="top_nav"
+  >
     <div class="container-fluid">
       <!-- nav hide on big screen -->
       <div id="navhide">
         <div class="row justify-content-around">
           <!-- togler button -->
           <div class="container-fluid col-2 mx-1">
-            <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
+            <button
+              class="navbar-toggler align-self-start border-0 bg-white rounded"
+              type="button"
+            >
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
           <!-- logo nav-->
           <div class="container-fluid col-5 ml-1">
-            <div id="logonav">
-              <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+            <div class="mobnavlogobg" id="logonav">
+              <img
+                src="./image/logo1.png"
+                alt="@logo"
+                height="auto"
+                width="100px"
+              />
             </div>
           </div>
           <!-- cart nav -->
           <div class="container-fluid col-4 justify-content-around">
-            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+            <a href="cart.html" class="btn ml-5" role="button"
+              ><i class="fas fa-cart-plus">Cart</i>
             </a>
           </div>
         </div>
@@ -91,7 +116,12 @@
         <!-- search nav -->
         <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
           <form class="d-flex input-group">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
             <div class="input-group-append">
               <button class="btn btn-" type="submit">
                 <i class="fas fa-search"></i>
@@ -103,28 +133,45 @@
 
       <div
         class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-        id="navbarSupportedContent">
-        <ul class="navbar-nav align-self-stretch justify-content-around">
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav align-self-stretch navUl">
           <!-- nav close button -->
-          <button type="button" class="btn btnclsnav" id="navhide">
+          <!-- <button type="button" class="btn btnclsnav" id="navhide">
             <span aria-hidden="true">&times;</span>
-          </button>
-
-          <li class="nav-item justify-content-around">
-            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home"></i>Home</a>
+          </button> -->
+          <a class="btnclsnav" id="navhide"
+            ><img alt="logo" src="./image/Closeicon.png" height="30px"
+            width="30px"
+          </a>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./index.html"
+              ><i class="fa fa-home"></i>Home</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
+          <li class="nav-item">
+            <a class="nav-link" href="Adeel/Product.html"
+              ><i class="fa fa-store"></i>Shop</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
+          <li class="nav-item">
+            <a href="./aboutus.html" class="nav-link" role="button"
+              >About Us</a
+            >
           </li>
-          <li class="nav-item justify-content-around">
-            <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
+          <li class="nav-item">
+            <a href="contactus.html" class="nav-link" role="button"
+              ><i class="fa fa-address-book"></i>Contact Us</a
+            >
           </li>
           <!-- accountSec after size decrease -->
-          <li class="nav-item justify-content-around" id="accountSec">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item" id="accountSec">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-toggle="dropdown"
+              aria-expanded="false"
+            >
               <i class="fas fa-user"></i>ACCOUNT
             </button>
             <ul class="dropdown-menu">
@@ -222,20 +269,6 @@
             <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a>
         </div>
         <div class="row mt-4">
-          <h4>Pack Size : &nbsp; &nbsp;</h4>
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Select Sizes
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">60 ML</a></li>
-              <li><a class="dropdown-item" href="#">125 ML</a></li>
-              <li><a class="dropdown-item" href="#">250 ML</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="row mt-4">
           <h4>Seller: &nbsp; &nbsp;</h4>
           <p style="font-size: 18px">Patna Drugs</p>
         </div>
@@ -283,88 +316,228 @@
     </div>
   </div>
 
-  <!-- *********** Ratings and Reviews ************** -->
+  <!-- *********** Descriptions ************** -->
   <div class="container mt-5 mb-5">
-    <div class="row">
+    <div class="description">
+      <h2>Description</h2>
+      <p>Dettol Antiseptic Liquid is a topical liquid for cuts and wounds, 
+        as well as for maintaining home hygiene. Dettol liquid can also be used with proper dilution, 
+        to sanitize your home, toys and babywear by killing over 100 illness-causing germs. 
+        Recommended by the Indian Medical Association this antiseptic liquid from Dettol is also great for sanitizing home surfaces or adding to laundry to get rid of germs. 
+        Dettol Antiseptic Liquid should be an essential part of your first aid kit at home, 
+        this 1-litre bottle comes with a fresh pine scent.</p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="benefits">
+      <h2>Benefits</h2>
+      <p>* Dettol disinfectant liquid protects from over 100 germs.<br>
+        * Can also be used as a cleaner for personal and home hygiene.<br>
+        * Gives protection against infections from cuts, wounds and scratches.<br>
+        * Has been proven to be 99.9% successful at deactivating the SARS-CoV-2 virus which causes the COVID-19 disease, when used in 1:40 dilution for 5 minutes.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <p>The main active ingredient is Chloroxylenol, 
+        the other ingredients in Dettol disinfectant are pine oil, soap, 
+        isopropanol, castor oil and water.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="uses">
+      <h2>Uses</h2>
+      <p>* First aid disinfection through the topical application on cuts, scratches and wounds.<br>
+        * Clothing disinfection through addition in the water while washing.<br>
+        * Surface and floor disinfection by adding 5ml of Dettol to a bucket of water.<br>
+        * Used as a post-shaving disinfectant by diluting 15 ml Dettol liquid in 300ml of water.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="how_to_use">
+      <h2>How to Use</h2>
+      <p>* Read the instructions carefully.<br>
+        * Add Dettol disinfectant liquid to the recommended amount of water for dilution.<br>
+        * For cuts and other first-aid use dilute Dettol in about 1 cup of clean water before using it to wash and clean the cut gently.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="safety_info">
+      <h2>Safety Information</h2>
+      <p>* Do not use Dettol liquid undiluted on the body for long periods of time, it can cause discolouration or burns.<br>
+        * Keep in a cool, dry place away from direct sunlight.<br>
+        * Keep away from children.
+      </p>
+    </div>
+  </div>
+
+  <!-- ********************** FAQS ************************ -->
+  <div class="container mt-5 mb-5">
+    <div class="faqs">
+      <h2>FAQS</h2>
+      <p><b>Q1: Can I use it for pimples?</b><br>
+        Ans: No, this product is not recommended for acne or pimple treatment. 
+        You can, however, dilute 5ml of liquid in 10lrts of water for bathing purposes.<br>
+        <b>Q2: Is it a hand sanitiser?</b><br>
+        Ans: Diluted Dettol antiseptic liquid can be used to sanitize hands in emergencies, however, it is not recommended. 
+        Please use Dettol hand sanitizer as it is more appropriate for this use case.<br>
+        <b>Q3: Is the Dettol company trustworthy?</b><br>
+        Ans: The Dettol company has been ranked among India's top 10 most trusted brands for the past 10 years, 
+        it has been manufacturing cleaning and disinfectant products since 1932.<br>
+        <b>Q4: What is Dettol Disinfectant Spray?</b><br>
+        Ans: It is a hard and soft surface spray disinfectant that also kills odour causing bacteria resulting in a fresh pine smell. 
+        Dettol disinfectant spray is not meant to be used on the body.<br>
+        <b>Q5: What is the expiry time?</b><br>
+        Ans: Please check the bottle label for the expiration date, do not use it if it is expired.
+      </p>
+    </div>
+  </div>
+
+  <div class="container mt-5 mb-5">
+    <div class="product_details">
+      <h2>Product Details</h2>
+      <p>
+        Brand: DETTOL ANTISEPTIC<br>
+        Expires on or After: 30/05/2025<br>
+        Country of Origin India
+      </p>
+    </div>
+  </div>
+
+  <!-- ********************** Ratings ************************ -->
+  <div class="container mt-5 mb-5">
+    <div class="ratings">
       <h2>Ratings and Reviews</h2>
-    </div>
-  </div>
-
-  <div class="row mt-5 mb-5">
-    <div class="media">
-      <img src="../image/imgpng/prof3.png" class="mr-3" alt="placeholder image" />
-      <div class="media-body">
-        <h5 class="mt-0">
-          Very Nice Product
-          <span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
+      <h5>4.7/5</h5><br>
+      <h5>315 ratings</h5>
+        <div class="row">
+          <h3 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
-            <i class="fa fa-star-half"></i></span>
-        </h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-          non debitis, magni harum consequatur doloribus illum quia optio
-          repellendus numquam enim natus autem, neque, delectus eius culpa
-          iusto earum cupiditate
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-5 mb-5">
-    <div class="media">
-      <img src="../image/imgpng/prof2.png" class="mr-3" alt="placeholder image" />
-      <div class="media-body">
-        <h5 class="mt-0">
-          Product was Damaged<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
-            <i class="fa fa-star-half"></i></span>
-        </h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-          non debitis, magni harum consequatur doloribus illum quia optio
-          repellendus numquam enim natus autem, neque, delectus eius culpa
-          iusto earum cupiditate
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row mt-5 mb-5">
-    <div class="media">
-      <img src="../image/imgpng/prof1.png" class="mr-3" alt="placeholder image" />
-      <div class="media-body">
-        <h5 class="mt-0">
-          Good Quality<span class="text-warning"><i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
-          </span>
-        </h5>
+            <i class="fa fa-star-half"></i>
+          </h3><br>
+        </div>
+      </p>
+    </div>
+  </div>
+
+  <!-- ********************** Reviews ************************ -->
+  <div class="container mt-5 mb-5">
+    <div class="reviews">
+      <h2>Recent Reviews</h2><br>
+      <h5>Venu Ganesh</h5>
+        <div class="row">
+          <h3 class="text-warning">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </h3><br>
+        </div>
+        <h5>"Good"</h5>
+    </div>
+    <br>
+    <div class="reviews">
+      <h5>Manish Kumar</h5>
+        <div class="row">
+          <h3 class="text-warning">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </h3><br>
+        </div>
+        <h5>"Good"</h5>
+    </div>
+    <br>
+    <div class="reviews">
+      <h5>Ankur Kumar</h5>
+        <div class="row">
+          <h3 class="text-warning">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star"></i><i class="fa fa-star"></i>
+            <i class="fa fa-star-half"></i>
+          </h3><br>
+        </div>
+        <h5>"Good"</h5><br>
+        <h5>View All Reviews ></h5>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <!-- footer -->
+   <footer id="main-footer" class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum
-          non debitis, magni harum consequatur doloribus illum quia optio
-          repellendus numquam enim natus autem, neque, delectus eius culpa
-          iusto earum cupiditate
+          <b>Visit us at:</b><br />
+          mediwalabox.com<br />
+          Bailey road<br />
+          Patna<br />
+          Bihar<br />
+          800014
         </p>
       </div>
-    </div>
-  </div>
 
-  <!-- *************** Form to post reviews ****************** -->
-  <div class="row mb-5">
-    <h2>Post your own Reviews</h2>
-  </div>
+      <div class="col">
+        <div class="">
+          <p>
+            <b
+              >Copyright &copy;
+              <span id="footeryear"></span>
+              'G3'<br />
+              All Rights Reserved.</b
+            >
+          </p>
+        </div>
+      </div>
 
-  <form>
-    <div class="form-group">
-      <label for="exampleInputName">Name</label>
-      <input type="name" class="form-control" id="exampleInputName" aria-describedby="name"
-        placeholder="write your name" />
+      <div id="footerrightside" class="col">
+        <div class="">
+          <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+          <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+        </div>
+
+        <div class="d-flex justify-content-center socialmediatag">
+          <div class="p-1">
+            <a href="http://facebook.com">
+              <img src="./image/imgpng/facebook.png" alt="@fb" width="30px" />
+            </a>
+          </div>
+          <div class="p-1">
+            <a href="http://twitter.com">
+              <img src="./image/imgpng/twitter.png" alt="@tw" width="35px" />
+            </a>
+          </div>
+          <div class="p-1">
+            <a href="http://instagram.com">
+              <img
+                src="./image/imgpng/instagram.png"
+                alt="@inst"
+                width="30px"
+              />
+            </a>
+          </div>
+          <div class="p-1">
+            <a href="http://www.whatsapp.com">
+              <img
+                src="./image/imgpng/WhatsApp-logo.png  "
+                alt="@wapp"
+                width="30px"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="form-group">
-      <label for="exampleInputReviews">Reviews</label>
-      <textarea type="text" class="form-control" id="exampleInputtextarea" placeholder="write your own reviews"
-        rows="3"></textarea>
-    </div>
-    <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
+  </footer>
 </body>
-
 </html>
