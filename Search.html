@@ -25,8 +25,8 @@
   </head>
 
   <body class="">
-    <!-- header section -->
-    <header class="container-fluid row" id="headertop">
+     <!-- header section -->
+     <header class="container-fluid row" id="headertop">
       <!-- logo -->
       <div class="container-fluid col-3">
         <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
@@ -105,7 +105,7 @@
             </div>
             <!-- logo nav-->
             <div class="container-fluid col-5 ml-1">
-              <div id="logonav">
+              <div class="mobnavlogobg" id="logonav">
                 <img
                   src="./image/logo1.png"
                   alt="@logo"
@@ -144,34 +144,37 @@
           class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav align-self-stretch justify-content-around">
+          <ul class="navbar-nav align-self-stretch navUl">
             <!-- nav close button -->
-            <button type="button" class="btn btnclsnav" id="navhide">
+            <!-- <button type="button" class="btn btnclsnav" id="navhide">
               <span aria-hidden="true">&times;</span>
-            </button>
-
-            <li class="nav-item justify-content-around">
+            </button> -->
+            <a class="btnclsnav" id="navhide"
+              ><img alt="logo" src="./image/Closeicon.png" height="30px"
+              width="30px"
+            </a>
+            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="./index.html"
                 ><i class="fa fa-home"></i>Home</a
               >
             </li>
-            <li class="nav-item justify-content-around">
+            <li class="nav-item">
               <a class="nav-link" href="Adeel/Product.html"
                 ><i class="fa fa-store"></i>Shop</a
               >
             </li>
-            <li class="nav-item justify-content-around">
+            <li class="nav-item">
               <a href="./aboutus.html" class="nav-link" role="button"
                 >About Us</a
               >
             </li>
-            <li class="nav-item justify-content-around">
-              <a href="wishlist.html" class="nav-link" role="button"
+            <li class="nav-item">
+              <a href="contactus.html" class="nav-link" role="button"
                 ><i class="fa fa-address-book"></i>Contact Us</a
               >
             </li>
             <!-- accountSec after size decrease -->
-            <li class="nav-item justify-content-around" id="accountSec">
+            <li class="nav-item" id="accountSec">
               <button
                 class="btn dropdown-toggle"
                 type="button"
@@ -204,40 +207,167 @@
     <!--+++++++++++++++++++++++++++++++++++++work from here+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
     <!--Search listing page-->
 
-    <section class="Search">
-      <h1>Some Common Item...</h1>
-      <div class="row">
-        <div class="search-col">
-          <p><strong>Paracetamol 250mg Strip of 15 Tablets</strong></p>
-          <h4>BY SUN PHARMA</h4>
-          <h2>
-            <b><u>MRP-50</u></b>
-          </h2>
-          <div class="container-fluid col-4 justify-content-around">
-            <a href="cart.html" class="btn" role="button"
-              ><i class="fas fa-cart-plus"> Add to Cart</i>
-            </a>
+    <section Id="SearchListPage" class="container container-fluid">
+       
+      <div class="text-center"> Showing all results for..............</div>
+      
+          
+            <div class=" row  searchDetails    " >
+              
+              <div class="productNameandbarnd text-center"> 
+                <a href="./Adeel/Product.html"
+                  >
+                    Paracetamol 250mg Strip of 15 Tablets</i
+                  >
+                </a>
+                <p>BY SUN PHARMA</p>
+              </div>
+                
+              <div class="MrpOPriceDiscount text-center">
+                <b class="ourPrice"><strong>₹50</strong></b>
+                <strike>₹50</strike>
+                <b class=" Discount"><strong>14% off</strong></b>
+              </div>
+
+
+              <div class="cartbtn text-center">
+                  <a href="cart.html" class="btn" role="button"
+                    ><i class="fas fa-cart-plus"> Add to Cart</i>
+                  </a>
+              </div>
+
+            </div> 
+
+            <div class=" row  searchDetails  " >
+              
+              <div class="productNameandbarnd text-center"> 
+                <a href="./Adeel/Product.html"
+                  >
+                    Paracetamol 250mg Strip of 15 Tablets</i
+                  >
+                </a>
+                <p>BY SUN PHARMA</p>
+              </div>
+                
+              <div class="MrpOPriceDiscount text-center">
+                <b class="ourPrice"><strong>₹50</strong></b>
+                <strike>₹50</strike>
+                <b class=" Discount"><strong>14% off</strong></b>
+              </div>
+
+
+              <div class="cartbtn text-center">
+                  <a href="cart.html" class="btn" role="button"
+                    ><i class="fas fa-cart-plus"> Add to Cart</i>
+                  </a>
+              </div>
+
+            </div> 
+
+
+            <div class=" row  searchDetails   " >
+              
+              <div class="productNameandbarnd text-center"> 
+                <a href="./Adeel/Product.html"
+                  >
+                    Paracetamol 250mg Strip of 15 Tablets</i
+                  >
+                </a>
+                <p>BY SUN PHARMA</p>
+              </div>
+                
+              <div class="MrpOPriceDiscount text-center">
+                <b class="ourPrice"><strong>₹50</strong></b>
+                <strike>₹50</strike>
+                <b class=" Discount"><strong>14% off</strong></b>
+              </div>
+
+
+              <div class="cartbtn text-center">
+                  <a href="cart.html" class="btn" role="button"
+                    ><i class="fas fa-cart-plus"> Add to Cart</i>
+                  </a>
+              </div>
+
+            </div> 
+          
+            <div id="pagingnationbar"
+              <ul class="pagination ">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </div> 
+         
+    </section>
+
+     <!-- footer -->
+     <footer id="main-footer" class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col">
+          <p>
+            <b>Visit us at:</b><br />
+            mediwalabox.com<br />
+            Bailey road<br />
+            Patna<br />
+            Bihar<br />
+            800014
+          </p>
+        </div>
+
+        <div class="col">
+          <div class="">
+            <p>
+              <b
+                >Copyright &copy;
+                <span id="footeryear"></span>
+                'G3'<br />
+                All Rights Reserved.</b
+              >
+            </p>
           </div>
         </div>
 
-        <div class="search-col">
-          <p><strong>Calpol 650mg Strip of 15 Tablets</strong></p>
-          <h4>BY GLAXOMITHILINE PHARMA</h4>
-          <h2>
-            <b><u>MRP-45</u></b>
-          </h2>
-          <i class="fas fa-cart-plus">Add to Cart</i>
-        </div>
+        <div id="footerrightside" class="col">
+          <div class="">
+            <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+            <p><i class="fa fa-mobile"></i> +91 1234567890</p>
+          </div>
 
-        <div class="search-col">
-          <p><strong>Cellile 500 Strip of 10 Tablets</strong></p>
-          <h4>BY SUN PHARMA</h4>
-          <h2>
-            <b><u>MRP-60</u></b>
-          </h2>
-          <i class="fas fa-cart-plus">Add to Cart</i>
+          <div class="d-flex justify-content-center socialmediatag">
+            <div class="p-1">
+              <a href="http://facebook.com">
+                <img src="./image/imgpng/facebook.png" alt="@fb" width="30px" />
+              </a>
+            </div>
+            <div class="p-1">
+              <a href="http://twitter.com">
+                <img src="./image/imgpng/twitter.png" alt="@tw" width="35px" />
+              </a>
+            </div>
+            <div class="p-1">
+              <a href="http://instagram.com">
+                <img
+                  src="./image/imgpng/instagram.png"
+                  alt="@inst"
+                  width="30px"
+                />
+              </a>
+            </div>
+            <div class="p-1">
+              <a href="http://www.whatsapp.com">
+                <img
+                  src="./image/imgpng/WhatsApp-logo.png  "
+                  alt="@wapp"
+                  width="30px"
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
   </body>
 </html>

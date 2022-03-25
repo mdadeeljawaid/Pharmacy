@@ -38,6 +38,12 @@
     clear: both;
 }
 
+.services {
+    display: table;
+    height: max-content;
+    background-color: none;
+}
+
 .services .service {
     float: left;
     width: 21%;

@@ -1,15 +1,17 @@
 .Search {
-    width: 90%;
-    margin: auto;
+    width: 60%;
+    margin: right;
     text-align: left;
     padding: top 100px;
-    margin: auto;
+    
 }
 
 h1 {
     font-size: 36px;
     font-weight: 600;
     text-align: left;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 h2 {
@@ -25,27 +27,34 @@ h4 {
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-    text-align: left;
+    text-align:right;
 }
 
-.row {
+h5 {
+    color:rgb(3, 3, 26);
+    text-align: right;
+}
+
+/* .row {
     margin-top: 3%;
     margin: auto;
     display: flex;
     justify-content: space-between;
-}
+} */
 
-.search-col {
-    flex-basis: 33%;
-    background: rgb(212, 206, 206);
-    border-radius: 10px;
+.search-col1 {
+    flex-basis: 50%;
+    background: #8adeff;
+    border-radius: 20px;
     margin-bottom: 10%;
-    padding: 20px 12px;
+    padding: 30px 12px;
     box-sizing: border-box;
     text-align: left;
     transition: 1s;
     font-size: medium;
     font-weight: 500;
+    transition-property: all;
+
 }
 
 .search-col:hover {
