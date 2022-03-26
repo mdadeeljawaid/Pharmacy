@@ -162,7 +162,7 @@
                 <h3 style="height: 50px; line-height: 50px; background-color: rgb(190, 231, 231); padding-left: 1%;">
                     Your Cart (<span id="item-in-cart">0</span>)</h3>
                 <hr style="height: 5px; box-shadow: inset 0 9px 90px -30px rgba(5, 73, 136, 0.8);">
-                <br>
+                <!-- <br> -->
                 <div class="empty-cart">
                     <h2>Your Cart is Empty</h2>
                     <a href="index.html">Order Now</a>
@@ -191,8 +191,7 @@
                             <br>
                             <span style="font-weight: 700; color:  rgb(27, 79, 146);">Total Price: &#x20b9;
                                 <span id="item1total">450</span> </span>
-                            <br>
-                            <br>
+
                             <button class="delete-item">Delete</button>
                         </div>
                     </div>
@@ -220,8 +219,7 @@
                             <br>
                             <span style="font-weight: 700; color:  rgb(27, 79, 146);">Total Price: &#x20b9;
                                 <span id="item1total">450</span> </span>
-                            <br>
-                            <br>
+
                             <button class="delete-item">Delete</button>
                         </div>
                     </div>
@@ -232,12 +230,21 @@
                 <div class="checkout-section">
                     Total Price: <span id="total">0</span>
                     <br>
+                    Delivery Cost:<span id="delivery-fee">0</span>
+                    <br>
                     Discount: <span id="discount">0</span>
                     <hr>
                     Total: <span id="grandTotal">0</span>
                     <br>
                     <br>
                     <button id="checkout-btn">Order Now</button>
+                    <br>
+                    <br>
+                    <p class="checkout-msg">
+                        Flat 5% discount when total > 500
+                        <br>
+                        Zero Cost Delivery when total > 500
+                    </p>
                 </div>
             </div>
         </div>
