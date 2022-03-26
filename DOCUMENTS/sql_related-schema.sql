@@ -44,7 +44,7 @@ $.Admin(G3)
     PurchasePrice 	float NOT NULL,
     MRP			    float NOT NULL,
     OurPrice 		float NOT NULL,
-    BrandId 		int   NOT NULL,(FK, Brand(BrandId))
+    BrandId         int   NOT NULL,(FK, Brand(BrandId))
     CategoryId 		bigint NOT NULL,(FK CategoryMaster(CMId) )
     Composition Id	bigint NOT NULL,(FK, ProductType(TypeId))
     Quantity		bigint NOT NULL,
@@ -52,6 +52,11 @@ $.Admin(G3)
     Image1 			nvarchar (50) NULL,
     Image2			nvarchar (50) NULL,
     ValuePoint 		bigint NOT NULL
+
+6. Brand
+    BrandId   int  (PK)
+    ManufacturerName varchar(100) Not Null
+    
 
 6. ProductType
     TypeId			 bigint NOT NULL ,(PK)
