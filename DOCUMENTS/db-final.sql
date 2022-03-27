@@ -38,27 +38,18 @@ CREATE TABLE `useraddresses` (
 
 CREATE TABLE `seller` (
   `SellerId` int NOT NULL,
-  `EmailId` varchar(45) NOT NULL,
-  `Password` varchar(45) NOT NULL,
+  `EmailId` varchar(100) NOT NULL,
+  `Password` varchar(500) NOT NULL,
   `Status` tinyint NOT NULL DEFAULT '0',
-  PRIMARY KEY (`SellerId`),
-  UNIQUE KEY `EmailId_UNIQUE` (`EmailId`)
-);
-
-
-CREATE TABLE `sellerinfo` (
-  `SellerInfoId` int NOT NULL,
-  `SellerId` int NOT NULL,
-  `ShopName` varchar(45) NOT NULL,
-  `ShopRegNo` varchar(45) NOT NULL,
+  `ShopName` varchar(100) NOT NULL,
+  `ShopRegNo` varchar(50) NOT NULL,
   `ShopContactNo` varchar(12) NOT NULL,
-  `ShopAddress` varchar(45) NOT NULL,
-  `ShopPincode` varchar(45) NOT NULL,
-  `DocumentUrl` varchar(200) DEFAULT NULL,
-  PRIMARY KEY (`SellerInfoId`),
-  UNIQUE KEY `SellerId_UNIQUE` (`SellerId`),
-  UNIQUE KEY `ShopContactNo_UNIQUE` (`ShopContactNo`),
-  CONSTRAINT `SellerId` FOREIGN KEY (`SellerId`) REFERENCES `seller` (`SellerId`) ON DELETE CASCADE ON UPDATE CASCADE
+  `ShopAddress` varchar(200) NOT NULL,
+  `ShopPincode` int NOT NULL,
+  `DocumentUrl` varchar(100) NOT NULL,
+  PRIMARY KEY (`SellerId`),
+  UNIQUE KEY `EmailId_UNIQUE` (`EmailId`),
+  UNIQUE KEY `ShopContactNo_UNIQUE` (`ShopContactNo`)
 );
 
 
@@ -187,5 +178,14 @@ CREATE TABLE `shoppingcart` (
 );
 
 
+CREATE TABLE `prescription` (
+  `PrescriptionId` int NOT NULL,
+  `PrescriptionUserId` int NOT NULL,
+  `PrescriptionImageUrl` varchar(100) NOT NULL,
+  `PrescriptionUploadedDate` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`PrescriptionId`),
+  KEY `PrescriptionUserId_idx` (`PrescriptionUserId`),
+  CONSTRAINT `PrescriptionUserId` FOREIGN KEY (`PrescriptionUserId`) REFERENCES `user` (`UserId`) ON DELETE CASCADE ON UPDATE CASCADE
+);
 
 
