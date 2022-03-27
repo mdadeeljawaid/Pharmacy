@@ -309,8 +309,62 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* end home page */
 
-/* start search page */
+/* Login page*/
+
+#home-section {
+  /* background: url(./image/signupPageBackColor.jpg) ; */
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url(./image/signupPageBackColor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+  
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 700px;
+  
+}
+
+.logosignup{
+  justify-items: center;
+}
+
+#home-section .home-inner {
+  padding-top: 100px;
+}
+
+#home-section .formSection {
+  background-color: #c6f7f7;
+}
+
+#home-section .fas {
+  color: #008ed6;
+  background: rgb(252, 250, 250);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+
 
 /* end search page */
