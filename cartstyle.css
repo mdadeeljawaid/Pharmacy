@@ -114,6 +114,10 @@
         margin-bottom: 5px;
     }
 
+    .product-details {
+        font-weight: 200;
+    }
+
     .medicine-image {
         width: 30%;
         float: right;
