@@ -1,0 +1,69 @@
+*{
+    margin: auto;
+    padding: justify;
+}
+.row{
+    background-color: rgb(190, 231, 231);
+    background: justify;
+    background-color: none;
+    background scroll;
+    border: 80%;
+
+}
+
+.Col-1{
+    padding: 33px;
+    margin:33px;
+    border: 1px dotted rgb(86, 170, 170);
+    border-radius: 10px;
+    height: 140px;
+    margin-bottom: 10px;
+    
+}
+
+.Col-2{
+    padding: 33px;
+    margin:33px;
+    border: 1px dotted rgb(86, 170, 170);
+    border-radius: 10px;
+    height: 140px;
+    margin-bottom: 10px;
+    
+}
+
+.Col-3{
+    padding: 33px;
+    margin:33px;
+    border: 1px dotted rgb(86, 170, 170);
+    border-radius: 10px;
+    height: 140px;
+    margin-bottom: 10px;
+    
+}
+    
+}
+.medicine-image {
+    float: left;
+    width: 30%;
+}
+.delete-item {
+    align-content: flex-end;
+    float: inline-start;
+    width: 80px;
+    text-align: center;
+}
+.delete-item:hover {
+    background-color: rgb(216, 34, 34);
+}
+
+@media (max-width: 700px) {
+    .row {
+        height: 200px;
+        width: 100%;
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    
+
+    .medicine-details,

@@ -9,9 +9,11 @@
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  <link rel="stylesheet" href="productstyle.css" />
+    <link rel="stylesheet" href="../mystyle.css" />
+    <link rel="stylesheet" href="productstyle.css" />
   <script src="productjScript.js"></script>
 </head>
 
@@ -142,7 +144,7 @@
           </button> -->
           <a class="btnclsnav" id="navhide"
             ><img alt="logo" src="./image/Closeicon.png" height="30px"
-            width="30px"
+            width="30px">
           </a>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./index.html"
@@ -196,18 +198,18 @@
 
   <!-- **************************** Product Page Work Starts from here ********************************** -->
 
-  <div class="container">
-    <div class="row">
+  <div class="container product-section">
+    <div class="row ml-0 product-details">
       <div class="col-md-6">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner mt-2">
-            <div class="carousel-item active">
+          <div class="carousel-inner ml-0 mt-4">
+            <div class="carousel-item active ml-0">
               <img src="../image/imgpng/dettol1.png" class="d-block w-100 productpageimage-main" alt="First Slide" />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item ml-0">
               <img src="../image/imgpng/dettol2.png" class="d-block w-100 productpageimage-main" alt="Second Slide" />
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item ml-0">
               <img src="../image/imgpng/dettol3.png" class="d-block w-100 productpageimage-main" alt="Third Slide" />
             </div>
           </div>
@@ -224,16 +226,16 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-6 mt-4">
         <div class="row">
-          <h2>Dettol Antiseptic Liquid Bottle</h2>
+          <h4>Dettol Antiseptic Liquid Bottle</h4>
         </div>
         <div class="row">
-          <h1>₹ 59.29</h1>
+          <h4>₹ 59.29</h4>
           &nbsp; &nbsp;
-          <h3><del>₹ 60.5</del></h3>
+          <h5><del>₹ 60.5</del></h5>
           &nbsp; &nbsp;
-          <h2 class="text-success">2% off</h2>
+          <h4 class="text-success">2% off</h4>
         </div>
         <div class="row">
           <p>Inclusive of all taxes</p>
@@ -244,82 +246,92 @@
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star-half"></i>
           </h3>
-          <h5>315 ratings</h5>
+          <h5><a href="#ratings">(315 ratings)</h5></a>
         </div>
         <div class="row">
           <h3 class="text-info">
             <i class="fa fa-map-marker" aria-hidden="true"></i>
           </h3>
           <p style="font: size 20px">
-            &nbsp; Delivery by Tomorrow &nbsp;<b>Before 12 pm | &nbsp; <span class="text-success">FREE</span></b>
+            &nbsp; Delivery &nbsp;<b><span class="text-success">FREE</span></b>
           </p>
         </div>
-        <div class="row">
-          <p><b>Offers :-</b></p>
-        </div>
+       
         <div class="row">
           <p>
-            <i class="text-success fa fa-check-square"></i>
-            <i>Get 20% instant off on medicines</i>
+            <i>Offer :- Get 15% instant off on medicines</i><br>
+            <b>Only Cash On Delivery option available for payment</b>
           </p>
         </div>
+
+        <!-- ************ Add to wishlist ************* -->
+        <div class="row mb-3">
+            <a href="#" class="btn wishlist-btn"><span>+ Add to Wish List</span></a>
+        </div>
+
+        <!-- ************ Add to cart button ************* -->
         <div class="row">
-          <!-- <button class="button-container">Add to Cart</button> -->
-          <a class="btn btn-danger text-light">
+          <a href="#" class="btn">
             <i class="fa fa-cart-plus" aria-hidden="true"></i>Add to Cart</a>
         </div>
+
         <div class="row mt-4">
-          <h4>Seller: &nbsp; &nbsp;</h4>
+          <h4>Seller :- &nbsp;</h4>
           <p style="font-size: 18px">Patna Drugs</p>
         </div>
+
       </div>
     </div>
   </div>
-
+  <hr>
   <!-- ******** Similar Products ******** -->
   <div class="container container-fluid">
     <div class="row mt-5"></div>
-    <h2>Similar Products</h2>
+    <h3>Similar Products</h3>
   </div>
 
   <div class="row productpage-similar-outerDiv">
     <div class="productpage-similar">
+      <a href="#">
       <img src="../image/imgpng/smp1.png" class="" alt="First Similar Product" />
       <div class="">
-        <h5 class="">
-          Dettol Liquid Disinfectant For Floor Cleaner, Surface Disinfection
-          Personal Hygiene Lime Fresh 500ml
-        </h5>
+        <h5 class="">Surface Disinfection Personal Hygiene Lime Fresh 500ml</h5>
+        <h5>₹ 59.29</h5>
       </div>
-    </div>
+    </div></a>
 
     <div class="productpage-similar">
+      <a href="#">
       <img src="../image/imgpng/smp1.png" class="" alt="First Similar Product" />
       <div class="">
-        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner,</h5>
+        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner</h5>
+        <h5>₹ 59.29</h5>
       </div>
-    </div>
+    </div></a>
+
     <div class="productpage-similar">
+      <a href="#">
       <img src="../image/imgpng/tablet.png" class="" alt="First Similar Product" />
       <div class="">
-        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner,</h5>
+        <h5 class="">Dettol Liquid Disinfectant For Floor Cleaner</h5>
+        <h5>₹ 59.29</h5>
       </div>
-    </div>
+    </div></a>
+
     <div class="productpage-similar">
+      <a href="#">
       <img src="../image/imgpng/smp3.png" class="" alt="First Similar Product" />
       <div class="">
-        <h5 class="">
-          Dettol Liquid Disinfectant For Floor Cleaner, Surface Disinfection
-          Personal Hygiene Lime Fresh 500ml
-        </h5>
+        <h5 class="">Surface Disinfection Personal Hygiene Lime Fresh 500ml</h5>
+        <h5>₹ 59.29</h5>
       </div>
-    </div>
+    </div></a>
   </div>
-
+  <hr>
   <!-- *********** Descriptions ************** -->
-  <div class="container mt-5 mb-5">
+  <div class="container mt-5 mb-1">
     <div class="description">
-      <h2>Description</h2>
+      <h5>Description</h5>
       <p>Dettol Antiseptic Liquid is a topical liquid for cuts and wounds, 
         as well as for maintaining home hygiene. Dettol liquid can also be used with proper dilution, 
         to sanitize your home, toys and babywear by killing over 100 illness-causing germs. 
@@ -329,9 +341,9 @@
     </div>
   </div>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-1 mb-1">
     <div class="benefits">
-      <h2>Benefits</h2>
+      <h5>Benefits</h5>
       <p>* Dettol disinfectant liquid protects from over 100 germs.<br>
         * Can also be used as a cleaner for personal and home hygiene.<br>
         * Gives protection against infections from cuts, wounds and scratches.<br>
@@ -340,9 +352,9 @@
     </div>
   </div>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-1 mb-1">
     <div class="ingredients">
-      <h2>Ingredients</h2>
+      <h5>Ingredients</h5>
       <p>The main active ingredient is Chloroxylenol, 
         the other ingredients in Dettol disinfectant are pine oil, soap, 
         isopropanol, castor oil and water.
@@ -350,9 +362,9 @@
     </div>
   </div>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-1 mb-1">
     <div class="uses">
-      <h2>Uses</h2>
+      <h5>Uses</h5>
       <p>* First aid disinfection through the topical application on cuts, scratches and wounds.<br>
         * Clothing disinfection through addition in the water while washing.<br>
         * Surface and floor disinfection by adding 5ml of Dettol to a bucket of water.<br>
@@ -361,9 +373,9 @@
     </div>
   </div>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-1 mb-1">
     <div class="how_to_use">
-      <h2>How to Use</h2>
+      <h5>How to Use</h5>
       <p>* Read the instructions carefully.<br>
         * Add Dettol disinfectant liquid to the recommended amount of water for dilution.<br>
         * For cuts and other first-aid use dilute Dettol in about 1 cup of clean water before using it to wash and clean the cut gently.
@@ -371,20 +383,20 @@
     </div>
   </div>
 
-  <div class="container mt-5 mb-5">
+  <div class="container mt-1 mb-1">
     <div class="safety_info">
-      <h2>Safety Information</h2>
+      <h5>Safety Information</h5>
       <p>* Do not use Dettol liquid undiluted on the body for long periods of time, it can cause discolouration or burns.<br>
         * Keep in a cool, dry place away from direct sunlight.<br>
         * Keep away from children.
       </p>
     </div>
   </div>
-
+  <hr>
   <!-- ********************** FAQS ************************ -->
   <div class="container mt-5 mb-5">
     <div class="faqs">
-      <h2>FAQS</h2>
+      <h5>FAQS</h5>
       <p><b>Q1: Can I use it for pimples?</b><br>
         Ans: No, this product is not recommended for acne or pimple treatment. 
         You can, however, dilute 5ml of liquid in 10lrts of water for bathing purposes.<br>
@@ -402,74 +414,98 @@
       </p>
     </div>
   </div>
-
-  <div class="container mt-5 mb-5">
-    <div class="product_details">
-      <h2>Product Details</h2>
-      <p>
-        Brand: DETTOL ANTISEPTIC<br>
-        Expires on or After: 30/05/2025<br>
-        Country of Origin India
-      </p>
-    </div>
-  </div>
-
+  <hr>
   <!-- ********************** Ratings ************************ -->
   <div class="container mt-5 mb-5">
-    <div class="ratings">
-      <h2>Ratings and Reviews</h2>
-      <h5>4.7/5</h5><br>
+    <div class="ratings" id="ratings">
+      <h5>Ratings and Reviews</h5>
+      <h5>4.7/5</h5>
       <h5>315 ratings</h5>
-        <div class="row">
-          <h3 class="text-warning">
+       <div class="center">
+          <h5 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star-half"></i>
-          </h3><br>
+          </h5> 
         </div>
       </p>
     </div>
   </div>
-
+  <hr>
   <!-- ********************** Reviews ************************ -->
   <div class="container mt-5 mb-5">
     <div class="reviews">
-      <h2>Recent Reviews</h2><br>
+      <h5>Recent Reviews</h5><br>
       <h5>Venu Ganesh</h5>
-        <div class="row">
-          <h3 class="text-warning">
+        <div class="center">
+          <h5 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star-half"></i>
-          </h3><br>
+          </h5>
         </div>
-        <h5>"Good"</h5>
+        <p>"Good"</p>
     </div>
-    <br>
+    <hr>
     <div class="reviews">
       <h5>Manish Kumar</h5>
-        <div class="row">
-          <h3 class="text-warning">
+        <div class="center">
+          <h5 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star-half"></i>
-          </h3><br>
+          </h5>
         </div>
-        <h5>"Good"</h5>
+        <p>"Good"</p>
     </div>
-    <br>
+    <hr>
     <div class="reviews">
       <h5>Ankur Kumar</h5>
-        <div class="row">
-          <h3 class="text-warning">
+        <div class="center">
+          <h5 class="text-warning">
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star"></i><i class="fa fa-star"></i>
             <i class="fa fa-star-half"></i>
-          </h3><br>
+          </h5>
         </div>
-        <h5>"Good"</h5><br>
-        <h5>View All Reviews ></h5>
+        <p>"Good"</p>
+        <hr>
+        <h5><a href="#">View All Reviews ></a></h5>
     </div>
+  </div>
+  <hr>
+  <div class="container mt-5 mb-5 ft-dsc">
+    <div class="footer-description">
+        <div class="center">
+          <h2 class="text-primary">
+            <i class="fa fa-ribbon"></i>
+          </h2>
+        </div>
+        <h5>1 lakh+ Products</h5>
+        <p>We maintain strict quality controls on all our partner retailers, 
+           so that you always get standard quality products.</p>
+    </div>
+
+    <div class="footer-description ml-5">
+      <div class="center">
+        <h2 class="text-primary">
+          <i class="fa fa-money-bill-wave"></i>
+        </h2><br>
+      </div>
+      <h5>COD payment option</h5>
+      <p>We are currently providing only Cash On Delivery option for the payment</p>
+  </div>
+
+  <div class="footer-description ml-5">
+    <div class="center">
+      <h2 class="text-primary">
+        <i class="fa fa-calendar"></i>
+      </h2><br>
+    </div>
+    <h5>Easy Return</h5>
+    <p>If you found any mismatch in the medicines you have ordered or any expired medicine supplied to you 
+      then you can easily return it the back within 24 hours from the time of delivery</p>
+</div>
   </div>
 
   <!-- footer -->
@@ -509,18 +545,18 @@
         <div class="d-flex justify-content-center socialmediatag">
           <div class="p-1">
             <a href="http://facebook.com">
-              <img src="./image/imgpng/facebook.png" alt="@fb" width="30px" />
+              <img src="../image/imgpng/facebook.png" alt="@fb" width="30px" />
             </a>
           </div>
           <div class="p-1">
             <a href="http://twitter.com">
-              <img src="./image/imgpng/twitter.png" alt="@tw" width="35px" />
+              <img src="../image/imgpng/twitter.png" alt="@tw" width="35px" />
             </a>
           </div>
           <div class="p-1">
             <a href="http://instagram.com">
               <img
-                src="./image/imgpng/instagram.png"
+                src="../image/imgpng/instagram.png"
                 alt="@inst"
                 width="30px"
               />
@@ -529,7 +565,7 @@
           <div class="p-1">
             <a href="http://www.whatsapp.com">
               <img
-                src="./image/imgpng/WhatsApp-logo.png  "
+                src="../image/imgpng/WhatsApp-logo.png  "
                 alt="@wapp"
                 width="30px"
               />
