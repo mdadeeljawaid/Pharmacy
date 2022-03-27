@@ -10,7 +10,7 @@ $(document).ready(function(){
   // })
   
   
-
+//for nav on mobile view
 
   var fixHeight = function() {
     $('.navbar-nav').css(
@@ -29,13 +29,13 @@ $(document).ready(function(){
   });
   
 
-  $('.navbar-toggler').on('click', function() {
-    $('.mobileMenu').toggleClass('open');
+  $('.navbar-toggler,.overlay,.btnclsnav').on('click', function() {
+    $('.mobileMenu,.overlay,.btnclsnav').toggleClass('open');
   });
 
 
 
-
+//for banner portion
   $('.carousel').carousel({
     interval: 3000,
     keyboard: true,
@@ -53,10 +53,13 @@ $(document).ready(function(){
 
 
 
-
+  //current year for copyright
+  document.getElementById("footeryear").innerHTML=new Date().getFullYear();
 
 
 
 
 
 });
+
+
