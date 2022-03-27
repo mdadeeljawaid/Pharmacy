@@ -90,6 +90,7 @@
             <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
             </a>
           </div>
+
         </div>
 
         <!-- search nav -->
@@ -128,24 +129,16 @@
             <a href="contactus.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
           </li>
           <!-- accountSec after size decrease -->
-          <li class="nav-item" id="accountSec">
-            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
-              <i class="fas fa-user"></i>ACCOUNT
+          <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Naiyer Iqbal
             </button>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="./login.html">LOGIN</a>
-              </li>
-              <li>
-                <a href="./registration.html">SIGNUP</a>
-              </li>
-
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li><a class="dropdown-item" href="#">SELLER</a></li>
-            </ul>
-          </li>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="./Profile.html">Profile</a>
+              <a class="dropdown-item" href="./ManageAddress.html">Manage Address</a>
+            </div>
+          </div>
         </ul>
       </div>
     </div>
@@ -160,18 +153,6 @@
 
   <!-- Profile Page -->
   <section id="profilepage">
-    <div class="container">
-      <nav class="navbar navbar-inverse ">
-        <div class="container-fluid">
-
-          <ul class="nav navbar-nav">
-            <li><a href="#" onclick="fun('Profile')">Profile</a></li>
-            <li><a href="#" onclick="fun('Address')">Manage Address</a></li>
-          </ul>
-        </div>
-      </nav>
-
-    </div>
     <div class="container" id="demo1">
       <div class="row gutters">
         <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
@@ -186,7 +167,7 @@
                   <h6 class="user-email">naiyeriqbal678@gmail.com</h6>
                 </div>
                 <div class="about">
-                  <h5>About</h5>
+                  <h5><a href="./login.html">Logout</a></h5>
                   <p>I'm Naiyer Iqbal. Java Developer at google california...</p>
                 </div>
               </div>
@@ -216,6 +197,12 @@
                   <div class="form-group">
                     <label for="phone">Phone</label>
                     <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                  </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                  <div class="form-group">
+                    <label for="aDdress">Address</label>
+                    <input type="text" class="form-control" id="aDdress" placeholder="Enter your address">
                   </div>
                 </div>
 
@@ -249,7 +236,7 @@
                   <h6 class="user-email">naiyeriqbal678@gmail.com</h6>
                 </div>
                 <div class="about">
-                  <h5>About</h5>
+                  <h5><a href="./login.html">Logout</a></h5>
                   <p>I'm Naiyer Iqbal. Java Developer at google california...</p>
                 </div>
               </div>
@@ -291,7 +278,8 @@
               <div class="row gutters" id='buttons'>
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                   <div class="text-right">
-                    <button type="button" id="submit" name="submit" class="btn btn-success mb-5" onchange="Address()">Add</button>
+                    <button type="button" id="submit" name="submit" class="btn btn-success mb-5"
+                      onchange="Address()">Add</button>
                     <button type="button" id="submit" name="submit" class="btn btn-danger mb-5">Delete</button>
                     <button type="button" id="submit" name="submit" class="btn btn-primary mb-5">Update</button>
                     <button type="button" id="submit" name="submit" class="btn btn-secondary mb-5">Cancel</button>
@@ -306,47 +294,12 @@
 
   </section>
   <br><br>
-  <div class="container">
-    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-      <div class="card h-100">
-        <div class="card-body">
-          <div class="row gutters">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-              <h6 class="mt-3 mb-2 text-primary">Address</h6>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label for="Street">Street</label>
-                <input type="name" class="form-control" id="Street" placeholder="Enter Street">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label for="ciTy">City</label>
-                <input type="name" class="form-control" id="ciTy" placeholder="Enter City">
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label for="sTate">State</label>
-                <input type="text" class="form-control" id="sTate" placeholder="Enter State">
-              </div>
-            </div>
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-              <div class="form-group">
-                <label for="pin">pin Code</label>
-                <input type="text" class="form-control" id="pin" placeholder="pin Code">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
 </body>
 <script>
-  function Address(){
-    
+  function Address() {
+
   }
 </script>
+
 </html>

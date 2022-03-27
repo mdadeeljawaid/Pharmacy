@@ -75,7 +75,6 @@ $.Admin(G3)
 9. ShopingCart
     ShopingId		bigint NOT NULL ,(PK)
     CustomerUserId 	nvarchar(20) NULL ,(FK, , UserAccount(UserId))
-    SessionId 		nvarchar (50) NOT NULL ,
     Date 			datetime NOT NULL ,
     ProductId 		bigint NOT NULL ,
     Quantity		bigint NOT NULL ,
@@ -96,7 +95,7 @@ $.Admin(G3)
     Active 			    bit NOT NULL
 
 11. OrderDetails
-    OrderId 		bigint NOT NULL ,(PK)
+    OrderId 		bigint NOT NULL ,(FK)
     ProductId 		bigint NOT NULL , ,(FK, ProductMaster(ProductId)
     ProductPrice 	float NOT NULL ,
     Quantity 		bigint NOT NULL ,

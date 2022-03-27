@@ -11,10 +11,18 @@
 }
 
 .cart input[type="number"] {
+    outline: none;
     color: rgb(27, 79, 146);
+    width: 50px;
     font-weight: 600;
-    border: none;
+    border: 2px solid rgb(58, 143, 143);
     background-color: inherit;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cart input[type="number"]:hover {
+    border-color: rgb(108, 173, 173);
 }
 
 .empty-cart {
@@ -112,6 +120,11 @@
         width: 100%;
         margin: 0;
         margin-bottom: 5px;
+    }
+
+    .product-details {
+        font-weight: normal;
+        font-size: 0.9em;
     }
 
     .medicine-image {
