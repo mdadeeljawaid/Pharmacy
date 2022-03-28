@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myjScript.js"></script>
+    <link rel="stylesheet" href="profilestyle.css">
+    <script src="profilejs.js"></script>
+    <style>
+        /* start home page */
+
+        body {
+            /* background-image: linear-gradient(to right, #efffda, #ffffff); */
+            /* background-image: linear-gradient(to right, #a3fdf2af, #f1f4f8); */
+            background-image: linear-gradient(to right, rgb(214 248 240), rgb(218 237 254));
+        }
+
+        /* nav */
+        #top_nav ul li a {
+            color: white;
+            font-family: open sans;
+            font-weight: 600;
+            /* padding: 0 0px 0px 0px;
+  margin: 0 116px 0 0; */
+        }
+
+        .navUl {
+            justify-content: space-evenly;
+        }
+
+        #uperrow {
+            justify-content: space-evenly;
+        }
+
+        #navtoglerbtn {
+            padding: 0px 15px 0px 0px;
+        }
+
+        #navlogo {}
+
+        /* navlogo background */
+        #logonav img {
+            background-color: white;
+            border-radius: 7px;
+            padding: 1px 1px 1px 1px;
+        }
+
+        #navcart {}
+
+        #searchnav {}
+
+        #headertop {
+            justify-content: space-around;
+            padding-right: 25px;
+            padding-left: 20px;
+        }
+
+        .stickySearch {
+            position: -webkit-sticky;
+            /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        @media only screen and (min-width: 990px) {
+            #top_nav ul li a {
+                padding: 0 0 0px 0px;
+                margin: 4px 168px 4px -12%;
+            }
+        }
+
+        @media only screen and (min-width: 1329px) {
+            #top_nav ul li a {
+                padding: 0 0 0px 0px;
+                margin: 4px 244px 4px auto;
+            }
+        }
+
+        /* btn color */
+        .btn {
+            background-color: #2e9af8;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: #0c71c9;
+            color: white;
+        }
+
+        /* nav bg color */
+        .nav-bgcolor {
+            background-color: #2e9af8;
+        }
+
+        .navbar-toggler {
+            background-color: #2e9af8;
+
+        }
+
+        /* nav account background color */
+        #accountSec ul {
+            background-color: #2e9af8;
+        }
+
+
+
+        /* Extra small devices (phones, 700px and down) */
+        @media only screen and (max-width: 700px) {
+            #headertop {
+                display: none;
+            }
+
+            .navUl {
+                justify-content: space-evenly;
+            }
+
+            .mobileMenu {
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+                position: fixed;
+                top: 0px;
+                bottom: 0;
+                margin: auto;
+                /* margin-top: 50px; */
+
+                left: 0;
+                -webkit-transition: all ease 0.25s;
+                transition: all ease 0.25s;
+                background-color: #2e9af8;
+                z-index: 500;
+            }
+
+            .mobileMenu.open {
+                -webkit-transform: translateX(0%);
+                transform: translateX(0%);
+            }
+
+            .mobileMenu .navbar-nav {
+                overflow-y: auto;
+            }
+
+            .overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0px;
+                right: 0;
+                margin: auto;
+                background-color: rgba(0, 0, 0, 0.5);
+                display: none;
+            }
+
+            .overlay.open {
+                display: block;
+                z-index: 499;
+            }
+
+            .navUl li {
+                /* justify-content: space-between; */
+                margin: 14px 14px 9px 24px
+                    /* padding: 0 0 0 0; */
+            }
+
+            #accountSec {
+                bottom: 0;
+            }
+
+        }
+
+        /* Medium devices (landscape tablets, 700px and up) */
+        @media only screen and (min-width: 700px) {
+            #accountSec {
+                display: none;
+            }
+
+            #navhide {
+                display: none;
+            }
+
+            .navbar-expand-lg {
+                -ms-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -ms-flex-pack: start;
+                justify-content: flex-start;
+            }
+
+            .navbar-expand-lg .navbar-nav {
+                -ms-flex-direction: row;
+                flex-direction: row;
+            }
+
+            .navbar-expand-lg .navbar-nav .dropdown-menu {
+                position: absolute;
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 0.5rem;
+                padding-left: 0.5rem;
+            }
+
+            .navbar-expand-lg>.container,
+            .navbar-expand-lg>.container-fluid,
+            .navbar-expand-lg>.container-sm,
+            .navbar-expand-lg>.container-md,
+            .navbar-expand-lg>.container-lg,
+            .navbar-expand-lg>.container-xl {
+                -ms-flex-wrap: nowrap;
+                flex-wrap: nowrap;
+            }
+
+            .navbar-expand-lg .navbar-nav-scroll {
+                overflow: visible;
+            }
+
+            .navbar-expand-lg .navbar-collapse {
+                display: -ms-flexbox !important;
+                display: flex !important;
+                -ms-flex-preferred-size: auto;
+                flex-basis: auto;
+            }
+
+            .navbar-expand-lg .navbar-toggler {
+                display: none;
+            }
+
+            .CustmPadingMargin {}
+        }
+
+        /* end nav part */
+
+
+        /* banner  */
+        @media only screen and (max-width: 700px) {
+            .sizeforimage img {
+                height: 200px;
+                width: 100% auto;
+            }
+        }
+
+        #banner {
+            position: -webkit-;
+        }
+
+        /* dummy text */
+
+        #dummytext .row {
+            justify-content: space-around;
+            padding: 20px 0px 20px 0;
+        }
+
+
+
+        /* categary section */
+        section {
+
+            width: 100%;
+        }
+
+        .categery-outter-div {
+            justify-content: space-evenly;
+
+        }
+
+        .widthSet {
+            width: 15%;
+            height: 170px;
+            border-radius: 10%;
+            margin-top: 4%;
+            box-shadow: 0px 9px 20px 0px rgb(161 163 102);
+        }
+
+        .widthSet img {
+            border-radius: 10%;
+            height: 100%;
+            width: 100%;
+        }
+
+        .widthSet:hover {
+            box-shadow: 0px 0px 13px 8px rgb(192 211 232);
+        }
+
+        @media only screen and (max-width:700px) {
+            .widthSet {
+                width: 31%;
+                height: 144px;
+                border-radius: 10%;
+                margin-top: 4%;
+            }
+        }
+
+        @media only screen and (min-width: 701px) {
+            .widthSet {
+                width: 16%;
+                border-radius: 10%;
+                margin-top: 4%;
+                margin: 6px 55px 24px 60px;
+            }
+        }
+
+        /* review section */
+        #review img {
+            margin-top: -50px;
+        }
+
+        #review .card:hover {
+            background: #3292a6;
+            color: #fff;
+        }
+
+        #review .fab {
+            color: #fff;
+        }
+
+        /* footer section */
+
+        footer {
+            background-color: #2e9af8;
+            bottom: 0;
+            margin-top: 30px;
+            width: 100%;
+            /* height: 100px; */
+            color: white;
+            text-align: center;
+        }
+
+        #salepamplets img {
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
+
+        /* footer display order */
+        @media only screen and (max-width: 450px) {
+
+            /* #main-footer .row{
+    flex-direction: column
+  } */
+            #addresssection {
+                order: 1;
+            }
+
+            #Copyrightsection {
+                order: 3;
+            }
+
+            #footerSocialMedia {
+                order: 2;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /* end home page */
+
+        /* Login page*/
+
+        #home-section {
+            /* background: url(./image/signupPageBackColor.jpg) ; */
+            background: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)), url(./image/signupPageBackColor.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            min-height: 700px;
+
+        }
+
+        #home-section .dark-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            min-height: 700px;
+
+        }
+
+        .logosignup {
+            justify-items: center;
+        }
+
+        #home-section .home-inner {
+            padding-top: 100px;
+        }
+
+        #home-section .formSection {
+            background-color: #c6f7f7;
+        }
+
+        #home-section .fas {
+            color: #008ed6;
+            background: rgb(252, 250, 250);
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+
+
+
+        /* end search page */
+        #profilepage {}
+
+        .account-settings .user-profile {
+            margin: 0 0 1rem 0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .account-settings .user-profile .user-avatar {
+            margin: 0 0 1rem 0;
+        }
+
+        .account-settings .user-profile .user-avatar img {
+            width: 90px;
+            height: 90px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+        }
+
+        .account-settings .user-profile h5.user-name {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .account-settings .user-profile h6.user-email {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #9fa8b9;
+        }
+
+        .account-settings .about {
+            margin: 2rem 0 0 0;
+            text-align: center;
+        }
+
+        .account-settings .about h5 {
+            margin: 0 0 15px 0;
+            color: #007ae1;
+        }
+
+        .account-settings .about p {
+            font-size: 0.825rem;
+        }
+
+        .form-control {
+            padding: 4px;
+            border: 1px solid #cfd1d8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+
+            background: #ffffff;
+            color: #2e323c;
+        }
+
+        .card {
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            border: 0;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin: 10px;
+        }
+
+        #buttons {
+            margin: 10px;
+        }
+
+        .card-body {
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body class="">
+    <!-- header section -->
+    <header class="container-fluid row" id="headertop">
+        <!-- logo -->
+        <div class="container-fluid col-3">
+            <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
+        </div>
+
+        <!-- search -->
+        <div class="container-fluid col-5 mt-3">
+            <form class="d-flex input-group">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <div class="input-group-append">
+                    <button class="btn btn-" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <!-- accountSec    -->
+        <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
+            <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fas fa-user">Account</i>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="./login.html">LOGIN</a>
+                </li>
+                <li>
+                    <a href="./registration.html">SIGNUP</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="#">SELLER</a></li>
+            </ul>
+        </div>
+
+        <!-- cart -->
+        <div class="container-fluid col-1 mt-3">
+            <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+            </a>
+        </div>
+    </header>
+
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
+        <div class="container-fluid">
+            <!-- nav hide on big screen -->
+            <div id="navhide">
+                <div class="row justify-content-around">
+                    <!-- togler button -->
+                    <div class="container-fluid col-2 mx-1">
+                        <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!-- logo nav-->
+                    <div class="container-fluid col-5 ml-1">
+                        <div class="mobnavlogobg" id="logonav">
+                            <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+                        </div>
+                    </div>
+                    <!-- cart nav -->
+                    <div class="container-fluid col-4 justify-content-around">
+                        <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- search nav -->
+                <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
+                    <form class="d-flex input-group">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <div class="input-group-append">
+                            <button class="btn btn-" type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+                id="navbarSupportedContent">
+                <ul class="navbar-nav align-self-stretch navUl">
+                    <!-- nav close button -->
+                    <!-- <button type="button" class="btn btnclsnav" id="navhide">
+              <span aria-hidden="true">&times;</span>
+            </button> -->
+                    <a class="btnclsnav" id="navhide"><img alt="logo" src="./image/Closeicon.png" height="30px"
+                            width="30px">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><i
+                                class="fa fa-home"></i>Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contactus.html" class="nav-link" role="button"><i
+                                class="fa fa-address-book"></i>Contact Us</a>
+                    </li>
+                    <!-- accountSec after size decrease -->
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- Profile Page -->
+    <div class="container">
+        <div class="row gutters">
+            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="account-settings">
+                            <div class="user-profile">
+                                <div class="user-avatar">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="naiyer Iqbal">
+                                </div>
+                                <h5 class="user-name">Naiyer Iqbal</h5>
+                                <h6 class="user-email">naiyeriqbal678@gmail.com</h6>
+                            </div>
+                            <div class="about">
+                                <h5><a href="./manager.html">Manage Address</a></h5>
+                            </div>
+                            <div class="about">
+                                <h5><a href="./login.html">Logout</a></h5>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12" style="padding: 8px;">
+                    <span>Manage Address</span><button style="margin-left: 70%;">Add New Address</button>
+                </div>
+                <div class="card h-80">
+                    <div class="card-body" id="add">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h6 class="mb-2 text-primary">Personal Details</h6>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="eMail">Email</label>
+                                    <input type="email" class="form-control" id="eMail" placeholder="Enter email ID">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                                </div>
+                            
+                        </div>
+                        <div class="row gutters" id='buttons'>
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div class="text-right">
+                                    <button type="button" id="submit" name="submit"
+                                        class="btn btn-secondary mb-5">Cancel</button>
+                                    <button type="button" id="submit" name="submit" class="btn btn-primary mb-5"
+                                        onclick="save()">Add</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div id="home"
+        style="font-size:12px;height:140px;word-wrap:break-word;padding:8px;margin-left:30%; margin-right:8%;border: 1px solid #cfd1d8;">
+        <div id="inner" style="">
+
+        </div>
+    </div>
+</body>
+<script>
+    function Add() {
+        var x = document.getElementById('add');
+        if (x.style.display === 'none') {
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+
+    function save() {
+        var name = $('#fullName').val();
+        var eMail = $('#eMail').val();
+        var phone = $('#phone').val();
+       
+        console.log(name)
+        $('#inner').append("<p>" + name + "</p><p>" + eMail + "</p><p>" + phone + "</p><p>" )
+        $('#eMail').val('');
+        $('#fullName').val('');
+        $('#phone').val('');
+       
+
+
+
+
+
+    }
+    $(document).ready(function () {
+
+        //   $(window).resize(function () {
+        //       if ($(window).width() < 700) {
+        //           $(".nav-bgcolor").removeClass('nav-bgcolor')
+        //       }
+        //       else{
+        //         $(".navbar").addClass('nav-bgcolor')
+        //       } 
+        // })
+
+
+        //for nav on mobile view
+
+        var fixHeight = function () {
+            $('.navbar-nav').css(
+                'max-height',
+                document.documentElement.clientHeight - 150
+            );
+        };
+        fixHeight();
+
+        $(window).resize(function () {
+            fixHeight();
+        });
+
+        $('.navbar .navbar-toggler').on('click', function () {
+            fixHeight();
+        });
+
+
+        $('.navbar-toggler,.overlay,.btnclsnav').on('click', function () {
+            $('.mobileMenu,.overlay,.btnclsnav').toggleClass('open');
+        });
+
+
+
+        //for banner portion
+        $('.carousel').carousel({
+            interval: 3000,
+            keyboard: true,
+            pause: 'hover',
+            wrap: true
+        });
+
+        $('#slider4').on('slide.bs.carousel', function () {
+            console.log('SLIDE!');
+        });
+
+        $('#slider4').on('slid.bs.carousel', function () {
+            console.log('SLID!');
+        });
+
+
+
+        //current year for copyright
+        document.getElementById("footeryear").innerHTML = new Date().getFullYear();
+
+
+
+
+
+    });
+</script>
+
+</html>

@@ -55,11 +55,15 @@ body {
   width: 100 px;
   height: auto;
   text-align: center;
-  border: 5px solid blue;
-  border-radius: 10%;
+  background-color: white;
+  border-radius: 5%;
   padding: 0;
-
+  box-shadow: 0px 0px 13px 8px rgb(192 211 232);
 }
+
+/* .product-details {
+  justify-content: space-evenly;
+} */
 
 /* anchor tags */
 a:hover {
@@ -91,12 +95,12 @@ a:active {
   width: 20%;
   float: left;
   flex-wrap: nowrap;
-  /* margin: 0px 0px 25px 55px; */
   margin-top: 2%;
   padding: 0 0 0 0;
   text-align: center;
-  background-color: rgb(209, 207, 207);
-  border-radius: 10%;
+  background-color: transparent;
+  border-radius: 5%;
+  box-shadow: 0px 0px 13px 8px rgb(192 211 232);
 }
 
 .productpage-similar:hover {
@@ -111,8 +115,9 @@ a:active {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10%;
-
 }
+
+
 
 @media only screen and (max-width:750px) {
   .productpageimage-main {
@@ -126,7 +131,6 @@ a:active {
     width: 40%;
     float: left;
     flex-wrap: nowrap;
-    /* margin: 0px 0px 27px 58px; */
     margin-top: 2%;
     padding: 0 0 0 0;
     text-align: center;
@@ -150,12 +154,80 @@ a:active {
 }
 
 /* reviews */
-.ratings {
+/* .ratings {
   width: 210px;
   text-align: center;
   border: 5px solid blue;
   border-radius: 10%;
+} */
+
+
+/* Add Quantity Button */
+/* -- quantity box -- */
+
+.quantity {
+  display: inline-block;
 }
+
+.quantity .input-text.qty {
+  width: 35px;
+  height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+  border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+  border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+  background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+  outline: none;
+}
+
+
+
 
 /* wishlist button */
 .wishlist-btn {
