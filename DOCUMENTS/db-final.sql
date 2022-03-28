@@ -1,3 +1,9 @@
+
+create database pharmacy;
+
+use pharmacy;
+
+
 CREATE TABLE `admin` (
   `AdminId` int NOT NULL,
   `Username` varchar(45) NOT NULL,
