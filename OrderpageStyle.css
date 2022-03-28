@@ -1,0 +1,68 @@
+
+#Myorderpage {
+    background-color: rgb(255, 255, 255);
+    
+    margin-top: 10px;
+    align-items:center;
+    border: 2px solid rgb(194, 187, 187);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+
+#Myorderpage .orderrow{
+    justify-content: space-around;
+    width: 70%;
+    min-height: 175px;
+    margin: auto;
+    margin-bottom: 5px;
+    margin-bottom: 5px;
+    
+    background-color: #fcfcfc;
+    border: 2px solid rgb(194, 187, 187);
+    border-radius: 12px;
+    padding: 20px;
+    
+
+}
+
+@media only screen and (max-width: 750px) {
+    #Myorderpage .orderrow{
+        height: auto;
+        width: 90%;
+    }
+
+}
+
+#Myorderpage .dorderid{
+    width: 50%;
+    
+}
+#Myorderpage .orderdate{
+    width: 50%;
+    
+}
+
+#Myorderpage .dpname{
+    width: 50%;
+   
+}
+#Myorderpage .mediorderdetail{
+    width: 100%;
+}
+#Myorderpage .delvdate{
+    width: 50%;
+}
+
+#Myorderpage .orderStatus{
+    width: 50%;
+}
+#Myorderpage .details-btn{
+    width: 50%;
+}
+#Myorderpage .cancle-btn{
+    width: 50%;
+}
+
+
+
