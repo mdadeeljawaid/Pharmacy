@@ -2,362 +2,365 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-    <link rel="stylesheet" href="mystyle.css" />
-    <script src="myjScript.js"></script>
-    <link rel="stylesheet" href="cat.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOME</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="mystyle.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <script src="myjScript.js"></script>
+  <link rel="stylesheet" href="cat.css">
+  <style>
+    .bloc_left_price {
+      color: #c01508;
+      text-align: center;
+      font-weight: bold;
+      font-size: 150%;
+    }
+
+    .category_block li:hover {
+      background-color: #007bff;
+    }
+
+    .category_block li:hover a {
+      color: #ffffff;
+    }
+
+    .category_block li a {
+      color: #343a40;
+    }
+
+    .add_to_cart_block .price {
+      color: #c01508;
+      text-align: center;
+      font-weight: bold;
+      font-size: 200%;
+      margin-bottom: 0;
+    }
+
+    .add_to_cart_block .price_discounted {
+      color: #343a40;
+      text-align: center;
+      text-decoration: line-through;
+      font-size: 140%;
+    }
+
+    .product_rassurance {
+      padding: 10px;
+      margin-top: 15px;
+      background: #ffffff;
+      border: 1px solid #6c757d;
+      color: #6c757d;
+    }
+
+    .product_rassurance .list-inline {
+      margin-bottom: 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .product_rassurance .list-inline li:hover {
+      color: #343a40;
+    }
+
+    .reviews_product .fa-star {
+      color: gold;
+    }
+
+    .pagination {
+      margin-top: 20px;
+    }
+
+    footer {
+      background: #343a40;
+      padding: 40px;
+    }
+
+    footer a {
+      color: #f8f9fa !important
+    }
+  </style>
 </head>
 
 <body class="">
-    <!-- header section -->
-    <header class="container-fluid row" id="headertop">
-        <!-- logo -->
-        <div class="container-fluid col-3">
-            <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
+  <!-- header section -->
+  <header class="container-fluid row" id="headertop">
+    <!-- logo -->
+    <div class="container-fluid col-3">
+      <img src="./image/logo1.png" alt="@logo" height="auto" width="200px" />
+    </div>
+
+    <!-- search -->
+    <div class="container-fluid col-5 mt-3">
+      <form class="d-flex input-group">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+        <div class="input-group-append">
+          <button class="btn btn-" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- accountSec    -->
+    <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
+      <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fas fa-user">Account</i>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <a href="./login.html">LOGIN</a>
+        </li>
+        <li>
+          <a href="./registration.html">SIGNUP</a>
+        </li>
+
+        <li>
+          <hr class="dropdown-divider" />
+        </li>
+        <li><a class="dropdown-item" href="#">SELLER</a></li>
+      </ul>
+    </div>
+
+    <!-- cart -->
+    <div class="container-fluid col-1 mt-3">
+      <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
+      </a>
+    </div>
+  </header>
+
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
+    <div class="container-fluid">
+      <!-- nav hide on big screen -->
+      <div id="navhide">
+        <div class="row justify-content-around">
+          <!-- togler button -->
+          <div class="container-fluid col-2 mx-1">
+            <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <!-- logo nav-->
+          <div class="container-fluid col-5 ml-1">
+            <div id="logonav">
+              <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
+            </div>
+          </div>
+          <!-- cart nav -->
+          <div class="container-fluid col-4 justify-content-around">
+            <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
+            </a>
+          </div>
         </div>
 
-        <!-- search -->
-        <div class="container-fluid col-5 mt-3">
-            <form class="d-flex input-group">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <div class="input-group-append">
-                    <button class="btn btn-" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
+        <!-- search nav -->
+        <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
+          <form class="d-flex input-group">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <div class="input-group-append">
+              <button class="btn btn-" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </form>
         </div>
+      </div>
 
-        <!-- accountSec    -->
-        <div class="accountSec container-fluid col-3 mt-3 navbar-expand-lg" id="acctTop">
-            <button class="btn dropdown-toggle float-lg-right float-md-right" type="button" data-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fas fa-user">Account</i>
+      <div
+        class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
+        id="navbarSupportedContent">
+        <ul class="navbar-nav align-self-stretch justify-content-around">
+          <!-- nav close button -->
+          <button type="button" class="btn btnclsnav" id="navhide">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+          <li class="nav-item justify-content-around">
+            <a class="nav-link active" aria-current="page" href="./index.html"><i class="fa fa-home"></i>Home</a>
+          </li>
+          <li class="nav-item justify-content-around">
+            <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
+          </li>
+          <li class="nav-item justify-content-around">
+            <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
+          </li>
+          <li class="nav-item justify-content-around">
+            <a href="wishlist.html" class="nav-link" role="button"><i class="fa fa-address-book"></i>Contact Us</a>
+          </li>
+          <!-- accountSec after size decrease -->
+          <li class="nav-item justify-content-around" id="accountSec">
+            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user"></i>ACCOUNT
             </button>
             <ul class="dropdown-menu">
-                <li>
-                    <a href="./login.html">LOGIN</a>
-                </li>
-                <li>
-                    <a href="./registration.html">SIGNUP</a>
-                </li>
+              <li>
+                <a href="./login.html">LOGIN</a>
+              </li>
+              <li>
+                <a href="./registration.html">SIGNUP</a>
+              </li>
 
-                <li>
-                    <hr class="dropdown-divider" />
-                </li>
-                <li><a class="dropdown-item" href="#">SELLER</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li><a class="dropdown-item" href="#">SELLER</a></li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="overlay"></div>
+  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!--+++++++++++++++++++++++++++++++++++++work from here+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-        <!-- cart -->
-        <div class="container-fluid col-1 mt-3">
-            <a href="cart.html" class="btn" role="button"><i class="fas fa-cart-plus">Cart</i>
-            </a>
-        </div>
-    </header>
 
-    <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg navbar-light nav-bgcolor CustmPadingMargin" id="top_nav">
-        <div class="container-fluid">
-            <!-- nav hide on big screen -->
-            <div id="navhide">
-                <div class="row justify-content-around">
-                    <!-- togler button -->
-                    <div class="container-fluid col-2 mx-1">
-                        <button class="navbar-toggler align-self-start border-0 bg-white rounded" type="button">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <!-- logo nav-->
-                    <div class="container-fluid col-5 ml-1">
-                        <div class="mobnavlogobg" id="logonav">
-                            <img src="./image/logo1.png" alt="@logo" height="auto" width="100px" />
-                        </div>
-                    </div>
-                    <!-- cart nav -->
-                    <div class="container-fluid col-4 justify-content-around">
-                        <a href="cart.html" class="btn ml-5" role="button"><i class="fas fa-cart-plus">Cart</i>
-                        </a>
-                    </div>
+ <div class="main-div-product">
+   <div id="categories" class="list-group mt-3">
+    <ul id="cat-ul">
+      <li class="card-header bg-primary text-white text-uppercase list-group text-center"> Categories</li>
+      <li class="list-group-item text-center"><a href="#">Covid Essential</a></li>
+      <li class="list-group-item text-center"><a href="#">Good products</a></li>
+      <li class="list-group-item text-center"><a href="#">best product</a></li>
+      <li class="list-group-item text-center"><a href="#">baba ki booty</a></li>
+    </ul>
+   </div>
+ </div>
+
+</div>
+
+
+<div class="col" id="products">
+  <div class="row">
+      <div class="col-sm-4 mt-3 " id="product-div">
+          <div class="card">
+            <a href="./Adeel/Product.html">
+              <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+              <div id="product-des">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                of the card's
+                content.</p>
+              </div>
+              <div class="container">
+                <div class="row no-gutters">
+                  <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+                  <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
                 </div>
+              </div>
+          </div>
+      </div>
 
-                <!-- search nav -->
-                <div class="container-fluid mt-3 ml-auto mt-0 row" id="navhide">
-                    <form class="d-flex input-group">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                        <div class="input-group-append">
-                            <button class="btn btn-" type="submit">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+      <div class="col-sm-4 mt-3 " id="product-div">
+        <div class="card">
+          <a href="./Adeel/Product.html">
+            <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+            <div id="product-des">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+              of the card's
+              content.</p>
             </div>
-
-            <div class="collapse navbar-collapse p-3 p-lg-0 mt-lg-0 d-flex flex-column flex-lg-row flex-xl-row justify-content-lg-end mobileMenu"
-                id="navbarSupportedContent">
-                <ul class="navbar-nav align-self-stretch navUl">
-                    <!-- nav close button -->
-                    <!-- <button type="button" class="btn btnclsnav" id="navhide">
-              <span aria-hidden="true">&times;</span>
-            </button> -->
-                    <a class="btnclsnav" id="navhide"><img alt="logo" src="./image/Closeicon.png" height="30px"
-                            width="30px" </a> <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html"><i
-                                class="fa fa-home"></i>Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Adeel/Product.html"><i class="fa fa-store"></i>Shop</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="./aboutus.html" class="nav-link" role="button">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contactus.html" class="nav-link" role="button"><i
-                                    class="fa fa-address-book"></i>Contact Us</a>
-                        </li>
-                        <!-- accountSec after size decrease -->
-                        <li class="nav-item" id="accountSec">
-                            <button class="btn dropdown-toggle" type="button" data-toggle="dropdown"
-                                aria-expanded="false">
-                                <i class="fas fa-user"></i>ACCOUNT
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>
-                                    <a href="./login.html">LOGIN</a>
-                                </li>
-                                <li>
-                                    <a href="./registration.html">SIGNUP</a>
-                                </li>
-
-                                <li>
-                                    <hr class="dropdown-divider" />
-                                </li>
-                                <li><a class="dropdown-item" href="#">SELLER</a></li>
-                            </ul>
-                        </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="overlay"></div>
-    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-    <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-
-
-    <div class="container-fluid">
-
-        <div class="card bg-light mb-3 float-sm-left mt-3" id="cat-nav">
-            <div class="card-header bg-primary text-white text-uppercase"></i> Categories</div>
-            <ul class="list-group category_block">
-                <li class="list-group-item"><a href="cat.html">Cras justo odio</a></li>
-                <li class="list-group-item"><a href="category.html">Dapibus ac facilisis in</a></li>
-                <li class="list-group-item"><a href="category.html">Morbi leo risus</a></li>
-                <li class="list-group-item"><a href="category.html">Porta ac consectetur ac</a></li>
-                <li class="list-group-item"><a href="category.html">Vestibulum at eros</a></li>
-            </ul>
-
-        </div>
-
-
-        <div class="col" id="products">
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body ">
-                            <h4 class="card-title"><a href="product.html" title="View Product">dettol</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col" id="cart-sec">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-4 mt-3">
-                    <div class="card">
-                        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="product.html" title="View Product">Product title</a></h4>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of the card's
-                                content.</p>
-                            <div class="row">
-                                <div class="col">
-                                    <p id="del"><del> MRP ₹99.00</del></p>
-                                    <p class="price">₹69.00 </p>
-                                </div>
-                                <div class="col">
-                                    <a href="#" class="btn btn-success btn-block text-light"><i class="fa fa-cart-plus"
-                                            aria-hidden="true"></i>Add to Cart</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="container">
+              <div class="row no-gutters">
+                <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+                <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+              </div>
             </div>
         </div>
     </div>
-    <!-- footer -->
-    <footer id="main-footer" class="container-fluid">
-        <div class="row align-items-center">
-            <div class="col">
-                <p>
-                    <b>Visit us at:</b><br />
-                    mediwalabox.com<br />
-                    Bailey road<br />
-                    Patna<br />
-                    Bihar<br />
-                    800014
-                </p>
-            </div>
 
-            <div class="col">
-                <div class="">
-                    <p>
-                        <b>Copyright &copy;
-                            <span id="footeryear"></span>
-                            'G3'<br />
-                            All Rights Reserved.</b>
-                    </p>
-                </div>
+    <div class="col-sm-4 mt-3 " id="product-div">
+      <div class="card">
+        <a href="./Adeel/Product.html">
+          <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+          <div id="product-des">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk
+            of the card's
+            content.</p>
+          </div>
+          <div class="container">
+            <div class="row no-gutters">
+              <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+              <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
             </div>
+          </div>
+      </div>
+  </div>
 
-            <div id="footerrightside" class="col">
-                <div class="">
-                    <p><i class="fa fa-mobile"></i> +91 1234567890</p>
-                    <p><i class="fa fa-mobile"></i> +91 1234567890</p>
-                </div>
-
-                <div class="d-flex justify-content-center socialmediatag">
-                    <div class="p-1">
-                        <a href="http://facebook.com">
-                            <img src="./image/imgpng/facebook.png" alt="@fb" width="30px" />
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="http://twitter.com">
-                            <img src="./image/imgpng/twitter.png" alt="@tw" width="35px" />
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="http://instagram.com">
-                            <img src="./image/imgpng/instagram.png" alt="@inst" width="30px" />
-                        </a>
-                    </div>
-                    <div class="p-1">
-                        <a href="http://www.whatsapp.com">
-                            <img src="./image/imgpng/WhatsApp-logo.png  " alt="@wapp" width="30px" />
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <div class="col-sm-4 mt-3 " id="product-div">
+    <div class="card">
+      <a href="./Adeel/Product.html">
+        <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+        <div id="product-des">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+          of the card's
+          content.</p>
         </div>
-    </footer>
+        <div class="container">
+          <div class="row no-gutters">
+            <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+            <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+          </div>
+        </div>
+    </div>
+</div>
 
+<div class="col-sm-4 mt-3 " id="product-div">
+  <div class="card">
+    <a href="./Adeel/Product.html">
+      <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+      <div id="product-des">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+        of the card's
+        content.</p>
+      </div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+          <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<div class="col-sm-4 mt-3 " id="product-div">
+  <div class="card">
+    <a href="./Adeel/Product.html">
+      <img class="card-img-top" src="Adeel/image/dettol1.jpg" alt="Card image cap"></a>
+      <div id="product-des">
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk
+        of the card's
+        content.</p>
+      </div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col" id="del"><p id="del" ><del > MRP ₹99.00</del></p><p class="price">₹69.00</p></div>
+          <div class=" col-sm-6"><a href="#" class="btn btn-success btn-block text-light"> Add to <i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+    
+   
+    </div>
+  </div>
+
+  
 </body>
+</html>
+</body>
+
 
 </html>
