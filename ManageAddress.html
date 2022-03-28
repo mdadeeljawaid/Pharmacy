@@ -17,6 +17,82 @@
     <script src="myjScript.js"></script>
     <link rel="stylesheet" href="profilestyle.css">
     <script src="profilejs.js"></script>
+    <style>
+        .account-settings .user-profile {
+            margin: 0 0 1rem 0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .account-settings .user-profile .user-avatar {
+            margin: 0 0 1rem 0;
+        }
+
+        .account-settings .user-profile .user-avatar img {
+            width: 90px;
+            height: 90px;
+            -webkit-border-radius: 100px;
+            -moz-border-radius: 100px;
+            border-radius: 100px;
+        }
+
+        .account-settings .user-profile h5.user-name {
+            margin: 0 0 0.5rem 0;
+        }
+
+        .account-settings .user-profile h6.user-email {
+            margin: 0;
+            font-size: 0.8rem;
+            font-weight: 400;
+            color: #9fa8b9;
+        }
+
+        .account-settings .about {
+            margin: 2rem 0 0 0;
+            text-align: center;
+        }
+
+        .account-settings .about h5 {
+            margin: 0 0 15px 0;
+            color: #007ae1;
+        }
+
+        .account-settings .about p {
+            font-size: 0.825rem;
+        }
+
+        .form-control {
+            padding: 4px;
+            border: 1px solid #cfd1d8;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+
+            background: #ffffff;
+            color: #2e323c;
+        }
+
+        .card {
+            background: #ffffff;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            border: 0;
+            margin-bottom: 1rem;
+        }
+
+        .form-group {
+            margin: 10px;
+        }
+
+        #buttons {
+            margin: 10px;
+        }
+
+        .card-body {
+            height: 300px;
+        }
+    </style>
 </head>
 
 <body class="">
@@ -145,7 +221,7 @@
             </div>
         </div>
     </nav>
-    <div class="overlay"></div>
+
 
 
 
@@ -154,37 +230,38 @@
 
 
     <!-- Profile Page -->
-    <div class="container" id="demo2">
-        <div class="row gutters">
-            <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <div class="account-settings">
-                            <div class="user-profile">
-                                <div class="user-avatar">
-                                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="naiyer iqbal">
+    <section>
+        <div class="container" id="demo2">
+            <div class="row gutters">
+                <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-6">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <div class="account-settings">
+                                <div class="user-profile">
+                                    <div class="user-avatar">
+                                        <img src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                                            alt="naiyer iqbal">
+                                    </div>
+                                    <h5 class="user-name">Naiyer Iqbal</h5>
+                                    <h6 class="user-email">naiyeriqbal678@gmail.com</h6>
                                 </div>
-                                <h5 class="user-name">Naiyer Iqbal</h5>
-                                <h6 class="user-email">naiyeriqbal678@gmail.com</h6>
-                            </div>
-                            <div class="about">
-                                <h5>About</h5>
-                                <p>I'm Naiyer Iqbal. Java Developer at google california...</p>
+                                <div class="about">
+                                    <h5>About</h5>
+                                    <p>I'm Naiyer Iqbal. Java Developer at google california...</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- manage address -->
+                <!-- manage address -->
 
-            <div class="container">
-                <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-6" style="padding: 8px;">
-                    <span style="margin-left: 5px;">Manage Address</span><button style="margin-left: 70%;"
-                        onclick="Add()">Add New Address</button>
-                </div>
-                <div class="row">
-                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class="container">
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-6" style="padding: 8px;">
+                        <span style="margin-left: 5px;">Manage Address</span><button style="margin-left: 70%;"
+                            onclick="Add()">Add New Address</button>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-6">
                         <div class="card h-100">
 
                             <div class="card-body" id="add" style="display: none;">
@@ -241,13 +318,14 @@
                     </div>
 
                 </div>
-
-            </div> <br><br>
-
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     function Add() {
         var x = document.getElementById('add');
+        console.log(x)
         if (x.style.display === 'none') {
             x.style.display = 'block';
         } else {
