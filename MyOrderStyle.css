@@ -1,69 +1,25 @@
 *{
+    padding-left: 20px;
     margin: auto;
-    padding: justify;
+    margin-top: auto;
 }
 .row{
-    background-color: rgb(190, 231, 231);
-    background: justify;
-    background-color: none;
-    background scroll;
-    border: 80%;
-
+    padding: 30px;
+    margin-top: auto;
+    margin: 60px;
+    border: 80px;
+    height: 150px;
+    width: 70%;
 }
-
-.Col-1{
-    padding: 33px;
-    margin:33px;
-    border: 1px dotted rgb(86, 170, 170);
-    border-radius: 10px;
-    height: 140px;
-    margin-bottom: 10px;
-    
+.Product-details{
+    padding: 10px;
+    margin: 0 2% 0 2%;
+    border: 1px dotted rgb(162, 209, 209);
+    border-radius: 5px;
+    height: 130px;
+    margin-bottom: 5px;
 }
-
-.Col-2{
-    padding: 33px;
-    margin:33px;
-    border: 1px dotted rgb(86, 170, 170);
-    border-radius: 10px;
-    height: 140px;
-    margin-bottom: 10px;
-    
+.medicine-image{
+    padding: justify;
+    margin: auto;
 }
-
-.Col-3{
-    padding: 33px;
-    margin:33px;
-    border: 1px dotted rgb(86, 170, 170);
-    border-radius: 10px;
-    height: 140px;
-    margin-bottom: 10px;
-    
-}
-    
-}
-.medicine-image {
-    float: left;
-    width: 30%;
-}
-.delete-item {
-    align-content: flex-end;
-    float: inline-start;
-    width: 80px;
-    text-align: center;
-}
-.delete-item:hover {
-    background-color: rgb(216, 34, 34);
-}
-
-@media (max-width: 700px) {
-    .row {
-        height: 200px;
-        width: 100%;
-        margin: 0;
-        margin-bottom: 5px;
-    }
-
-    
-
-    .medicine-details,
