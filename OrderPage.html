@@ -15,7 +15,7 @@
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
   <link rel="stylesheet" href="mystyle.css" />
   <script src="myjScript.js"></script>
-  <link rel="stylesheet" href="./MyOrderStyle.css">
+  <link rel="stylesheet" href="./OrderpageStyle.css">
 </head>
 
 <body>
@@ -200,61 +200,73 @@
   <!--+++++++++++++++++++++++++++++++++++++work from here+++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
   <!-- YOUR SOME ORDER-->
+  
+  
 
-  <h1 style="height: 60px; line-height: 60px; background-color: rgb(190, 231, 231); padding-left: 5%;">
-    My Orders</h1>
-  <hr style="height: 5px; box-shadow: inset 0 9px 90px -30px rgba(8, 12, 1, 0.952);">
+  <section Id="Myorderpage" class="container container-fluid py-4">
+         
+    <p>order list</p>
+        
+          <div class=" row  orderrow   " >
+            
+            <div class="dorderid "> 
+              <b><strong>Order Id :  ABC001576</strong></b>
+            </div>
 
-  <!---------------Product----------------------->
-  <div class="row">
-    <div class="Col-1">
-        <div class="Product-details">
-          <div class="medicine-image">
-            <img src="image/medicine.png" width="30%" />
-        </div>
-          <span id="Product-name"><Strong>BLISTO F2 500mg</Strong></span>
-          <span id="Product-info"><u>BY CIPELA</u></span>
-          <h6>Delevery_Date:</h6>
-          <br>
-        <br>
-          <span id="Quantity">Quantity:-</span>
-       </div>
-          <div class="Medicine-right">
-            <span style="font-weight: 700; color:  rgb(6, 79, 175);">
-                Price/Unit: &#x20b9; <span id="item1price">450</span>
-            </span>
-            <br>
-            <button class="delete-item">Cancel</button>
-        </div>
-      </div>
+            <div class="orderdate">
 
-      <div class="Col-2">
-          <div class="Product-details">
-            <div class="medicine-image">
-              <img src="image/medicine.png" width=30%" />
-          </div
-            <span id="Product-name"><Strong>CALPOLE 500mg</Strong></span>
-            <span id="Product-info"><u>BY CIPELA</u></span>
-            <h5>Delevery_Date:</h5>
-            <br>
-          <br>
-            <span id="Quantity">Quantity:-</span>
-         </div>
-            <div class="Medicine-right">
-              <span style="font-weight: 700; color:  rgb(6, 79, 175);">
-                  Price/Unit: &#x20b9; <span id="item1price">450</span>
-              </span>
-              <br>
-              <button class="delete-item">Cancel</button>
-          </div>
-        </div>
-      </div>
+              <b class="">Order date :<strong>12-44-5454</strong></b>
+              
+            </div>
+
+            <div class="dpname text-left">
+              <b class="">saddam bhai</b>
+            </div>
+
+            <div class="mediorderdetail">
+              <b class="">asprin+1</b>
+            </div>
+
+           
+              
+            <div class="delvdate ">
+
+              <b class="">Delivery date :<strong>12-44-5454</strong></b>
+
+            </div>
+
+            <div class="orderStatus">
+              <b class="text-success"><strong>Delivered</strong></b>
+            </div>
+
+
+            <div class="details-btn">
+              <a href=# class="btn btn-secondary">
+                <i class="fas fa-angle-double-right"></i> Details
+              </a>
+            </div>
+
+            <div class="cancle-btn ">
+              <a href=# class="btn btn-secondary">
+                &times; Cancel
+              </a>
+            </div>
+
+
+          </div> 
+
     
+        
+         
+       
+  </section>
 
-   </div>
-  <aside></aside>
-  <section></section>
-  <footer></footer>
+  
+
+ 
+
+ 
+
 </body>
 
 </html>
