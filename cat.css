@@ -2,6 +2,9 @@
     width: 270px;float: left;
     height: 100%;
 }
+.card-title{
+    color: blue;
+}
 @media only screen and (max-width:700px) {
     #categories{
      display:none;
