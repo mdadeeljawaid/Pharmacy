@@ -1,0 +1,17 @@
+Logo                    - done
+About us                - done
+Contact us              - done
+Login                   - done
+Registration            - done
+Menu                    - done
+Navbar                  - done
+home page               - done
+category wise product   - done
+search listing page     - done 
+product detail page     - done 
+profile page            - done 
+order page              - done
+cart page               - done
+wishlist page           - not done 
+seller page             - not done
+admin page              - not done
