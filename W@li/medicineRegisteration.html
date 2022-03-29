@@ -83,7 +83,7 @@
     <!-- ============================================================================================================ -->
 
     <div class="container-fluid py-4">
-        <form action="">
+        <form id="medicineRegisterpage" action="">
         <legend>Medicine Registartion</legend>
         <div class="input-group input-group-sm">
             <div class="input-group-prepend">
@@ -95,9 +95,9 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm">Medicine Name</span>
             </div>
-            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
           </div>
-
+           
           <div class="input-group input-group-sm">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm">Prescription</span>
@@ -113,9 +113,12 @@
 
           <div class="input-group input-group-sm">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Manufacture Id</span>
+              <span class="input-group-text" id="inputGroup-sizing-sm">Manufacture Name</span>
             </div>
-            <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            <select name="Manufacture" id="Manufacture">
+              <option value="none">select</option>
+              <option value="Cardio">Sun Pharma</option>
+            </select>
           </div>
 
           <div class="input-group input-group-sm">
@@ -162,7 +165,7 @@
 
           <div class="input-group input-group-sm">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Chemical Class Id</span>
+              <span class="input-group-text" id="inputGroup-sizing-sm">Chemical Class Name</span>
             </div>
             <input type="number" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
           </div>
@@ -176,9 +179,14 @@
 
           <div class="input-group input-group-sm">
             <div class="input-group-prepend">
-              <span class="input-group-text" id="inputGroup-sizing-sm">Therapeutic Class</span>
+              <span class="input-group-text" id="inputGroup-sizing-sm">Therapeutic Name</span>
             </div>
-            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            
+            <select name="Therapeutic" id="Therapeutic">
+              <option value="none">None</option>
+              <option value="Cardio">Cardio</option>
+            </select>
+          
           </div>
 
           <div class="input-group input-group-sm">
@@ -192,19 +200,25 @@
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm">Medicine Url 1</span>
             </div>
-            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
           </div>
 
           <div class="input-group input-group-sm">
             <div class="input-group-prepend">
               <span class="input-group-text" id="inputGroup-sizing-sm">Medicine Url 2</span>
             </div>
-            <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+            <div class="custom-file">
+              <input type="file" class="custom-file-input" id="customFile">
+              <label class="custom-file-label" for="customFile">Choose file</label>
+            </div>
           </div>
 
           <div id="button-med-reg" class="">
-          <input type="button" class="btn-danger btn-lg" value="reset">
-          <input class="btn-success btn-lg" type="button" value="submit">
+          <input type="button" class="btn-danger btn-lg" value="Reset">
+          <input class="btn-success btn-lg" type="button" value="Submit">
         </div>
         </form>
     </div>

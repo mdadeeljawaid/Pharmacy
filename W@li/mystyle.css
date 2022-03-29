@@ -1,5 +1,5 @@
 .input-group-text{
-    width: 135px;
+    width: 145px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -17,5 +17,10 @@ input[type=number] {
 #button-med-reg{
     float: right;
     margin-top: 10px;
+}
+
+#medicineRegisterpage{
+  width: 50%;
+  margin: auto;
 }
 
