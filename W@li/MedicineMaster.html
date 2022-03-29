@@ -90,53 +90,181 @@
       </div>
     </header>
 
-
-     <!-- ACTIONS -->
-     <section id="actions" class="py-4 mb-4 bg-light">
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
-            <a href="medicineRegisteration.html" class="btn btn-primary btn-block">
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-success btn-block"
+              data-toggle="collapse"
+              href="#collapseMedicineinventery"
+            >
+              Medicineinventery
+            </a>
+          </div>
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-warning btn-block"
+              data-toggle="collapse"
+              href="#collapseManufactureList"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              ManufactureList
+            </a>
+          </div>
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-warning btn-block"
+              data-toggle="collapse"
+              href="#collapseTherapeuticClassList"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              Therapeutic Class List
+            </a>
+          </div>
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-warning btn-block"
+              data-toggle="collapse"
+              href="#collapsechemicalclassList"
+              role="button"
+              aria-expanded="false"
+              aria-controls="collapseExample"
+            >
+              chemical class List
+            </a>
+          </div>
+
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-primary btn-block"
+              data-toggle="collapse"
+              href="#collapseADDMedicineData"
+            >
               <i class="fas fa-plus"></i> ADD Medicine Data
             </a>
           </div>
-          <div class="col-md-3">
-            <a href="medicineInventory.html" class="btn btn-success btn-block">
-             Medicine inventery
-            </a>
-          </div>
-          <div class="col-md-3">
-            <a href="" class="btn btn-warning btn-block">
-               Manufacture List
+
+          <div class="col-md-3 my-1">
+            <a
+              class="btn btn-danger btn-block"
+              data-toggle="collapse"
+              href="#collapseAddManufacture"
+            >
+              <i class="fas fa-plus"></i> Add Manufacture
             </a>
           </div>
 
-          <div class="col-md-3">
-            <a href="" class="btn btn-danger btn-block">
-              <i class="fas fa-plus"></i>  Add Manufacture
-            </a>
-          </div>
-
-          <div class="col-md-3">
-            <a href="" class="btn btn-info btn-block">
+          <div class="col-md-3 my-1">
+            <a
+              href=""
+              class="btn btn-info btn-block"
+              data-toggle="collapse"
+              href="#collapseAddchemicalClass"
+            >
               <i class="fas fa-plus"></i> Add chemical Class
             </a>
           </div>
 
-          <div class="col-md-3">
-            <a href="" class="btn btn-dark btn-block">
-              <i class="fas fa-plus"></i>  Add theraputic Class
+          <div class="col-md-3 my-1">
+            <a
+              href=""
+              class="btn btn-dark btn-block"
+              data-toggle="collapse"
+              href="#collapseAddtheraputicClass"
+            >
+              <i class="fas fa-plus"></i> Add theraputic Class
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    
+    <!-- manafacture list -->
+    <div class="container collapse" id="collapseManufactureList">
+      <div class="row container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <h4>Manufacture List</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Manufacturer id</th>
+                <th>Manufacturer Name</th>
+                <th>Description</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>intas</td>
+                <td>dgdg</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
-    
+    <!-- chemical class list -->
+    <div class="container collapse" id="collapsechemicalclassList">
+      <div class="row container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <h4>Manufacture List</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>chemical class</th>
+                <th>chemical class Name</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>intas</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
-
+    <!-- Therapeutic Class list -->
+    <div class="container collapse" id="collapseTherapeuticClassList">
+      <div class="row container-fluid">
+        <div class="card">
+          <div class="card-header">
+            <h4>Manufacture List</h4>
+          </div>
+          <table class="table table-striped">
+            <thead class="thead-dark">
+              <tr>
+                <th>Therapeutic Class id</th>
+                <th>Therapeutic Class Name</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>cardic</td>
+                <td>dgdg</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
