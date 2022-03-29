@@ -42,7 +42,7 @@
 #order-details {
     margin: 1% 1% 0 1%;
     padding: 0;
-    border-top: 1px dotted grey;
+    border-top: 2px solid grey;
 }
 
 #cancel-order {
@@ -51,6 +51,16 @@
     padding: 1%;
     width: 100px;
     border-radius: 2px;
+}
+
+.order-item {
+    border-bottom: 1px dotted grey;
+}
+
+
+
+#seller-name {
+    font-weight: 600;
 }
 
 @media only screen and (max-width: 750px) {
