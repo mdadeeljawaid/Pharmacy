@@ -50,40 +50,58 @@
                 <div class="col-md-6 mx-auto">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Account Login</h4>
+                            <h4>Seller Registration</h4>
                         </div>
                         <div class="card-body">
                             <form>
-                                <label for="email"><b>Email</b></label>
-                                <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                                <div class="form-group">
+                                    <label for="email"><b>Email</b></label>
+                                    <input type="text" class="form-control" placeholder="Enter Email" name="email" id="email" required>
+                                </div>
 
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                                <div class="form-group">
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" class="form-control" placeholder="Enter Password" name="psw" id="psw" required>
+                            </div>
 
+                            <div class="form-group">
                                 <label for="psw-reEnter"><b>ReEnter Password</b></label>
-                                <input type="password" placeholder="ReEnter Password" name="psw-reEnter"
+                                <input type="password" class="form-control" placeholder="ReEnter Password" name="psw-reEnter"
                                     id="psw-reEnter" required>
+                                </div>
 
+                                <div class="form-group">
                                 <label for="ShopName"><b>ShopName</b></label>
-                                <input type="text" placeholder="Enter ShopName" name="ShopName" id="ShopName" required>
+                                <input type="text" class="form-control" placeholder="Enter ShopName" name="ShopName" id="ShopName" required>
+                            </div>
 
+                            <div class="form-group">
                                 <label for="ShopRegNo"><b>ShopRegNo</b></label>
-                                <input type="text" placeholder="EnterShopRegNo " name="ShopRegNo" id="ShopRegNo"
+                                <input type="text" class="form-control" placeholder="EnterShopRegNo " name="ShopRegNo" id="ShopRegNo"
                                     required>
+                                </div>
 
+                                <div class="form-group">
                                 <label for="ShopContactNo"><b>ShopContactNo</b></label>
-                                <input type="text" placeholder="ShopContactNo " name="ShopContactNo" id="ShopContactNo"
+                                <input type="text" class="form-control" placeholder="ShopContactNo " name="ShopContactNo" id="ShopContactNo"
                                     required>
+                                </div>
 
+                                <div class="form-group">
                                 <label for="ShopAddress"><b>ShopAddress</b></label>
-                                <input type="text" placeholder=" ShopAddress" name="ShopAddress" id="ShopAddress"
+                                <input type="text" class="form-control" placeholder=" ShopAddress" name="ShopAddress" id="ShopAddress"
                                     required>
+                                </div>
 
+                                <div class="form-group">
                                 <label for="ShopPincode"><b>Enter a ShopPincode:</b></label>
-                                <input type="text" id="pincode" name="pincode" maxlength="6"><br><br>
+                                <input type="text" class="form-control" placeholder="Shop Pin code"  id="ShopPincode" name="pincode" maxlength="6"><br><br>
+                            </div>
 
+                            <div class="form-group">
                                 <label for="myfile">Select a file:</label>
-                                <input type="file" id="myfile" name="myfile">
+                                <input type="file" class="form-control" id="myfile" name="myfile">
+                            </div>
 
                                 <input type="submit" value="Sign Up" class="btn btn-outline-light btn-block" />
 
