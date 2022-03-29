@@ -167,33 +167,59 @@
         <div class="row orderrow">
             <div class="col-6">
                 <h6>Order Id: <span id="orderid">ABC123456</span></h6>
-                <p id="product-name" style="display: inline;">Product Name</p>&emsp;
-                <span id="product-price"> &#x20b9; 999</span>
-                <p id="product-description">Product Description</p>
+                <h6 id="customer-name" style="display: inline;">Customer Name</h6>
+                <p>Delivery Address: <span id="delivery-address">Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Aliquid ea harum debitis, pariatur voluptatem illum!</span></p>
+
             </div>
             <div class="col-6">
-                <br>
+                <h6>Total Price &emsp;: <span id="grand-total-price"> &#x20b9; 5999</span></h6>
                 <p>Order Date &emsp;: <span id="order-date">29-03-2022</span></p>
                 <p>Delivery Date : <span id="order-date">30-03-2022</span></p>
                 <p>Status &nbsp;&emsp;&emsp;&emsp;: <span id="order-status">Dispatched</span></p>
+                <button class="btn-danger" id="cancel-order">Cancel</button>
             </div>
             <div class="row collapse" id="order-details">
-                <div class="col-6 p-2">
-                    <h6 id="customer-name">Customer Name</h6>
-                    <p>Delivery Address: <span id="delivery-address">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Aliquid ea harum debitis, pariatur voluptatem illum!</span></p>
-                    <br>
-                    <p>Seller Name: <span id="seller-name">Seller Name</span></p>
-                    <p>Seller Address: <span id="seller-address: ">Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Minus, expedita.</span></p>
+                <div class="row ml-1 order-item">
+                    <div class="col-6 col-md-6 p-2">
+                        <h6 id="product-name">Product Name1</h6>
+                        <p id="product-description">Product Description1</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla fugiat eius corrupti
+                            nostrum quasi esse optio provident quis nemo!</p>
+                    </div>
+                    <div class="col-4 offset-1 p-2">
+                        <br>
+                        <p>MRP &emsp;&emsp;&nbsp; : <span class="product-mrp">&#x20b9; 1099</span></p>
+                        <p>Discount&emsp;: <span class="product-discount">&#x20b9; 100</span></p>
+                        <hr>
+                        <p>Total Price&nbsp; : <span class="product-price">&#x20b9; 999</span> </p>
+                    </div>
                 </div>
-                <div class="col-4 offset-1 p-2">
-                    <p>MRP &emsp;&emsp;&nbsp; : <span class="product-mrp">&#x20b9; 1099</span></p>
-                    <p>Discount&emsp;: <span class="product-discount">&#x20b9; 100</span></p>
-                    <hr>
-                    <p>Total Price&nbsp; : <span class="product-price">&#x20b9; 999</span> </p>
-                    <br><br>
-                    <button class="btn-danger" id="cancel-order">Cancel</button>
+                <hr>
+                <div class="row ml-1 order-item">
+                    <div class="col-6 p-2">
+                        <h6 id="product-name">Product Name2</h6>
+                        <p id="product-description">Product Description2</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla fugiat eius corrupti
+                            nostrum quasi esse optio provident quis nemo!</p>
+                    </div>
+                    <div class="col-4 offset-1 p-2">
+                        <br>
+                        <p>MRP &emsp;&emsp;&nbsp; : <span class="product-mrp">&#x20b9; 1099</span></p>
+                        <p>Discount&emsp;: <span class="product-discount">&#x20b9; 100</span></p>
+                        <hr>
+                        <p>Total Price&nbsp; : <span class="product-price">&#x20b9; 999</span> </p>
+                    </div>
+                </div>
+                <div class="row ml-1">
+                    <div class="col-12 p-2 seller-details">
+                        <span id="seller-name">Seller Name</span>
+                        <p>Seller Address: <span id="seller-address: ">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Minus, expedita.</span></p>
+                    </div>
+
                 </div>
             </div>
         </div>
