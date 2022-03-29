@@ -83,24 +83,8 @@
 
     <!-- ============================================================================================================ -->
 
-    <!-- search -->
-    <!-- <div class="col-3 mt-3 ml-2">
-      <form class="d-flex input-group">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <div class="input-group-append">
-          <button class="btn btn-" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </form>
-    </div> -->
-
-    <div class="wrap mt-3 ml-4">
+    <!-- search button and text box -->
+    <div class="wrap mt-3">
       <div class="search">
          <input type="text" class="searchTerm" placeholder="Search.....">
          <button type="submit" class="searchButton">
@@ -109,32 +93,34 @@
       </div>
    </div>
 
-
+   <!-- Form -->
     <form>
-      <div class="form-group row mt-4 mr-4">
-        <label for="sellerid" class="col-sm-2 col-form-label ml-4">Seller Id :</label>
+      <div class="form-group row mt-4">
+        <label for="sellerid" class="col-sm-2 col-form-label">Seller Id :</label>
         <div class="col-sm-3">
           <input type="sellerid" class="form-control mr-4" id="sellerid">
         </div>
       </div>
-      <div class="form-group row mr-4">
-        <label for="medicineid" class="col-sm-2 col-form-label ml-4">Medicine Id :</label>
+      <div class="form-group row">
+        <label for="medicineid" class="col-sm-2 col-form-label">Medicine Id :</label>
         <div class="col-sm-3">
           <input type="medicineid" class="form-control" id="medicineid">
         </div>
       </div>
-      <div class="form-group row mr-4">
-        <label for="quantity" class="col-sm-2 col-form-label ml-4">Quantity :</label>
+      <div class="form-group row">
+        <label for="quantity" class="col-sm-2 col-form-label">Quantity :</label>
         <div class="col-sm-3">
           <input type="quantity" class="form-control" id="quantity">
         </div>
       </div>
-      <div class="form-group row mr-4">
-        <label for="discount" class="col-sm-2 col-form-label ml-4">Discount :</label>
+      <div class="form-group row">
+        <label for="discount" class="col-sm-2 col-form-label ">Discount :</label>
         <div class="col-sm-3">
           <input type="discount" class="form-control" id="discount">
         </div>
-      </div> 
+      </div>
+
+      <!-- Submit button -->
       <button type="submit" class="btn btn-primary submit">Submit</button>
     </form>
 
