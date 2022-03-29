@@ -14,4 +14,48 @@ order page              - done
 cart page               - done
 wishlist page           - not done 
 seller page             - not done
+    Login page      - not done
+    Registration page - not done
+    seller profile page - not done
+    Seller Medicine master - not done
+        display seller medicine page
+            medicineid
+            medicine name
+            quantity
+            discount
+            MRP
+            Selling price
+    order page      - not done
+        OrderId
+        CustomerId
+        OrderDate
+        OrderAmount
+        Discount
+        NetAmount
+        ShippingDate
+        ShippingAddressId
+        ShippingSellerId
+        StatusId
+
+    
 admin page              - not done
+    Login page      - done
+    Dashboard page  - done
+    medicine master - not done
+    profile page    - not done
+    user detail page - not done
+        table creation
+        user details
+    order page      - not done
+        OrderId
+        CustomerId
+        OrderDate
+        OrderAmount
+        Discount
+        NetAmount
+        ShippingDate
+        ShippingAddressId
+        ShippingSellerId
+        StatusId
+
+    
