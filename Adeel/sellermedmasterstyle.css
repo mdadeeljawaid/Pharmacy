@@ -1,3 +1,23 @@
+html,
+body {
+    width: 100%;
+
+    overflow-x: hidden;
+}
+
+@media (max-width:800px) {
+
+    html,
+    body {
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+
+    
+
+}
+
 .search {
     width: 100%;
     margin-left: 40%;
@@ -36,7 +56,7 @@
     border: 1px solid #00B4CC;
 }
 
-.form-group{
+.form-group {
     margin-left: 38%;
 }
 
