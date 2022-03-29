@@ -20,7 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="mystyle.css" />
-    <link rel="stylesheet" href="sellermedmasterstyle.css" />
+    <link rel="stylesheet" href="sellerMedicineMasterStyle.css" />
     <script src="myjScript.js"></script>
   </head>
 
@@ -83,72 +83,79 @@
     <!-- ============================================================================================================ -->
 
     <!-- search button and text box -->
-    <!-- search -->
-    <div class="container mx-auto row my-4">
-      <form class="d-flex input-group">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <div class="input-group-append">
-          <button class="btn btn-" type="submit">
-            <i class="fas fa-search"></i>
-          </button>
-        </div>
-      </form>
-    </div>
+      <!-- search -->
+      <div class=" container mx-auto row my-4">
+        <form class="d-flex input-group">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </form>
+      </div>
 
     <!-- Form -->
 
-    <section>
-      <div class="container mx-auto row my-4"></div>
-      <div class="card text-center card-form bg-primary mx-5">
-        <div class="card-body px-5">
-          <h3>quant update</h3>
+   <section>
+    <div class="container mx-auto row my-4" ></div>
+    <div class="card text-center card-form bg-primary">
+        <div class="card-body">
+          <h3>Quantity Update</h3>
           <p></p>
-          <form class="px-5">
-            <div class="form-group">
+
+          <form>
+            <div class="form-inline">
+            <div class="col-md-12 form-group">
+              <label for="sellerid" class="col-sm-2 col-form-label">Seller Id :</label>
               <input
                 type="text"
                 class="form-control form-control-lg"
-                placeholder="SellerId"
+                placeholder="Seller Id"
               />
             </div>
-            <div class="form-group">
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="medicineid" class="col-sm-2 col-form-label">Medicine Id :</label>
               <input
                 type="text"
                 class="form-control form-control-lg"
                 placeholder="Medicine Id"
               />
             </div>
-            <div class="form-group">
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="quantity" class="col-sm-2 col-form-label">Quantity :</label>
               <input
                 type="text"
                 class="form-control form-control-lg"
-                placeholder="Medicine Name"
+                placeholder="Medicine Id" 
               />
             </div>
-            <div class="form-group">
+          </div>
+          <div class="form-inline mt-2 mb-2">
+            <div class="col-md-12 form-group">
+              <label for="discount" class="col-sm-2 col-form-label">Discount :</label>
               <input
-                type="number"
+                type="text"
                 class="form-control form-control-lg"
-                placeholder="Quantity"
+                placeholder="Medicine Id" 
               />
             </div>
-            <div class="form-group">
-              <input
-                type="number"
-                class="form-control form-control-lg"
-                placeholder="Discount"
-              />
-            </div>
-            <input
+          </div>
+            <!-- <input
               type="submit"
               value="Sign Up"
               class="btn btn-outline-light btn-block"
-            />
+            /> -->
+            <button type="submit" class="btn btn-dark">Submit</button>
           </form>
         </div>
       </div>
