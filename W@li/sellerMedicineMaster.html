@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
+    <title>Seller's Medicine Master</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="stylesheet"
@@ -20,6 +20,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="mystyle.css" />
+    <link rel="stylesheet" href="sellermedmasterstyle.css" />
     <script src="myjScript.js"></script>
   </head>
 
@@ -44,7 +45,7 @@
               <a href="seller.html" class="nav-link">Seller</a>
             </li>
             <li class="nav-item px-2">
-              <a href="MedicineMaster.html" class="nav-link">MedicineMaster</a>
+              <a href="MedicineList.html" class="nav-link">MedicineMaster</a>
             </li>
             <li class="nav-item px-2">
               <a href="users.html" class="nav-link">Users</a>
@@ -79,19 +80,83 @@
       </div>
     </nav>
 
-    <!-- HEADER -->
-    <header id="main-header" class="py-2 bg-primary text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1><i class="fas fa-cog"></i> Medicne list</h1>
+
+    <!-- ============================================================================================================ -->
+
+    <!-- search button and text box -->
+      <!-- search -->
+      <div class=" container mx-auto row my-4">
+        <form class="d-flex input-group">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <div class="input-group-append">
+            <button class="btn btn-" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
           </div>
+        </form>
+      </div>
+
+   <!-- Form -->
+
+   <section>
+    <div class="container mx-auto row my-4" ></div>
+    <div class="card text-center card-form bg-primary">
+        <div class="card-body">
+          <h3>quant update</h3>
+          <p></p>
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="SellerId"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Medicine Id" 
+              />
+            </div>
+            <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control form-control-lg"
+                  placeholder="Medicine Name"
+                />
+              </div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Quantity"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Discount"
+              />
+            </div>
+            <input
+              type="submit"
+              value="Sign Up"
+              class="btn btn-outline-light btn-block"
+            />
+
+           
+          </form>
         </div>
       </div>
-    </header>
-
-
-
+    </section>
+   
     <!-- FOOTER -->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
       <div class="container">

@@ -1,5 +1,7 @@
-/* To remove unwanted horizontal whitespace from page */
+To remove unwanted horizontal whitespace from page
+
 html,
+
 body {
     width: 100%;
     overflow-x: hidden;
@@ -9,7 +11,7 @@ body {
 @media (max-width:800px) {
 
     /* To remove unwanted horizontal whitespace from page in mobile view */
-    html,
+   html,
     body {
         width: 100%;
         overflow-x: hidden;
