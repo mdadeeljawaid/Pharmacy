@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myjScript.js"></script>
+</head>
+
+<body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">AdminPannel</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav">
+                    <li class="nav-item px-2">
+                        <a href="index.html" class="nav-link active">Dashboard</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="seller.html" class="nav-link">Seller</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="MedicineList.html" class="nav-link">MedicineMaster</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a href="users.html" class="nav-link">Users</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown mr-3">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                            <i class="fas fa-user"></i> Welcome Wali
+                        </a>
+                        <div class="dropdown-menu">
+                            <a href="profile.html" class="dropdown-item">
+                                <i class="fas fa-user-circle"></i> Profile
+                            </a>
+                            <a href="settings.html" class="dropdown-item">
+                                <i class="fas fa-cog"></i> Settings
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="login.html" class="nav-link">
+                            <i class="fas fa-user-times"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <div class="container mt-3">
+        <div class="row gutters">
+
+
+
+            <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+                <div class=" row card h-80">
+                    <div class="card-body" id="add">
+                        <div class="row gutters">
+                            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                <h6 class="mb-2 text-primary">Seller Details</h6>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Email-Id</label>
+                                    <input type="email" class="form-control" id="Email-Id" placeholder="Email-Id"
+                                        disabled>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="shopeName">Shop Name</label>
+                                    <input type="text" class="form-control" id="shopName" placeholder="Shop Name"
+                                        disabled>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="shopRegNo">Shop Registration Number</label>
+                                    <input type="text" class="form-control" id="shopRegNo"
+                                        placeholder="Shop Registration Number" disabled>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="shopContact">Contact Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="Contact Number"
+                                        disabled>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ShopAddress">Shop Address</label>
+                                    <input type="text" class="form-control" id="ShopAddress" placeholder="Address"
+                                        disabled>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ShopPincode">Shop Pincode</label>
+                                    <input type="number" class="form-control" id="ShopAddress" placeholder="Pincode"
+                                        disabled>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="ShopPincode">Document Url</label>
+                                    <input type="text" class="form-control" id="shopeDocumentUrl"
+                                        placeholder="Document Url" disabled>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="card h-80 address-section collapse " id="address-section">
+                        <div class="add-address ml-3 mr-3 mb-3 mt-3">
+                            <button data-toggle="collapse" data-target="#input-address-section">Add new Address</button>
+                        </div>
+                        <div class="collapse" id="input-address-section">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" placeholder="Full Name">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="contactno">Contact Number</label>
+                                    <input type="email" class="form-control" id="contactno"
+                                        placeholder="Contact Number">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="address">Address(Area/Street/Locality)</label>
+                                    <textarea class="form-control" id="address" placeholder="Area/Street/Locality"
+                                        rows="5" cols="10">
+                                        </textarea>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city" placeholder="City">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="state">State</label>
+                                    <input type="text" class="form-control" id="state" placeholder="State">
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                <div class="form-group">
+                                    <label for="pincode">Pincode</label>
+                                    <input type="number" class="form-control" id="pincode" placeholder="pincode">
+                                </div>
+                            </div>
+
+                            <div class="save-address col-8">
+                                <button class="save-address-btn btn btn-primary">Save</button>
+                            </div>
+                        </div>
+
+                        <div class="user-address-section mt-3 ml-3 mb-3 mr-3 p-3">
+                            <div class="left">
+                                <span class="username">User Name1</span> &nbsp;
+                                <span class="usercontactno">+91-9876543210</span>
+                                <br>
+                                <span class="useraddress">Area/Street/Locality</span>
+                                <br>
+                                <span class="usercity">City</span>,
+                                <span class="userstate">State</span> -
+                                <span class="userpincode">Pincode</span> &nbsp;
+                            </div>
+                            <div class="right mr-5">
+                                <button class="edit-address">
+                                    <i class='fas fa-pencil-alt'></i>&nbsp;
+                                </button>
+                                <button class="delete-address">
+                                    <i class="fas fa-trash-alt"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p class="lead text-center">
+                        Copyright &copy;
+                        <span id="year"></span>
+                        MediBox
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
