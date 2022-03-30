@@ -14,6 +14,11 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.table-widthset{
+  width:50%;
+  margin: auto;
+}
+
 #button-med-reg{
     float: right;
     margin-top: 10px;
@@ -24,12 +29,17 @@ input[type=number] {
   margin: auto;
 }
 
-#chemical-form{
+#collapseAddchemicalClass{
   width: 50%;
   margin: auto;
 
 }
-#manufacture-form{
+#collapseAddManufacture{
+  width: 50%;
+  margin: auto;
+
+}
+#collapseAddtheraputicClass{
   width: 50%;
   margin: auto;
 

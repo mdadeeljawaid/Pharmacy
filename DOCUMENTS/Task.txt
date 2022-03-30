@@ -12,13 +12,14 @@ product detail page     - done
 profile page            - done 
 order page              - done
 cart page               - done
-wishlist page           - not done 
+wishlist page           - not done
+ 
 seller page             - not done
-    Login page      -       done
-    Registration page - not done    wali
+    Login page          - done
+    Registration page   - done
     seller profile page - not done  abdullah
-    Seller Medicine master - not done
-        display seller medicine  table page    adeel bhaiya
+    Seller Medicine master - done
+        display seller medicine  table page 
             medicineid
             medicine name
             quantity
@@ -26,7 +27,7 @@ seller page             - not done
             MRP
             Selling price
 
-    order page      - not done   saddam bhai
+    order page      - done
         OrderId
         CustomerId
         OrderDate
@@ -39,21 +40,17 @@ seller page             - not done
         StatusId  (select option) pending , deliverd ,cancelled
 
     
-admin page              - not done
+admin page          - not done
     Login page      - done
-    
     Dashboard page  - done
-    
-    medicine master - not done
+    medicine master - done
     profile page    - not done abdullah
-   
-   
     user detail page - not done  saddam bhai
         table creation
         user details  
     
     
-    order page      -  not done   saddam bhai
+    order page      -  done
         OrderId
         CustomerId
         OrderDate
@@ -64,5 +61,3 @@ admin page              - not done
         ShippingAddressId
         ShippingSellerId
         StatusId
-
-    

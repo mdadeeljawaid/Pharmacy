@@ -109,7 +109,6 @@
               data-toggle="collapse"
               href="#collapseManufactureList"
               role="button"
-             
             >
               ManufactureList
             </a>
@@ -120,7 +119,6 @@
               data-toggle="collapse"
               href="#collapseTherapeuticClassList"
               role="button"
-              
             >
               Therapeutic Class List
             </a>
@@ -131,7 +129,6 @@
               data-toggle="collapse"
               href="#collapsechemicalclassList"
               role="button"
-              
             >
               chemical class List
             </a>
@@ -159,7 +156,6 @@
 
           <div class="col-md-3 my-1">
             <a
-              href=""
               class="btn btn-info btn-block"
               data-toggle="collapse"
               href="#collapseAddchemicalClass"
@@ -170,8 +166,7 @@
 
           <div class="col-md-3 my-1">
             <a
-              href=""
-              class="btn btn-dark btn-block"
+              class="btn btn-success btn-block"
               data-toggle="collapse"
               href="#collapseAddtheraputicClass"
             >
@@ -183,7 +178,10 @@
     </section>
 
     <!-- manafacture list -->
-    <div class="container collapse" id="collapseManufactureList">
+    <div
+      class="collapse container-fluid table-widthset"
+      id="collapseManufactureList"
+    >
       <div class="row container-fluid">
         <div class="card">
           <div class="card-header">
@@ -212,11 +210,14 @@
     </div>
 
     <!-- chemical class list -->
-    <div class="container collapse" id="collapsechemicalclassList">
+    <div
+      class="collapse container-fluid table-widthset"
+      id="collapsechemicalclassList"
+    >
       <div class="row container-fluid">
         <div class="card">
           <div class="card-header">
-            <h4>Manufacture List</h4>
+            <h4>chemical class list</h4>
           </div>
           <table class="table table-striped">
             <thead class="thead-dark">
@@ -237,11 +238,14 @@
     </div>
 
     <!-- Therapeutic Class list -->
-    <div class="container collapse" id="collapseTherapeuticClassList">
+    <div
+      class="collapse container-fluid table-widthset"
+      id="collapseTherapeuticClassList"
+    >
       <div class="row container-fluid">
         <div class="card">
           <div class="card-header">
-            <h4>Manufacture List</h4>
+            <h4>Therapeutic Class list</h4>
           </div>
           <table class="table table-striped">
             <thead class="thead-dark">
@@ -263,9 +267,8 @@
       </div>
     </div>
 
-
     <!--Medicine inventery list table -->
-    <div class="container-fluid collapse"  id="collapseMedicineinventery">
+    <div class="container-fluid collapse" id="collapseMedicineinventery">
       <div class="row">
         <div class="card">
           <div class="card-header">
@@ -320,6 +323,407 @@
       </div>
     </div>
 
+    <!--ADD Therapeutic Class  -->
+    <div class="collapse container-fluid py-4" id="collapseAddtheraputicClass">
+      <form action="">
+        <legend>Therapeutic Registartion</legend>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Therapeutic Class Name</span
+            >
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Description</span
+            >
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div id="button-med-reg" class="">
+          <input type="button" class="btn-danger btn-lg" value="Reset" />
+          <input class="btn-success btn-lg" type="button" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!--ADD Manufacture  -->
+    <div class="collapse container-fluid py-4" id="collapseAddManufacture">
+      <hr />
+      <form action="">
+        <legend>Manufacture Registration</legend>
+
+        <div>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span
+                class="input-group-text font-weight-bolder"
+                id="inputGroup-sizing-sm "
+                >Manufacture Name</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-sm"
+            />
+          </div>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span
+                class="input-group-text font-weight-bolder"
+                id="inputGroup-sizing-sm "
+                >Description</span
+              >
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-sm"
+            />
+          </div>
+          <div class="input-group input-group-sm">
+            <div class="input-group-prepend">
+              <span
+                class="input-group-text font-weight-bolder"
+                id="inputGroup-sizing-sm "
+                >Status</span
+              >
+            </div>
+            <input
+              type="number"
+              value="0"
+              step="1"
+              max="1"
+              min="0"
+              class="form-control"
+              aria-label="Small"
+              aria-describedby="inputGroup-sizing-sm"
+            />
+          </div>
+        </div>
+        <div id="button-med-reg" class="">
+          <input type="button" class="btn-danger btn-lg" value="Reset" />
+          <input class="btn-success btn-lg" type="button" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!--ADD chemical Class  -->
+    <div class="collapse container-fluid py-4" id="collapseAddchemicalClass">
+      <hr />
+      <form action="">
+        <legend>Chemical Class Form</legend>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm "
+              >Chemical Name</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+        <div id="button-med-reg" class="mt-3">
+          <input type="button" class="btn-danger btn-lg" value="Reset" />
+          <input class="btn-success btn-lg" type="button" value="Submit" />
+        </div>
+      </form>
+    </div>
+
+    <!--ADD medicine data -->
+    <div class="collapse container-fluid py-4" id="collapseADDMedicineData">
+      <form id="medicineRegisterpage" action="">
+        <legend>Medicine Add</legend>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Medicine Name</span
+            >
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Prescription</span
+            >
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Small"
+            step="1"
+            value="0"
+            max="1"
+            min="0"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Type Of Shell</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Manufacture Name</span
+            >
+          </div>
+          <select name="Manufacture" id="Manufacture">
+            <option value="none">select</option>
+            <option value="Cardio">Sun Pharma</option>
+          </select>
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Salt</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Mrp</span
+            >
+          </div>
+          <input
+            type="number"
+            class="form-control"
+            aria-label="Small"
+            step="0.00"
+            placeholder="0.00"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Uses</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Alternate Medicine</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Side Effects</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >How To Use</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Chemical Class Name</span
+            >
+          </div>
+          <select name="chemicalClassName" id="chemicalClassName">
+            <option value="none">None</option>
+            <option value="1">1</option>
+          </select>
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Habit Forming</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Therapeutic Name</span
+            >
+          </div>
+
+          <select name="Therapeutic" id="Therapeutic">
+            <option value="none">None</option>
+            <option value="Cardio">Cardio</option>
+          </select>
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Action Class</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Small"
+            aria-describedby="inputGroup-sizing-sm"
+          />
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Medicine Url 1</span
+            >
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile" />
+            <label class="custom-file-label" for="customFile"
+              >Choose file</label
+            >
+          </div>
+        </div>
+
+        <div class="input-group input-group-sm">
+          <div class="input-group-prepend">
+            <span
+              class="input-group-text font-weight-bolder"
+              id="inputGroup-sizing-sm"
+              >Medicine Url 2</span
+            >
+          </div>
+          <div class="custom-file">
+            <input type="file" class="custom-file-input" id="customFile" />
+            <label class="custom-file-label" for="customFile"
+              >Choose file</label
+            >
+          </div>
+        </div>
+
+        <div id="button-med-reg" class="">
+          <input type="button" class="btn-danger btn-lg" value="Reset" />
+          <input class="btn-success btn-lg" type="button" value="Submit" />
+        </div>
+      </form>
+    </div>
     <!-- FOOTER -->
     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
       <div class="container">

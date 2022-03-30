@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="mystyle.css" />
+    <script src="myjScript.js"></script>
+  </head>
+
+  <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">AdminPannel</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav">
+            <li class="nav-item px-2">
+              <a href="index.html" class="nav-link active">Dashboard</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="seller.html" class="nav-link">Seller</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="MedicineList.html" class="nav-link">MedicineMaster</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="users.html" class="nav-link">Users</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown mr-3">
+              <a
+                href="#"
+                class="nav-link dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                <i class="fas fa-user"></i> Welcome Wali
+              </a>
+              <div class="dropdown-menu">
+                <a href="profile.html" class="dropdown-item">
+                  <i class="fas fa-user-circle"></i> Profile
+                </a>
+                <a href="settings.html" class="dropdown-item">
+                  <i class="fas fa-cog"></i> Settings
+                </a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="fas fa-user-times"></i> Logout
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- ============================================================================================================ -->
+    <div class="container-fluid" >
+     <div class="row" aria-placeholder="none">
+            <div class="card">
+              <div class="card-header">
+                <h4><strong>Our Users:-</strong></h4>
+              </div>
+              <hr style="height: 5px; box-shadow: inset 0 9px 90px -30px rgba(0, 4, 8, 0.986);">
+              <table class="table table-striped  table-bordered text-center">
+                <thead class="thead-dark">
+                  <tr>
+                    <th><u>UserId</u></th>
+                    <th><u>FullName</u></th>
+                    <th><u>EmailId</u></th>
+                    <th><u>ContactNo</u></th>
+                    <th><u>Status</u></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i>A420</i></td>
+                    <td><i>Falana Dhimkana</i></td>
+                    <td><i>fdhimkana@gmail.com</i></td>
+                    <td><i>+91-5678982345</i></td>
+                    <td><i>Active</i></td>
+                  </tr>
+                  <tr>
+                    <td><i>A840</i></td>
+                    <td><i>kuchbhi kumar</i></td>
+                    <td><i>kumar@gmail.com</i></td>
+                    <td><i>+91-9876543212</i></td>
+                    <td><i>Inactive</i></td>
+                  </tr>
+                  <tr>
+                    <td><i>B220</i></td>
+                    <td><i>Dawa Bharti</i></td>
+                    <td><i>bdawa@gmailcom</i></td>
+                    <td><i>+91-5674382910</i></td>
+                    <td><i>Active</i></td>
+                  </tr>
+                  <tr>
+                    <td><i>B220</i></td>
+                    <td><i>Dawa Bharti</i></td>
+                    <td><i>bdawa@gmailcom</i></td>
+                    <td><i>+91-5674382910</i></td>
+                    <td><i>Active</i></td>
+                  </tr>
+
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="bg-dark text-white mt-4 p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="lead text-center">
+              Copyright &copy;
+              <span id="year"></span>
+              MediBox
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
