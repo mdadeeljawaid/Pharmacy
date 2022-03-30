@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller's Medicine Master</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="mystyle.css" />
+  <link rel="stylesheet" href="sellerMedicineMasterStyle.css" />
+  <script src="myjScript.js"></script>
+</head>
+
+<body>
+  <!-- nav section -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">AdminPannel</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item px-2">
+            <a href="index.html" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="seller.html" class="nav-link">Seller</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="MedicineList.html" class="nav-link">MedicineMaster</a>
+          </li>
+          <li class="nav-item px-2">
+            <a href="users.html" class="nav-link">Users</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown mr-3">
+            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+              <i class="fas fa-user"></i> Welcome Wali
+            </a>
+            <div class="dropdown-menu">
+              <a href="profile.html" class="dropdown-item">
+                <i class="fas fa-user-circle"></i> Profile
+              </a>
+              <a href="settings.html" class="dropdown-item">
+                <i class="fas fa-cog"></i> Settings
+              </a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link">
+              <i class="fas fa-user-times"></i> Logout
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================================================================ -->
+
+  <!-- search button and text box -->
+  <!-- search -->
+  <div class=" container mx-auto row my-4">
+    <form class="d-flex input-group">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Form -->
+
+  <section>
+    <div class="container mx-auto row my-4"></div>
+    <div class="card text-center card-form bg-primary">
+      <div class="card-body">
+        <h3>Quantity Update</h3>
+        <p></p>
+
+        <form>
+          <div class="form-inline">
+            <div class="col-md-12 form-group">
+              <label for="sellerid" class="col-sm-2 col-form-label">Seller Id :</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Seller Id" />
+            </div>
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="medicineid" class="col-sm-2 col-form-label">Medicine Id :</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Medicine Id" />
+            </div>
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="medicinename" class="col-sm-2 col-form-label">Medicine Name :</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Medicine Name" />
+            </div>
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="quantity" class="col-sm-2 col-form-label">Quantity :</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Quantity" />
+            </div>
+          </div>
+          <div class="form-inline mt-2">
+            <div class="col-md-12 form-group">
+              <label for="discount" class="col-sm-2 col-form-label">Discount :</label>
+              <input type="text" class="form-control form-control-lg" placeholder="Discount" />
+            </div>
+          </div>
+          <!-- <input
+              type="submit"
+              value="Sign Up"
+              class="btn btn-outline-light btn-block"
+            /> -->
+          <button type="submit" class="btn btn-dark mt-2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <button class="btn btn-success btn-block" data-toggle="collapse" data-target="#medicine-details">Show Medicine List</button>
+
+  <div class="collapse" id="medicine-details">
+    <table class="table">
+      <thead class="thead-light">
+        <tr>
+          <th scope="col">Medicine Id</th>
+          <th scope="col">Medicine Name</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Discount</th>
+          <th scope="col">MRP</th>
+          <th scope="col">Selling Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Cildip T</td>
+          <td>1</td>
+          <td>10%</td>
+          <td>200</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cildip T</td>
+          <td>1</td>
+          <td>10%</td>
+          <td>200</td>
+          <td>180</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Cildip T</td>
+          <td>1</td>
+          <td>10%</td>
+          <td>200</td>
+          <td>180</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+
+  <!-- FOOTER -->
+  <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p class="lead text-center">
+            Copyright &copy;
+            <span id="year"></span>
+            MediBox
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+Logo                    - done
+About us                - done
+Contact us              - done
+Login                   - done
+Registration            - done
+Menu                    - done
+Navbar                  - done
+home page               - done
+category wise product   - done
+search listing page     - done 
+product detail page     - done 
+profile page            - done 
+order page              - done
+cart page               - done
+wishlist page           - not done
+ 
+seller page             - not done
+    Login page          - done
+    Registration page   - done
+    seller profile page - not done  abdullah
+    Seller Medicine master - done
+        display seller medicine  table page 
+            medicineid
+            medicine name
+            quantity
+            discount
+            MRP
+            Selling price
+
+    order page      - done
+        OrderId
+        CustomerId
+        OrderDate
+        OrderAmount
+        Discount
+        NetAmount
+        ShippingDate
+        ShippingAddressId
+        ShippingSellerId
+        StatusId  (select option) pending , deliverd ,cancelled
+
+    
+admin page          - not done
+    Login page      - done
+    Dashboard page  - done
+    medicine master - done
+    profile page    - not done abdullah
+    user detail page - not done  saddam bhai
+        table creation
+        user details  
+    
+    
+    order page      -  done
+        OrderId
+        CustomerId
+        OrderDate
+        OrderAmount
+        Discount
+        NetAmount
+        ShippingDate
+        ShippingAddressId
+        ShippingSellerId
+        StatusId
