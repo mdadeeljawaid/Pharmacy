@@ -1,13 +1,11 @@
-
 create database pharmacy;
 
 use pharmacy;
 
-
 CREATE TABLE `admin` (
   `AdminId` int NOT NULL,
-  `Username` varchar(45) NOT NULL,
-  `Password` varchar(45) NOT NULL,
+  `Username` varchar(200) NOT NULL,
+  `Password` varchar(200) NOT NULL,
   PRIMARY KEY (`AdminId`),
   UNIQUE KEY `Username_UNIQUE` (`Username`)
 );
@@ -15,10 +13,10 @@ CREATE TABLE `admin` (
 
 CREATE TABLE `user` (
   `UserId` int NOT NULL,
-  `FullName` varchar(45) NOT NULL,
-  `EmailId` varchar(45) NOT NULL,
-  `ContactNumber` varchar(45) NOT NULL,
-  `Password` varchar(45) NOT NULL,
+  `FullName` varchar(200) NOT NULL,
+  `EmailId` varchar(200) NOT NULL,
+  `ContactNumber` varchar(200) NOT NULL,
+  `Password` varchar(200) NOT NULL,
   `Status` tinyint NOT NULL DEFAULT '0',
   PRIMARY KEY (`UserId`),
   UNIQUE KEY `EmailId_UNIQUE` (`EmailId`),
@@ -31,8 +29,8 @@ CREATE TABLE `useraddresses` (
   `UserId` int DEFAULT NULL,
   `MobileNumber` varchar(12) NOT NULL,
   `Locality` varchar(20) NOT NULL,
-  `AreaStreet` varchar(45) NOT NULL,
-  `Landmark` varchar(45) DEFAULT NULL,
+  `AreaStreet` varchar(200) NOT NULL,
+  `Landmark` varchar(200) DEFAULT NULL,
   `City` varchar(20) NOT NULL,
   `State` varchar(20) NOT NULL,
   `Pincode` int NOT NULL,
@@ -68,15 +66,15 @@ CREATE TABLE `chemicalclass` (
 
 CREATE TABLE `therarpeuticclass` (
   `TherarpeuticClassId` int NOT NULL,
-  `TName` varchar(45) NOT NULL,
+  `TName` varchar(200) NOT NULL,
   `TDescription` varchar(100) DEFAULT NULL,
   PRIMARY KEY (`TherarpeuticClassId`)
 );
 
 CREATE TABLE `manufacturermaster` (
   `Manufacturerid` int NOT NULL,
-  `ManufacturerName` varchar(45) NOT NULL,
-  `MDescription` varchar(45) DEFAULT NULL,
+  `ManufacturerName` varchar(200) NOT NULL,
+  `MDescription` varchar(200) DEFAULT NULL,
   `isActive` tinyint DEFAULT '0',
   PRIMARY KEY (`Manufacturerid`)
 );
@@ -84,22 +82,22 @@ CREATE TABLE `manufacturermaster` (
 
 CREATE TABLE `medicinemaster` (
   `MedicineId` int NOT NULL,
-  `MedicineName` varchar(45) NOT NULL,
+  `MedicineName` varchar(200) NOT NULL,
   `Prescription` tinyint NOT NULL DEFAULT '0',
-  `TypeOfSell` varchar(45) NOT NULL,
+  `TypeOfSell` varchar(200) NOT NULL,
   `ManufacturerId` int NOT NULL,
-  `Salt` varchar(45) NOT NULL,
-  `MRP` decimal(10,0) NOT NULL,
+  `Salt` varchar(500) NOT NULL,
+  `MRP` decimal(10,2) NOT NULL,
   `Uses` varchar(1000) NOT NULL,
-  `AlternateMedicines` varchar(500) NOT NULL,
+  `AlternateMedicines` varchar(1000) NOT NULL,
   `SideEffects` varchar(1000) NOT NULL,
   `HowToUse` varchar(1000) NOT NULL,
   `ChemicalClassId` int NOT NULL,
-  `HabitForming` varchar(45) NOT NULL,
+  `HabitForming` varchar(200) NOT NULL,
   `TherapeuticClass` int NOT NULL,
-  `ActionClass` varchar(45) NOT NULL,
-  `MedicineUrl1` varchar(100) DEFAULT NULL,
-  `MedicineUrl2` varchar(45) DEFAULT NULL,
+  `ActionClass` varchar(200) NOT NULL,
+  `MedicineUrl1` varchar(200) DEFAULT NULL,
+  `MedicineUrl2` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`MedicineId`),
   KEY `ManufacturerId_idx` (`ManufacturerId`),
   KEY `ChemicalClassId_idx` (`ChemicalClassId`),
@@ -112,9 +110,9 @@ CREATE TABLE `medicinemaster` (
 
 CREATE TABLE `orderstatus` (
   `OrderStatusId` int NOT NULL,
-  `StatusType` varchar(45) NOT NULL,
-  `StatusDescription` varchar(45) NOT NULL,
-  `isActive` varchar(45) NOT NULL,
+  `StatusType` varchar(200) NOT NULL,
+  `StatusDescription` varchar(200) NOT NULL,
+  `isActive` varchar(200) NOT NULL,
   PRIMARY KEY (`OrderStatusId`)
 );
 
@@ -123,9 +121,9 @@ CREATE TABLE `ordermaster` (
   `OrderId` int NOT NULL,
   `CustomerId` int DEFAULT NULL,
   `OrderDate` datetime DEFAULT NULL,
-  `OrderAmount` decimal(10,0) DEFAULT NULL,
-  `Discount` decimal(10,0) DEFAULT NULL,
-  `NetAmount` decimal(10,0) DEFAULT NULL,
+  `OrderAmount` decimal(10,2) DEFAULT NULL,
+  `Discount` decimal(10,2) DEFAULT NULL,
+  `NetAmount` decimal(10,2) DEFAULT NULL,
   `ShippingDate` datetime DEFAULT NULL,
   `ShippingAddressId` int DEFAULT NULL,
   `ShippingSellerId` int DEFAULT NULL,
@@ -145,9 +143,9 @@ CREATE TABLE `ordermaster` (
 CREATE TABLE `orderdetails` (
   `OrderId` int DEFAULT NULL,
   `MedicineId` int DEFAULT NULL,
-  `MedicinePrice` decimal(10,0) DEFAULT NULL,
+  `MedicinePrice` decimal(10,2) DEFAULT NULL,
   `MedicineQuantity` int DEFAULT NULL,
-  `MedicineDiscount` decimal(10,0) DEFAULT NULL,
+  `MedicineDiscount` decimal(10,2) DEFAULT NULL,
   `IsActive` tinyint DEFAULT '0',
   KEY `OrderDetailId_idx` (`OrderId`),
   KEY `OrderMedicineId_idx` (`MedicineId`),
@@ -160,7 +158,7 @@ CREATE TABLE `sellermedicinemaster` (
   `SellerId` int DEFAULT NULL,
   `MedicineId` int DEFAULT NULL,
   `Quantity` int DEFAULT '0',
-  `Discount` decimal(10,0) DEFAULT '0',
+  `Discount` decimal(10,2) DEFAULT '0',
   KEY `SellerId_idx` (`SellerId`),
   KEY `MedicineId_idx` (`MedicineId`),
   CONSTRAINT `MedicineId` FOREIGN KEY (`MedicineId`) REFERENCES `medicinemaster` (`MedicineId`) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -174,7 +172,7 @@ CREATE TABLE `shoppingcart` (
   `Date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `MedicineId` int NOT NULL,
   `Quantity` int NOT NULL DEFAULT '1',
-  `Price` decimal(10,0) NOT NULL,
+  `Price` decimal(10,2) NOT NULL,
   `Active` tinyint NOT NULL DEFAULT '0',
   PRIMARY KEY (`ShoppingCartId`),
   KEY `CustomerId_idx` (`CustomerId`),
