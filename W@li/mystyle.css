@@ -1,5 +1,5 @@
-.input-group-text{
-    width: 145px;
+.input-group-text {
+  width: 145px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -14,33 +14,70 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.table-widthset{
-  width:50%;
-  margin: auto;
-}
-
-#button-med-reg{
-    float: right;
-    margin-top: 10px;
-}
-
-#medicineRegisterpage{
+.table-widthset {
   width: 50%;
   margin: auto;
 }
 
-#collapseAddchemicalClass{
+#button-med-reg {
+  float: right;
+  margin-top: 10px;
+}
+
+#medicineRegisterpage {
+  width: 50%;
+  margin: auto;
+}
+
+#collapseAddchemicalClass {
   width: 50%;
   margin: auto;
 
 }
-#collapseAddManufacture{
+
+#collapseAddManufacture {
   width: 50%;
   margin: auto;
 
 }
-#collapseAddtheraputicClass{
+
+#collapseAddtheraputicClass {
   width: 50%;
   margin: auto;
 
+}
+
+.account-settings {
+  text-align: center;
+}
+
+.user-profile img {
+  width: 200px;
+  height: auto;
+  margin: auto;
+}
+
+.user-name {
+  margin-top: 10px;
+  color: darkblue;
+}
+
+.user-email,
+.user-contactno {
+  color: grey;
+  font-size: 0.9em;
+  margin: 0;
+}
+
+.manage-address button {
+  background-color: inherit;
+  border: none;
+  font-weight: 500;
+  color: darkblue;
+  font-size: 1.2em;
+}
+
+.manage-address button:hover {
+  color: rgba(0, 0, 139, 0.800);
+  border-bottom: 1px solid rgba(0, 0, 139, 0.800);
 }
