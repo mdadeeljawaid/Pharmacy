@@ -67,6 +67,29 @@ function checkFullName() {
   }
 }
 
+function checkContactNo() {
+  var contactno = document.getElementById("ContactNumber").value;
+  var contact_regex = /^[0-9]{10}$/
+  if (!contactno.match(contact_regex))
+ {
+    document.getElementById("ContactNumber-error").innerText = "Contact number Should be 10 digits";
+  } else {
+    document.getElementById("ContactNumber-error").innerText = "";
+  }
+}
+
+
+function checkPasswordMatch() {
+  var Password = document.getElementById("Password").value;
+  var RePassword = document.getElementById("RePassword").value;
+  //var alphExp = /^[0-9]+$/;
+  if (Password   != RePassword ) {
+    document.getElementById("RePassword-error").innerText = "Password not matched";
+  } else {
+    document.getElementById("RePassword-error").innerText = "";
+  }
+}
+
 
 // function checkFullName() {
 //   var fullname = $('#FullName').val();

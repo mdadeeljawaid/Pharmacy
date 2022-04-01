@@ -61,26 +61,33 @@
                 <form method="post" action="process_userSignup">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" id="FullName" name="FullName"
-                      placeholder="Full Name" onblur="checkFullName()" />
-                    <span id="fullname-error" class="text-danger">
+                      placeholder="Full Name" onblur="checkFullName()" required />
+                    <span id="fullname-error" class="text-danger"></span>
 
-                    </span>
+                    
                   </div>
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" id="ContactNumber" name="ContactNumber"
-                      placeholder="Mobile" onblur="checkContactNo()" />
+                      placeholder="Mobile" onblur="checkContactNo()"  required/>
+                      <span id="ContactNumber-error" class="text-danger"></span>
                   </div>
+                  
                   <div class="form-group">
                     <input type="email" class="form-control form-control-lg" id="EmailId" name="EmailId"
-                      placeholder="Email" onblur="checkEmail()" />
+                      placeholder="Email" onblur="checkEmail()"  required/>
+                      <span id="EmailId-error" class="text-danger"></span>
                   </div>
+
                   <div class="form-group">
                     <input type="password" class="form-control form-control-lg" id="Password" name="Password"
-                      placeholder="Password" onblur="checkPassword()" />
+                      placeholder="Password" onblur="checkPassword()" required />
+                      <span id="Password-error" class="text-danger"></span>
+                      
                   </div>
                   <div class="form-group">
                     <input type="password" class="form-control form-control-lg" id="RePassword" name="RePassword"
-                      placeholder="Confirm Password" onblur="checkPasswordMatch()" />
+                      placeholder="Confirm Password" onblur="checkPasswordMatch()" required />
+                      <span id="RePassword-error" class="text-danger"></span>
                   </div>
                   <input type="submit" value="Sign Up" class="btn btn-outline-light btn-block" />
 
