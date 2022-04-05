@@ -73,6 +73,7 @@ function checkContactNo() {
   if (!contactno.match(contact_regex))
  {
     document.getElementById("ContactNumber-error").innerText = "Contact number Should be 10 digits";
+    //document.getElementsByClassName("").style.color ="red";
   } else {
     document.getElementById("ContactNumber-error").innerText = "";
   }
