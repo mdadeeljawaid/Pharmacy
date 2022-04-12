@@ -161,7 +161,7 @@
                    </div>
                 </c:forEach>
              </div>
-             <button class="btn btn-outline-primary">Deliver Here</button>
+            
            
             </div>
         </div>
@@ -214,6 +214,9 @@
     
             </div>
         </div>
+        <div class="mt-2">
+        <button class="btn btn-outline-primary">Proceed to Payment</button>
+    </div>
     
     </div>
    
