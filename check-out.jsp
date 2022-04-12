@@ -1,20 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@page isELIgnored="false" %>
- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <title>Checkout Page</title>
-  <link rel="stylesheet" href="/css/check.css" />
+	
+    <link rel="stylesheet" href="/css/check.css"/>
+    
+	<script src="js/myscript.js"></script>
 </head>
 
 <body class="">
- 
-  
-  <!--+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
-  <%@include file="templates/header.jsp" %>
+	<!-- Header -->
+	<%@include file="Header.jsp"%>
+	
+	<!-- ----------------------------------------------------------------------------------------------------------------- -->
 
  
  
@@ -167,28 +167,62 @@
         </div>
         <div class="col-md-4 col-lg-5">
 
-            <section id="myorderpage" >
+            <section id="myoderdetails" >
                 <h3>Price Details </h3>
                 <div class="row orderrow">
                    
                     <div class="col-6">
                        
-                        <p>Price(1 itmes) &emsp;: <span id="order-date">29-03-2022</span></p>
-                        <p>Delivery charge : <span id="order-date">&#x20b9; 50</span></p>
-                        <h6>Total Price &emsp;: <span id="grand-total-price"> &#x20b9; 5999</span></h6>
+                        <p>Price(1 itmes) &emsp;: <span id="order-date">&#x20b9; 99</span></p>
+                        <p>Delivery charge : <span id="order-date">&#x20b9;    50</span></p>
+                        <h6>Total Price &emsp;: <span id="grand-total-price"> &#x20b9; 149</span></h6>
                         
                         
                     </div>
                     </div>
                     </section>
         </div>
+        
     </div>
-</div>
+
+    <div class="col-md-7 offset-md-0">
+        <div  id="order-details">
+            <div class="container-fluid row ml-1 order-item">
+                <div class="col-6 col-md-6 p-2">
+                    <h6 id="product-name">Product Name1</h6>
+                    <p id="product-description">Product Description1</p>
+                    <!-- <br>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic nulla fugiat eius corrupti
+                        nostrum quasi esse optio provident quis nemo!</p> -->
+                </div>
+                <div class="col-4 offset-1 p-2">
+                    <br>
+                    <p>MRP &emsp;&emsp;&nbsp; : <span class="product-mrp">&#x20b9; 99</span></p>
+                    <p>Discount&emsp;: <span class="product-discount">&#x20b9; 00</span></p>
+                    <hr>
+                    <p>Total Price&nbsp; : <span class="product-price">&#x20b9; 99</span> </p>
+                </div>
+            </div>
+            <hr>
+            
+            <div class="row ml-1">
+                <div class="col-12 p-2 seller-details">
+                    <span id="seller-name">Seller Name</span>
+                    <p>Seller Address: <span id="seller-address: ">Lorem ipsum dolor sit amet consectetur
+                            adipisicing</span></p>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+   
 
 
- 
- 
- 
+
+
+ <!-- footer -->
+	<%@include file="Footer.jsp"%>
   </body>
 
 
