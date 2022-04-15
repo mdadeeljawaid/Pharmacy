@@ -1,164 +1,216 @@
++
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: rgba(15, 15, 15, 0.205);
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-
-        .container {
-            padding: 16px;
-            background-color: rgb(158, 144, 144);
-        }
-
-
-        input[type=text],
-        input[type=password] {
-            width: 100%;
-            padding: 13px;
-            margin: 5px 0 23px 0;
-            display: inline-block;
-            border: none;
-            background: #f1f1f1;
-        }
-
-        input[type=text]:focus,
-        input[type=password]:focus {
-            background-color: rgba(171, 21, 201, 0.164);
-            outline: none;
-        }
-
-
-        hr {
-            border: 1px solid #f1f1f1;
-            margin-bottom: 24px;
-        }
-
-
-
-        .seller:hover {
-            opacity: 1;
-        }
-
-
-        a {
-            color: rgba(9, 24, 224, 0.288);
-        }
-<<<<<<< HEAD
-   
-   
-   </style>
-=======
-    </style>
->>>>>>> 0351aa4ec77c278989a975ad2e7f9e987cc997e1
-</head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="mystyle.css" />
+    
+  </head>
 
 <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+        <div class="container">
+            <a href="index.html" class="navbar-brand">MediBox</a>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="main-header" class="py-2 bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1><i class="fas fa-user"></i> MediBox Admin</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </section>
+
+     <!-- LOGIN -->
+     <section id="login">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-6 mx-auto">
+                     <div class="card">
+                         <div class="card-header">
+                             <h4>Seller Registration</h4>
+                         </div>
+                         <div class="card-body">
+                           
+                            
+                             <form>
+                                 <div class="form-group">
+                                     <label for="email"><b>Email</b></label>
+                                     <input type="email" class="form-control" placeholder="Enter Email" name="email"
+                                         id="email"placeholder="email"  onblur="validation()" required>
+                                 </div>
+
+                                   <div class="form-group">
+                                       <label for="Password"><b>Password</b></label>
+                                       <input type="password" class="form-control" placeholder="Enter Password" name="Password"
+                                        id="Password" placeholder="Password" onblur="validation()" required/>
+                                       <span id="Password-error" class="text-danger"></span>
+
+                                   </div>
+                                   <div class="form-group">
+                                      <label for="Confirmpassword"><Confirmpassword</b> </label>
+                                       <input type="password" class="form-control" id="Confirmpassword"
+                                           name="Confirmpassword" placeholder="Confirmpassword" onblur="validation()" required />
+                                       <span id="Confirmpassword" class="text-danger"></span>
+                                   </div>
+                                 <div class="form-group">
+                                     <label for="ShopName"><b>ShopName</b></label>
+                                     <input type="text" class="form-control" placeholder="Enter ShopName"
+                                         name="ShopName" id="ShopName"placeholder="ShopName" onblur="validation()"required>
+                                         <span id="ShopName" class="text-danger"></span>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="ShopRegNo"><b>ShopRegNo</b></label>
+                                     <input type="text" class="form-control" placeholder="EnterShopRegNo "
+                                         name="ShopRegNo" id="ShopRegNo" required>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="ShopContactNo"><b>ShopContactNo</b></label>
+                                     <input type="text" class="form-control" placeholder="ShopContactNo "
+                                         name="ShopContactNo" id="ShopContactNo" required>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="ShopAddress"><b>ShopAddress</b></label>
+                                     <input type="text" class="form-control" placeholder=" ShopAddress"
+                                         name="ShopAddress" id="ShopAddress" required>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="ShopPincode"><b>Enter a ShopPincode:</b></label>
+                                     <input type="text" class="form-control" placeholder="Shop Pin code"
+                                         id="ShopPincode" name="pincode" maxlength="6"><br><br>
+                                 </div>
+
+                                 <div class="form-group">
+                                     <label for="myfile">Select a file:</label>
+                                     <input type="file" class="form-control" id="myfile" name="myfile">
+                                 </div>
+
+                                 <input type="submit" value="Sign Up" class="btn btn-outline-light btn-block" />
+
+                                 <p class="signinlink">
+                                     I already have an account <a href="login.html">Sign In</a>
+                                 </p>
+                             </form>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+         <script type="text/javascript">
+             function validation() {
+                var ShopName = document.getElementById('ShopName').value;
+                var email = document.getElementById('email').value;
+                 var password = document.getElementById('password').value;
+                 var Confirmpassword = document.getElementById('Confirmpassword').value;
+                 var mobilenumber = document.getElementById('ShopContactNo').value;
+                 
+
+                 if (ShopName == "") {
+                 document.getElementById('ShopName').innerHTML = " ** Please fill the ShopName field";
+                      return false;
+                  }
+                 if (((ShopName.length <= 3) || (ShopName.length>= 20))) {
+
+                 
+                 document.getElementById('ShopName').innerHTML = " ** ShopName should be between 2 to 20 characters "
+                 } else if (!isNaN(ShopName)) {
+                 document.getElementById('ShopName').innerHTML = " ** Only Characters are allowed"
+
+                  }
 
 
-    <div class="container">
-<<<<<<< HEAD
-        <h3>SellerRegForm Detail</h3>
+                 if (password == "") {
+                     document.getElementById('Password').innerHTML = " ** Enter Password"
+                     return false;
+                 } else if (password == ShopName) {
+                     document.getElementById('Password').innerHTML = " ** Password cant'be your ShopName"
+                     return false;
+                 } else if ((password.length <= 8) || (password.length >= 20)) {
+                     document.getElementById('Password').innerHTML =" ** user password should be between 6 to 20 characters "
+                     return false;
+                 }
 
-        <hr>
+                 if (Confirmpassword == "") {
+                     document.getElementById('Confirmpasswordid').innerHTML = " ** Enter ConfirmPassword"
+                     return false;
+                 } else if (password != Confirmpassword) {
+                     document.getElementById('Confirmpasswordid').innerHTML = " ** Password does'nt Match"
+                     return false;
+                 }
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
-=======
-        <h3>SELLER DETAILS</h3>
-
-        <hr>
-        <form>
-            <label for="email"><b>Email</b></label>
-            <input type="text" placeholder="Enter Email" name="email" id="email" required>
-
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-            <label for="psw-reEnter"><b>ReEnter Password</b></label>
-            <input type="password" placeholder="ReEnter Password" name="psw-reEnter" id="psw-reEnter" required>
-
-
-
-            <label for="ShopName"><b>ShopName</b></label>
-            <input type="text" placeholder="Enter ShopName" name="ShopName" id="ShopName" required>
-
-            <label for="ShopRegNo"><b>ShopRegNo</b></label>
-            <input type="text" placeholder="EnterShopRegNo " name="ShopRegNo" id="ShopRegNo" required>
-
-            <label for="ShopContactNo"><b>ShopContactNo</b></label>
-            <input type="text" placeholder="ShopContactNo " name="ShopContactNo" id="ShopContactNo" required>
-
-            <label for="ShopAddress"><b>ShopAddress</b></label>
-            <input type="text" placeholder=" ShopAddress" name="ShopAddress" id="ShopAddress" required>
-
-            <label for="ShopPincode"><b>Enter a ShopPincode:</b></label>
-            <input type="text" id="pincode" name="pincode" maxlength="6"><br><br>
-
-            <label for="myfile">Select a file:</label>
-            <input type="file" id="myfile" name="myfile">
+                 if (mobilenumber == "") {
+                     document.getElementById("ShopContactNo").innerHTML = " ** Enter Mobile Number";
+                     return false;
+                 } else if (mobilenumber.length != 10) {
+                     document.getElementById("ShopContactNo").innerHTML = " ** Mobile Number Should be 10 digit "
+                     return false;
+                 } else if (isNaN(mobilenumber)) {
+                     document.getElementById('ShopContactNo').innerHTML = " ** Only digit are Accepted"
+                     return false;
+                 }
 
 
->>>>>>> 0351aa4ec77c278989a975ad2e7f9e987cc997e1
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-        <label for="psw-reEnter"><b>ReEnter Password</b></label>
-        <input type="password" placeholder="ReEnter Password" name="psw-reEnter" id="psw-reEnter" required>
+                 if (email == "") {
+                     document.getElementById('email').innerHTML = " ** Enter Email ID"
+                     return false;
+                 } else if (email.indexOf('@') <= 0) {
+                     document.getElementById('email').innerHTML = " ** @ Invalid Position"
+                     return false;
+                 } else if ((email.charAt(email.length - 4) != '.') && (email.charAt(email.length - 3) != '.')) {
+                     document.getElementById('email').innerHTML = " ** . Invalid Position"
+                     return false;
+                 }
+                 
+             }
+         </script>
 
 
 
-        <label for="ShopName"><b>ShopName</b></label>
-        <input type="text" placeholder="Enter ShopName" name="ShopName" id="ShopName" required>
 
-        <label for="ShopRegNo"><b>ShopRegNo</b></label>
-        <input type="text" placeholder="EnterShopRegNo " name="ShopRegNo" id="ShopRegNo" required>
+     </section>
 
-        <label for="ShopContactNo"><b>ShopContactNo</b></label>
-        <input type="text" placeholder="ShopContactNo " name="ShopContactNo" id="ShopContactNo" required>
+     <!-- FOOTER -->
+     <footer id="main-footer" class="bg-dark text-white mt-5 p-5">
+         <div class="container">
+             <div class="row">
+                 <div class="col">
+                     <p class="lead text-center">
+                         Copyright &copy;
+                         <span id="year"></span>
+                         Blogen
+                     </p>
+                 </div>
+             </div>
+         </div>
+     </footer>
+     </body>
 
-        <label for="ShopAddress"><b>ShopAddress</b></label>
-        <input type="text" placeholder=" ShopAddress" name="ShopAddress" id="ShopAddress" required>
-
-        <label for="ShopPincode"><b>Enter a ShopPincode:</b></label>
-        <input type="text" id="pincode" name="pincode" maxlength="6"><br><br>
-
-        <label for="myfile">Select a file:</label>
-        <input type="file" id="myfile" name="myfile">
-
-
-
-        <input type="submit" value="Sign Up" class="btn btn-outline-light btn-block" />
-
-        <p class="signinlink">
-            I already have an account <a href="login.html">Sign In</a>
-        </p>
-        </form>
-
-    </div>
-
-<<<<<<< HEAD
-=======
-            <p class="signinlink">
-                I already have an account <a href="login.html">Sign In</a>
-            </p>
-        </form>
-
-    </div>
-
->>>>>>> 0351aa4ec77c278989a975ad2e7f9e987cc997e1
-
-    </form>
-
-</body>
-
-</html>
+     </html>
