@@ -57,7 +57,7 @@ function CheckPincode(input) {
 } 
 
 function CheckAddress(input) {
-  const str = /([A-Z][a-z]+\s?)+,\s[A-Z]{2}\s\d{5}-?\d{4}?/;
+  const str = /^[a-z0-9\s,'-]*$/i;
     if(str.test(input.value.trim()))
     {
         ShowSuccess(input);
