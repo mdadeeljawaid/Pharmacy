@@ -56,17 +56,17 @@ function CheckPincode(input) {
     
 } 
 
-function CheckAddress(input) {
-  const str = /^[a-z0-9\s,'-]*$/i;
-    if(str.test(input.value.trim()))
-    {
-        ShowSuccess(input);
-    }
-    else {
-    ShowError(input, "ShopAddress is not valid");
-     }
+// function CheckAddress(input) {         
+//   const str = /^[a-z0-9\s,'-]*$/i;
+//     if(str.test(input.value.trim()))
+//     {
+//         ShowSuccess(input);
+//     }
+//     else {
+//     ShowError(input, "ShopAddress is not valid");
+//      }
     
-} 
+// } 
 
 
     
